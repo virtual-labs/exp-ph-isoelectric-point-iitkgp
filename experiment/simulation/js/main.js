@@ -1,4 +1,12 @@
 //Your JavaScript goes in here
+/*
+ Lab name: Experimental Biochemistry
+Exp name: pH-titration of amino acids and small peptides, and estimation of isoelectric point (pI)
+File name: main.js
+Developer: Prakriti Dhang
+
+ */
+
 function start() {
    
     document.getElementById("step0").disabled = true;
@@ -62,6 +70,19 @@ function start() {
     document.getElementById("alertModal").style.display = "none";
     document.getElementById("alertModal").classList.remove("show");
   }
+  
+
+
+  function showcon(){
+    document.getElementById("step3").disabled = false;
+    document.getElementById("conicalflask").style.display = "block";
+  }
+
+  function titration(){
+    document.getElementById("buretteswitch").setAttribute("onclick", "buretteswitch()");
+  }
+
+
   var imgobjpdrop = null;
   function buretteswitch(){
     var currenttop = 67;
@@ -72,9 +93,9 @@ function start() {
   
     function frame() {
       if (currenttop == 86) {
-        document.getElementById("pdrop").style.display = "none";
-      
-     clearInterval(imgobjpdrop);
+        document.getElementById("pdrop").style.display = "block";
+        currenttop = 67;
+     //clearInterval(imgobjpdrop);
       
       }
       else {
@@ -86,11 +107,9 @@ function start() {
   
   }
 
-  function showcon(){
-    document.getElementById("step3").disabled = false;
-    document.getElementById("conicalflask").style.display = "block";
-  }
 
-  function titration(){
-    document.getElementById("buretteswitch").setAttribute("onclick", "buretteswitch()");
+  function titrationstop(){
+    clearInterval(imgobjpdrop);
+    document.getElementById("pdrop").style.display = "none";
+    document.getElementById("step4").disabled = false;
   }

@@ -1,4 +1,10 @@
-/* You CSS goes in here */
+/* /*
+ Lab name: Experimental Biochemistry
+Exp name: pH-titration of amino acids and small peptides, and estimation of isoelectric point (pI)
+File name: main.css
+Developer: Prakriti Dhang
+
+ */ */
 
 .card {
     margin-bottom: 5px;
@@ -75,3 +81,20 @@
     display: none;
     z-index: 2;
 }
+
+.btn-indian-red {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #CD5C5C;
+    --bs-btn-border-color: #CD5C5C;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #B22222;
+    --bs-btn-hover-border-color: #CD5C5C;
+    --bs-btn-focus-shadow-rgb: 205, 92, 92;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #CD5C5C;
+    --bs-btn-active-border-color: #8B0000;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #CD5C5C;
+    --bs-btn-disabled-border-color: #CD5C5C;
+  }
