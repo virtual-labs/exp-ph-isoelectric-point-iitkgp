@@ -86,7 +86,7 @@ function start() {
     
     document.getElementById("buretteswitch").setAttribute("onclick", "buretteswitch()");
     $('#alertModal').modal('show');
-    $('.modal-body').text('Click on the purple of the burette.');
+    $('.modal-body').text('Click on the stopcock of the burette.');
   }
 
 
@@ -149,5 +149,5 @@ function start() {
   }
 
   function dataanalysis(){
-    
+
   }
