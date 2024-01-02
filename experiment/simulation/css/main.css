@@ -4,7 +4,7 @@ Exp name: pH-titration of amino acids and small peptides, and estimation of isoe
 File name: main.css
 Developer: Prakriti Dhang
 
- */ */
+ */ 
 
 .card {
     margin-bottom: 5px;
@@ -41,6 +41,17 @@ Developer: Prakriti Dhang
     
 }
 
+#canvasburettelabel{
+    position: absolute;
+    top:9%;
+    left:47.4%;
+    width:5%;
+    height:43%;
+    cursor: pointer;
+    z-index: 2;
+    
+}
+
 #burettestndholder{
     position: absolute;
     top:15.2%;
@@ -63,11 +74,12 @@ Developer: Prakriti Dhang
 #conicalflask{
     position: absolute;
     top:74%;
-    left:42.5%;
+    left:42%; /*41-43 */
     width:15%;
     height:18%;
     display: none;
     z-index: 2;
+    cursor: pointer;
 }
 
 
@@ -84,10 +96,10 @@ Developer: Prakriti Dhang
 
 .btn-indian-red {
     --bs-btn-color: #fff;
-    --bs-btn-bg: #CD5C5C;
+    --bs-btn-bg: #B22222;
     --bs-btn-border-color: #CD5C5C;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #B22222;
+    --bs-btn-hover-bg:  #c04343;
     --bs-btn-hover-border-color: #CD5C5C;
     --bs-btn-focus-shadow-rgb: 205, 92, 92;
     --bs-btn-active-color: #fff;

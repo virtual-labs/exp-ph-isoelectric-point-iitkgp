@@ -37,9 +37,12 @@ Developer: Prakriti Dhang
 							<li>Click on "Start the Experiment" button
 							</li>
 							<li>
+								Check on the "NaOH" checkbox and on button "Fill Burette".
 							</li>
-							<li></li>
-							<li></li>
+							<li>Click on button "Conical Flask filled with Amino Acid".</li>
+							<li> Now click on "titration" button. Then click on stopcock of the burette to start the titration. 
+								Once it starts click on the conical flask to mix NaOH with the amino acid.
+								Stop the titration by clicking on the stopcock of the burette. </li>
 							<li>Click on "Data Analysis" button.</li>
 						</ol>
 						<p class="h5">Calculation instructrion</p>
@@ -91,7 +94,7 @@ Developer: Prakriti Dhang
 								<td>Step 2</td>
 								<td><button id="step2" type="button"
 										class="btn btn-info border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " onclick="showcon()" disabled>Conical Flask filled with Amino acid</button></td>
+										style="cursor: pointer; " onclick="showcon()" disabled>Conical Flask filled with Amino Acid</button></td>
 
 							</tr>
 							<tr>
@@ -100,10 +103,10 @@ Developer: Prakriti Dhang
 								<td>
 									<button id="step3" type="button"
 										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " disabled onclick="titration()">Titration start</button>
-										<button id="step3" type="button"
+										style="cursor: pointer; " disabled onclick="titration()">Titration</button>
+										<!--button id="step31" type="button"
 										class="btn btn-indian-red border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; "  onclick="titrationstop()">Titration stop</button>
+										style="cursor: pointer; "  disabled onclick="titrationstop()">Titration stop</button-->
 								</td>
 
 							</tr>
@@ -111,7 +114,7 @@ Developer: Prakriti Dhang
 								<td>Step 4</td>
 								<td><button id="step4" type="button"
 										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " disabled>Data Analysis</button></td>
+										style="cursor: pointer; " disabled onclick="dataanalysis()">Data Analysis</button></td>
 
 							</tr>
 						</table>
@@ -119,38 +122,46 @@ Developer: Prakriti Dhang
 				</div>
 
 			</div>
-			</div>
 
+			</div>
 			<div class="row">
+
+			
+			<!--/div>
+
+			<div class="row"-->
+				<div class="col-md-3"></div>
 				<div class="col-md-6">
-					<!--div class="card card-body border border-1"-->
+					<div class="card card-body border border-1">
 						<div class="img-container">
 							<img src="./images/burette_stand.png"  id="burette">
 							<img src="./images/burette_stand_holder.png"  id="burettestndholder">
-							<img src="./images/burette_switch.png"  id="buretteswitch">
-							<img src="./images/conicalflask.png"  id="conicalflask">
+							<img src="./images/burette_switch.png"  id="buretteswitch" data-toggle="tooltip" data-placement="right" title="Stopcock">
+							<img src="./images/conicalflask.png"  id="conicalflask" data-toggle="tooltip" data-placement="right" title="Conical Flask">
 							<img src="./images/probdrop.png"  id="pdrop">
 							<canvas width="10px" height="20px" id="canvasburette" style="border: 0px solid black;"></canvas>
+							<canvas width="10px" height="20px" id="canvasburettelabel" style="border: 0px solid black;" data-toggle="tooltip" data-placement="right" title="Burette"></canvas>
 						</div>
-					<!--/div-->
+					</div>
 				</div>
 
+				<div class="col-md-3"></div>
+			</div>
+
+
+
+			<div class="row">
 				<div class="col-md-6">
 					<div class="card card-body border border-1">
 					</div>
 				</div>
-			</div>
-
-
-
-			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-6">
 					<div class="card">
-						<div class="card-header fs-5 fw-bold"> Calculation</div>
+						<div class="card-header fs-5 fw-bold"> pI Calculation</div>
 						<div class="card-body"></div>
 						</div>
 				</div>
-
+			</div>
 
 
 
@@ -197,7 +208,7 @@ Developer: Prakriti Dhang
 					</div>
 				</div>
 			</div>
-		</div>
+		
 		</div>
 
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -210,6 +221,17 @@ Developer: Prakriti Dhang
 
 		<script src="./js/plotgraph.js"></script>
 		<script src="./js/main.js"></script>
+
+		<script>
+			$(function () {
+  $('[data-toggle="tooltip"]').tooltip(
+	{
+					placement: 'right'
+				}
+			);
+			})
+
+		</script>
 </body>
 
 </html>
