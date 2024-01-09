@@ -77,9 +77,19 @@ function start() {
 
 
   function showcon(){
-    window.scrollBy(0,500);
-    document.getElementById("step3").disabled = false;
-    document.getElementById("conicalflask").style.display = "block";
+    cancelAnimationFrame(cancelani);
+    var aminoacid = document.getElementById("aminoacidsel");
+    aaobj = aminoacid.options[aminoacid.selectedIndex].text;
+    if(aminoacid.options[aminoacid.selectedIndex].value == 0){
+      $('#alertModal').modal('show');
+      $('.modal-body').text('Select any amino acid from the dropdown');
+    }
+    else{
+      window.scrollBy(0,500);
+      document.getElementById("step3").disabled = false;
+      document.getElementById("conicalflask").style.display = "block";
+    }
+    
   }
 
   function titration(){
@@ -98,6 +108,7 @@ function start() {
     clearInterval(imgobjpdrop);
     imgobjpdrop = setInterval(frame, 80);
   
+
     function frame() {
       if (currenttop == 86) {
         document.getElementById("pdrop").style.display = "block";
@@ -113,6 +124,48 @@ function start() {
   
       }
     }
+
+
+    canvasstb1 = document.getElementById("canvasburetteempty");
+    ctxgstb1 = canvasstb.getContext("2d");
+    var posY1 = 0;
+    var speed1 = 0.01;
+
+
+
+    function drawLine1() {
+
+
+      ctxgstb1.strokeStyle = 'white';
+      ctxgstb1.lineWidth = 600;
+      ctxgstb1.beginPath();
+      ctxgstb1.moveTo(0, posY1); /*  */
+      ctxgstb1.lineTo(0, 0);
+      ctxgstb1.stroke();
+      
+    }
+
+    function moveLine1() {
+      posY1 += speed1;
+
+      if (posY1 < 0 || posY1 > canvasstb1.height) {
+        speed1 = speed1 * -1;
+      }
+    }
+
+    function loop1() {
+      // clear old frame;
+      // ctx.clearRect(0,0,canvas.width, canvas.height);
+      moveLine1();
+      drawLine1();
+      cancelani = requestAnimationFrame(loop1);
+      
+    }
+    requestAnimationFrame(loop1);
+
+
+
+
   
   }
 
@@ -127,6 +180,7 @@ function start() {
     function frame() {
       if (currentleft == 43) {
         document.getElementById("conicalflask").style.display = "block";
+        document.getElementById("conicalflask").setAttribute("onclick", "conicalflaskstirstop()");
         currentleft = 41;
        
      //clearInterval(imgobjpdrop);
@@ -140,6 +194,11 @@ function start() {
     }
   }
 
+
+  function conicalflaskstirstop(){
+    clearInterval(imgobjcflask);
+  }
+
   function buretteswitchstop(){
     clearInterval(imgobjpdrop);
     clearInterval(imgobjcflask);
@@ -148,6 +207,74 @@ function start() {
     document.getElementById("conicalflask").removeAttribute("onclick", "conicalflaskstir()");
   }
 
-  function dataanalysis(){
 
+
+  function dataanalysisgraph(){
+      var chart = new CanvasJS.Chart("chartContainer", {
+        animationEnabled: true,
+        title: {
+          text: "Titration "
+        },
+        axisY: {
+          title: "pH",
+          minimum: 0,
+      maximum: 14,
+      interval:1,
+      gridThickness: 0.5
+    
+        },
+        axisX: {
+          title: "OH equivalents",
+          minimum: 0,
+      maximum: 10,
+      interval: 0.5,
+         
+    
+        },
+    
+        data: [{
+          type: "spline",
+    
+          dataPoints: [
+    
+          ]
+        }]
+      });
+      chart.render();
+      document.getElementById("exportChart").addEventListener("click",function(){
+        chart.exportChart({format: "jpg"});
+      });
   }
+
+  window.onload = function () {
+  var chart = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,
+    title: {
+      text: "Titration "
+    },
+    axisY: {
+      title: "pH",
+      minimum: 0,
+      maximum: 14,
+      interval:1,
+      gridThickness: 0
+
+    },
+    axisX: {
+      title: "OH equivalents",
+      minimum: 0,
+      maximum: 10,
+      interval: 0.5,
+
+    },
+
+    data: [{
+      type: "spline",
+
+      dataPoints: [
+
+      ]
+    }]
+  });
+  chart.render();
+}

@@ -40,6 +40,15 @@ Developer: Prakriti Dhang
     opacity: 45%;
     
 }
+#canvasburetteempty{
+    position: absolute;
+    top:15.1%;
+    left:47.4%;
+    width:5%;
+    height:37%;
+    opacity: 45%;
+    
+}
 
 #canvasburettelabel{
     position: absolute;
@@ -94,19 +103,28 @@ Developer: Prakriti Dhang
     z-index: 2;
 }
 
-.btn-indian-red {
+
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+
+  
+
+  .btn-slate-blue-grey {
     --bs-btn-color: #fff;
-    --bs-btn-bg: #B22222;
-    --bs-btn-border-color: #CD5C5C;
+    --bs-btn-bg: #6A5ACD;
+    --bs-btn-border-color: #6A5ACD;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg:  #c04343;
-    --bs-btn-hover-border-color: #CD5C5C;
-    --bs-btn-focus-shadow-rgb: 205, 92, 92;
+    --bs-btn-hover-bg: #483D8B;
+    --bs-btn-hover-border-color: #6A5ACD;
+    --bs-btn-focus-shadow-rgb: 106, 90, 205;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #CD5C5C;
-    --bs-btn-active-border-color: #8B0000;
+    --bs-btn-active-bg: #6A5ACD;
+    --bs-btn-active-border-color: #4B0082;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #CD5C5C;
-    --bs-btn-disabled-border-color: #CD5C5C;
+    --bs-btn-disabled-bg: #6A5ACD;
+    --bs-btn-disabled-border-color: #6A5ACD;
   }
