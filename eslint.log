@@ -1,0 +1,51 @@
+
+/home/runner/work/exp-ph-isoelectric-point-iitkgp/exp-ph-isoelectric-point-iitkgp/experiment/simulation/js/main.js
+   10:10  warning  'start' is defined but never used                 no-unused-vars
+   19:12  warning  'restartexp' is defined but never used            no-unused-vars
+   24:12  warning  'switchburette' is defined but never used         no-unused-vars
+   28:7   warning  'canvasstb' is not defined                        no-undef
+   29:7   warning  'ctxgstb' is not defined                          no-undef
+   29:17  warning  'canvasstb' is not defined                        no-undef
+   35:7   warning  Move function declaration to function body root   no-inner-declarations
+   38:9   warning  'ctxgstb' is not defined                          no-undef
+   39:9   warning  'ctxgstb' is not defined                          no-undef
+   40:9   warning  'ctxgstb' is not defined                          no-undef
+   41:9   warning  'ctxgstb' is not defined                          no-undef
+   42:9   warning  'ctxgstb' is not defined                          no-undef
+   43:9   warning  'ctxgstb' is not defined                          no-undef
+   47:7   warning  Move function declaration to function body root   no-inner-declarations
+   50:32  warning  'canvasstb' is not defined                        no-undef
+   55:7   warning  Move function declaration to function body root   no-inner-declarations
+   60:9   warning  'cancelani' is not defined                        no-undef
+   67:7   warning  '$' is not defined                                no-undef
+   68:7   warning  '$' is not defined                                no-undef
+   72:12  warning  'cancelmsg' is defined but never used             no-unused-vars
+   79:12  warning  'showcon' is defined but never used               no-unused-vars
+   80:26  warning  'cancelani' is not defined                        no-undef
+   82:5   warning  'aaobj' is not defined                            no-undef
+   84:7   warning  '$' is not defined                                no-undef
+   85:7   warning  '$' is not defined                                no-undef
+   95:12  warning  'titration' is defined but never used             no-unused-vars
+   98:5   warning  '$' is not defined                                no-undef
+   99:5   warning  '$' is not defined                                no-undef
+  104:12  warning  'buretteswitch' is defined but never used         no-unused-vars
+  129:5   warning  'canvasstb1' is not defined                       no-undef
+  130:5   warning  'ctxgstb1' is not defined                         no-undef
+  130:16  warning  'canvasstb' is not defined                        no-undef
+  139:7   warning  'ctxgstb1' is not defined                         no-undef
+  140:7   warning  'ctxgstb1' is not defined                         no-undef
+  141:7   warning  'ctxgstb1' is not defined                         no-undef
+  142:7   warning  'ctxgstb1' is not defined                         no-undef
+  143:7   warning  'ctxgstb1' is not defined                         no-undef
+  144:7   warning  'ctxgstb1' is not defined                         no-undef
+  151:32  warning  'canvasstb1' is not defined                       no-undef
+  161:7   warning  'cancelani' is not defined                        no-undef
+  173:12  warning  'conicalflaskstir' is defined but never used      no-unused-vars
+  198:12  warning  'conicalflaskstirstop' is defined but never used  no-unused-vars
+  202:12  warning  'buretteswitchstop' is defined but never used     no-unused-vars
+  212:12  warning  'dataanalysisgraph' is defined but never used     no-unused-vars
+  213:23  warning  'CanvasJS' is not defined                         no-undef
+  250:19  warning  'CanvasJS' is not defined                         no-undef
+
+✖ 46 problems (0 errors, 46 warnings)
+
