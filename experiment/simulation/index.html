@@ -39,19 +39,19 @@ Developer: Prakriti Dhang
 							<li>
 								Check on the "NaOH" checkbox and on button "Fill Burette".
 							</li>
-							<li>Click on button "Conical Flask filled with Amino Acid".</li>
+							<li>Select any amino acid from the dropdown. Next, click on button "Conical Flask filled with Amino Acid".</li>
 							<li> Now click on "titration" button. Then click on stopcock of the burette to start the titration. 
 								Once it starts click on the conical flask to mix NaOH with the amino acid.
 								Stop the titration by clicking on the stopcock of the burette. </li>
 							<li>Click on "Data Analysis" button.</li>
 						</ol>
-						<p class="h5">Calculation instructrion</p>
+						<p class="h5">pI calculation instruction</p>
 						<ol>
 
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
+							<li>Enter the calculated pI value in the third input box. Consider pK<sub>1</sub> and pK<sub>2</sub> values from the graph. Next click on "Check" button to display a message indicating correctness. To reveal the correct answer, click on the "Show Answer" button.</li>
+							<li>Enter the calculated pI value for basic amino acids in the third input box. Consider pK<sub>2</sub> and pK<sub>R</sub> values from the graph. Next click on "Check" button to display a message indicating correctness. To reveal the correct answer, click on the "Show Answer" button.</li>
+							<li>Enter the calculated pI value for acidic amino acids in the third input box. Consider pK<sub>1</sub> and pK<sub>R</sub> values from the graph. Next click on "Check" button to display a message indicating correctness. To reveal the correct answer, click on the "Show Answer" button.</li>
+							
 						</ol>
 						<b>Note:</b> To repeat the experiment, click on the "Re-Do the Experiment" button.
 					</div>
@@ -92,9 +92,35 @@ Developer: Prakriti Dhang
 							</tr>
 							<tr>
 								<td>Step 2</td>
-								<td><button id="step2" type="button"
-										class="btn btn-info border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " onclick="showcon()" disabled>Conical Flask filled with Amino Acid</button></td>
+								<td><div>
+									<select class="form-select" id="aminoacidsel" aria-label="Default select example">
+									  <option value="0" selected >Select any Amino Acid</option>
+									  <option value="1">Glycine (G)</option>
+									  <option value="2">Alanine (A)</option>
+									  <option value="3">Valine (V)</option>
+									  <option value="4">Leucine (L)</option>
+									  <option value="5">Isoleucine (I)</option>
+									  <option value="6">Serine (S)</option>
+									  <option value="7">Threonine (T)</option>
+									  <option value="8">Cysteine (C)</option>
+									  <option value="9">Methionine (M)</option>
+									  <option value="10">Proline (P)</option>
+									  <option value="11">Phenylalanine (F)</option>
+									  <option value="12">Tyrosine (Y)</option>
+									  <option value="13">Histidine (H)</option>
+									  <option value="14">Tryptophan (W)</option>
+									  <option value="15">Glutamine (Q)</option>
+									  <option value="16">Asparagine (N)</option>
+									  <option value="17">Glutamic acid (E)</option>
+									  <option value="18">Aspartic acid (D)</option>
+									  <option value="19">Lysine (K)</option>
+									  <option value="20">Arginine (R)</option>
+									 
+									</select>
+								  </div>
+									<button id="step2" type="button"
+										class="btn btn-info  border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="showcon()" disabled>Conical Flask</button></td>
 
 							</tr>
 							<tr>
@@ -113,8 +139,8 @@ Developer: Prakriti Dhang
 							<tr>
 								<td>Step 4</td>
 								<td><button id="step4" type="button"
-										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " disabled onclick="dataanalysis()">Data Analysis</button></td>
+										class="btn btn-slate-blue-grey border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; "  onclick="dataanalysisgraph()">Data Analysis</button></td>
 
 							</tr>
 						</table>
@@ -127,10 +153,8 @@ Developer: Prakriti Dhang
 			<div class="row">
 
 			
-			<!--/div>
-
-			<div class="row"-->
-				<div class="col-md-3"></div>
+			
+				
 				<div class="col-md-6">
 					<div class="card card-body border border-1">
 						<div class="img-container">
@@ -140,26 +164,132 @@ Developer: Prakriti Dhang
 							<img src="./images/conicalflask.png"  id="conicalflask" data-toggle="tooltip" data-placement="right" title="Conical Flask">
 							<img src="./images/probdrop.png"  id="pdrop">
 							<canvas width="10px" height="20px" id="canvasburette" style="border: 0px solid black;"></canvas>
+							<canvas width="10px" height="20px" id="canvasburetteempty" style="border: 0px solid black;"></canvas>
 							<canvas width="10px" height="20px" id="canvasburettelabel" style="border: 0px solid black;" data-toggle="tooltip" data-placement="right" title="Burette"></canvas>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<div class="card card-body border border-1">
+						
+							<div id="chartContainer" style="height: 500px; width: 100%;"></div>
+							<button class="btn btn-pastel-blue col-md-2" id="exportChart">Export Chart</button>
+						
+					</div>
+
+
+
+
+					<div class="card">
+						<div class="card-header fs-5 fw-bold"> pI Calculation</div>
+						<div class="card-body">
+							<div class="row g-3 align-items-center">
+								<div class="col-auto">
+									<label for="inputpi" class="col-form-label fs-5">pI=</label>
+								</div>
+								<div class="col-auto">
+									<span class="form-text fs-5">
+										(pK<sub>1</sub> + pK<sub>2</sub>)/2
+									</span>
+								</div>
+								
+								<div class="col-auto">
+									<span class="form-text fs-5">
+										=
+									</span>
+								</div>
+								<div class="col-auto">
+									<input type="input" id="inputpi12" placeholder="Enter calculated pI value " class="form-control">
+								</div>
+								
+								
+							</div>
+							<button id="steppi1" type="button"
+										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="check1()" disabled>Check</button>
+										<button id="showsteppi1" type="button"
+										class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; float: right;" onclick="showans1()" disabled>Show Answer</button>
+						</div>
+						</div>
+<!-------------------------------------- Baic ---------------------------------------->
+						<div class="card">
+						
+							<div class="card-body">
+								<label for="inputpi" class="col-form-label fs-5">For basic amino acids </label>
+								<div class="row g-3 align-items-center">
+									<div class="col-auto">
+										<label for="inputpi" class="col-form-label fs-5">pI=</label>
+									</div>
+									<div class="col-auto">
+										<span class="form-text fs-5">
+											(pK<sub>2</sub> + pK<sub>R</sub>)/2
+										</span>
+									</div>
+									
+									<div class="col-auto">
+										<span class="form-text fs-5">
+											=
+										</span>
+									</div>
+									<div class="col-auto">
+										<input type="input" id="inputpi12b" placeholder="Enter calculated pI value " class="form-control">
+									</div>
+								</div>
+								<button id="steppi2" type="button"
+										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="check2()" disabled>Check</button>
+										<button id="showsteppi2" type="button"
+										class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; float: right;" onclick="showans2()" disabled>Show Answer</button>
+							</div>
+							</div>
+
+<!-------------------------------------- Acidic ---------------------------------------->
+							<div class="card">
+								
+								<div class="card-body">
+									<label for="inputpi" class="col-form-label fs-5">For acidic amino acids </label>
+									<div class="row g-3 align-items-center">
+
+										<div class="col-auto">
+											<label for="inputpi" class="col-form-label fs-5">pI=</label>
+										</div>
+										<div class="col-auto">
+											<span class="form-text fs-5">
+												(pK<sub>1</sub> + pK<sub>R</sub>)/2
+											</span>
+										</div>
+										
+										<div class="col-auto">
+											<span class="form-text fs-5">
+												=
+											</span>
+										</div>
+										<div class="col-auto">
+											<input type="input" id="inputpi12a" placeholder="Enter calculated pI value " class="form-control">
+										</div>
+									</div>
+
+									<button id="steppi3" type="button"
+										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="check3()" disabled>Check</button>
+										<button id="showsteppi3" type="button"
+										class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; float: right;" onclick="showans3()" disabled>Show Answer</button>
+								</div>
+								</div>
+
+				</div>
 			</div>
 
 
 
 			<div class="row">
-				<div class="col-md-6">
-					<div class="card card-body border border-1">
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="card">
-						<div class="card-header fs-5 fw-bold"> pI Calculation</div>
-						<div class="card-body"></div>
-						</div>
+				
+				<div class="col-md-12">
+					
 				</div>
 			</div>
 
@@ -215,11 +345,11 @@ Developer: Prakriti Dhang
 
 		<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script-->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-		<!--script src="https://cdn.canvasjs.com/canvasjs.min.js"></script-->
-		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+		<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
 
-		<script src="./js/plotgraph.js"></script>
+		
 		<script src="./js/main.js"></script>
 
 		<script>
