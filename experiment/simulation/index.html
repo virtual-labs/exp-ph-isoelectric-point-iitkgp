@@ -39,19 +39,32 @@ Developer: Prakriti Dhang
 							<li>
 								Check on the "NaOH" checkbox and on button "Fill Burette".
 							</li>
-							<li>Select any amino acid from the dropdown. Next, click on button "Conical Flask filled with Amino Acid".</li>
-							<li> Now click on "titration" button. Then click on stopcock of the burette to start the titration. 
+							<li>Select any amino acid from the dropdown. Next, click on button "Conical Flask".</li>
+							<li>Click on the probe to measure the pH value. Click on the probe to move the probe
+								upwards.</li>
+							<li>Next click on the conical flask.</li>
+							<li> Now click on stopcock of the burette to start titration.
 								Once it starts click on the conical flask to mix NaOH with the amino acid.
 								Stop the titration by clicking on the stopcock of the burette. </li>
+							<li>Repeat step 4-6. </li>
 							<li>Click on "Data Analysis" button.</li>
 						</ol>
 						<p class="h5">pI calculation instruction</p>
 						<ol>
 
-							<li>Enter the calculated pI value in the third input box. Consider pK<sub>1</sub> and pK<sub>2</sub> values from the graph. Next click on "Check" button to display a message indicating correctness. To reveal the correct answer, click on the "Show Answer" button.</li>
-							<li>Enter the calculated pI value for basic amino acids in the third input box. Consider pK<sub>2</sub> and pK<sub>R</sub> values from the graph. Next click on "Check" button to display a message indicating correctness. To reveal the correct answer, click on the "Show Answer" button.</li>
-							<li>Enter the calculated pI value for acidic amino acids in the third input box. Consider pK<sub>1</sub> and pK<sub>R</sub> values from the graph. Next click on "Check" button to display a message indicating correctness. To reveal the correct answer, click on the "Show Answer" button.</li>
-							
+							<li>Enter the pI value in the input box. Consider pK<sub>1</sub> and
+								pK<sub>2</sub> values of chosen amino acid from the table . Next click on "Check" button to display a message
+								indicating correctness. To reveal the correct answer, click on the "Show Answer" button.
+							</li>
+							<li>For basic amino acids consider
+								pK<sub>2</sub> and pK<sub>R</sub> values of chosen amino acid from the table. Next click on "Check" button to
+								display a message indicating correctness. To reveal the correct answer, click on the
+								"Show Answer" button.</li>
+							<li>For acidic amino acids consider
+								pK<sub>1</sub> and pK<sub>R</sub> values of chosen amino acid from the table. Next click on "Check" button to
+								display a message indicating correctness. To reveal the correct answer, click on the
+								"Show Answer" button.</li>
+
 						</ol>
 						<b>Note:</b> To repeat the experiment, click on the "Re-Do the Experiment" button.
 					</div>
@@ -80,67 +93,84 @@ Developer: Prakriti Dhang
 								<td>
 									<div class="form-check form-check-inline">
 										<input class="custom-check-input" type="checkbox" value="" id="check1"
-											 disabled />
+											disabled />
 										<label class="custom-check-label" for="Check1">
 											NaOH
 										</label>
 									</div>
 									<button id="step1" type="button"
 										class="btn btn-info border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " onclick="switchburette()" disabled>Fill Burette</button></td>
+										style="cursor: pointer; " onclick="switchburette()" disabled>Fill
+										Burette</button>
+								</td>
 
 							</tr>
 							<tr>
 								<td>Step 2</td>
-								<td><div>
-									<select class="form-select" id="aminoacidsel" aria-label="Default select example">
-									  <option value="0" selected >Select any Amino Acid</option>
-									  <option value="1">Glycine (G)</option>
-									  <option value="2">Alanine (A)</option>
-									  <option value="3">Valine (V)</option>
-									  <option value="4">Leucine (L)</option>
-									  <option value="5">Isoleucine (I)</option>
-									  <option value="6">Serine (S)</option>
-									  <option value="7">Threonine (T)</option>
-									  <option value="8">Cysteine (C)</option>
-									  <option value="9">Methionine (M)</option>
-									  <option value="10">Proline (P)</option>
-									  <option value="11">Phenylalanine (F)</option>
-									  <option value="12">Tyrosine (Y)</option>
-									  <option value="13">Histidine (H)</option>
-									  <option value="14">Tryptophan (W)</option>
-									  <option value="15">Glutamine (Q)</option>
-									  <option value="16">Asparagine (N)</option>
-									  <option value="17">Glutamic acid (E)</option>
-									  <option value="18">Aspartic acid (D)</option>
-									  <option value="19">Lysine (K)</option>
-									  <option value="20">Arginine (R)</option>
-									 
-									</select>
-								  </div>
+								<td>
+									<div>
+										<select class="form-select" id="aminoacidsel"
+											aria-label="Default select example" disabled>
+											<option value="0" selected>Select any Amino Acid</option>
+											<option value="1">Glycine (G)</option>
+											<option value="2">Alanine (A)</option>
+											<option value="3">Valine (V)</option>
+											<option value="4">Leucine (L)</option>
+											<option value="5">Isoleucine (I)</option>
+											<option value="6">Serine (S)</option>
+											<option value="7">Threonine (T)</option>
+											<option value="8">Cysteine (C)</option>
+											<option value="9">Methionine (M)</option>
+											<option value="10">Proline (P)</option>
+											<option value="11">Phenylalanine (F)</option>
+											<option value="12">Tyrosine (Y)</option>
+											<option value="13">Histidine (H)</option>
+											<option value="14">Tryptophan (W)</option>
+											<option value="15">Glutamine (Q)</option>
+											<option value="16">Asparagine (N)</option>
+											<option value="17">Glutamic acid (E)</option>
+											<option value="18">Aspartic acid (D)</option>
+											<option value="19">Lysine (K)</option>
+											<option value="20">Arginine (R)</option>
+
+										</select>
+									</div>
 									<button id="step2" type="button"
 										class="btn btn-info  border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " onclick="showcon()" disabled>Conical Flask</button></td>
+										style="cursor: pointer; " onclick="showcon()" disabled>Conical Flask</button>
+								</td>
 
 							</tr>
-							<tr>
+							<!--tr>
 								<td>Step 3</td>
 
 								<td>
 									<button id="step3" type="button"
 										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
 										style="cursor: pointer; " disabled onclick="titration()">Titration</button>
-										<!--button id="step31" type="button"
-										class="btn btn-indian-red border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; "  disabled onclick="titrationstop()">Titration stop</button-->
+										
 								</td>
 
-							</tr>
+							</tr-->
 							<tr>
 								<td>Step 4</td>
-								<td><button id="step4" type="button"
+								<td><button id="step41" type="button"
 										class="btn btn-slate-blue-grey border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; "  onclick="dataanalysisgraph()">Data Analysis</button></td>
+										style="cursor: pointer; " onclick="dataanalysisgraph1()" >Data Analysis </button>
+
+
+									<button id="step42" type="button"
+										class="btn btn-slate-blue-grey border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; display: none;" onclick="dataanalysisgraph2()" disabled>Data
+										Analysis </button>
+
+
+									<button id="step43" type="button"
+										class="btn btn-slate-blue-grey border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; display: none;" onclick="dataanalysisgraph3()" disabled >Data
+										Analysis </button>
+
+								</td>
 
 							</tr>
 						</table>
@@ -149,219 +179,473 @@ Developer: Prakriti Dhang
 
 			</div>
 
-			</div>
-			<div class="row">
-
-			
-			
-				
-				<div class="col-md-6">
-					<div class="card card-body border border-1">
-						<div class="img-container">
-							<img src="./images/burette_stand.png"  id="burette">
-							<img src="./images/burette_stand_holder.png"  id="burettestndholder">
-							<img src="./images/burette_switch.png"  id="buretteswitch" data-toggle="tooltip" data-placement="right" title="Stopcock">
-							<img src="./images/conicalflask.png"  id="conicalflask" data-toggle="tooltip" data-placement="right" title="Conical Flask">
-							<img src="./images/probdrop.png"  id="pdrop">
-							<canvas width="10px" height="20px" id="canvasburette" style="border: 0px solid black;"></canvas>
-							<canvas width="10px" height="20px" id="canvasburetteempty" style="border: 0px solid black;"></canvas>
-							<canvas width="10px" height="20px" id="canvasburettelabel" style="border: 0px solid black;" data-toggle="tooltip" data-placement="right" title="Burette"></canvas>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="card card-body border border-1">
-						
-							<div id="chartContainer" style="height: 500px; width: 100%;"></div>
-							<button class="btn btn-pastel-blue col-md-2" id="exportChart">Export Chart</button>
-						
-					</div>
+		</div>
+		<div class="row">
 
 
 
 
-					<div class="card">
-						<div class="card-header fs-5 fw-bold"> pI Calculation</div>
-						<div class="card-body">
-							<div class="row g-3 align-items-center">
-								<div class="col-auto">
-									<label for="inputpi" class="col-form-label fs-5">pI=</label>
-								</div>
-								<div class="col-auto">
-									<span class="form-text fs-5">
-										(pK<sub>1</sub> + pK<sub>2</sub>)/2
-									</span>
-								</div>
-								
-								<div class="col-auto">
-									<span class="form-text fs-5">
-										=
-									</span>
-								</div>
-								<div class="col-auto">
-									<input type="input" id="inputpi12" placeholder="Enter calculated pI value " class="form-control">
-								</div>
-								
-								
-							</div>
-							<button id="steppi1" type="button"
-										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " onclick="check1()" disabled>Check</button>
-										<button id="showsteppi1" type="button"
-										class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; float: right;" onclick="showans1()" disabled>Show Answer</button>
-						</div>
-						</div>
-<!-------------------------------------- Baic ---------------------------------------->
-						<div class="card">
-						
-							<div class="card-body">
-								<label for="inputpi" class="col-form-label fs-5">For basic amino acids </label>
-								<div class="row g-3 align-items-center">
-									<div class="col-auto">
-										<label for="inputpi" class="col-form-label fs-5">pI=</label>
-									</div>
-									<div class="col-auto">
-										<span class="form-text fs-5">
-											(pK<sub>2</sub> + pK<sub>R</sub>)/2
-										</span>
-									</div>
-									
-									<div class="col-auto">
-										<span class="form-text fs-5">
-											=
-										</span>
-									</div>
-									<div class="col-auto">
-										<input type="input" id="inputpi12b" placeholder="Enter calculated pI value " class="form-control">
-									</div>
-								</div>
-								<button id="steppi2" type="button"
-										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " onclick="check2()" disabled>Check</button>
-										<button id="showsteppi2" type="button"
-										class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; float: right;" onclick="showans2()" disabled>Show Answer</button>
-							</div>
-							</div>
+			<div class="col-md-6">
+				<div class="card card-body border border-1">
+					<div class="img-container">
+						<img src="./images/burette_stand.png" id="burette">
+						<img src="./images/burette_stand_holder.png" id="burettestndholder">
+						<img src="./images/burette_switch.png" id="buretteswitch" data-toggle="tooltip"
+							data-placement="right" title="Stopcock">
 
-<!-------------------------------------- Acidic ---------------------------------------->
-							<div class="card">
-								
-								<div class="card-body">
-									<label for="inputpi" class="col-form-label fs-5">For acidic amino acids </label>
-									<div class="row g-3 align-items-center">
+						<img src="./images/conicalflask.png" id="conicalflask" data-toggle="tooltip"
+							data-placement="right" title="Conical Flask">
 
-										<div class="col-auto">
-											<label for="inputpi" class="col-form-label fs-5">pI=</label>
-										</div>
-										<div class="col-auto">
-											<span class="form-text fs-5">
-												(pK<sub>1</sub> + pK<sub>R</sub>)/2
-											</span>
-										</div>
-										
-										<div class="col-auto">
-											<span class="form-text fs-5">
-												=
-											</span>
-										</div>
-										<div class="col-auto">
-											<input type="input" id="inputpi12a" placeholder="Enter calculated pI value " class="form-control">
-										</div>
-									</div>
-
-									<button id="steppi3" type="button"
-										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " onclick="check3()" disabled>Check</button>
-										<button id="showsteppi3" type="button"
-										class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; float: right;" onclick="showans3()" disabled>Show Answer</button>
-								</div>
-								</div>
-
-				</div>
-			</div>
-
-
-
-			<div class="row">
-				
-				<div class="col-md-12">
-					
-				</div>
-			</div>
-
-
-
-
-
-
-			<div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title">Viewing message</h5>
-							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-						</div>
-						<div class="modal-body">
-							<p>A desktop or laptop is the preferred choice for an enhanced viewing experience.</p>
-							<p> When using a phone, it is recommended to enable the auto-rotate feature for an improved
-								viewing experience.</p>
-						</div>
-						<div class="modal-footer">
-
-							<button type="button" class="btn btn-warning" onclick="start()"
-								data-bs-dismiss="modal">OK</button>
-						</div>
+						<img src="./images/probdrop.png" id="pdrop">
+						<canvas width="10px" height="20px" id="canvasburette" style="border: 0px solid black;"></canvas>
+						<canvas width="10px" height="20px" id="canvasburetteempty"
+							style="border: 0px solid black;"></canvas>
+						<canvas width="10px" height="20px" id="canvasburettelabel" style="border: 0px solid black;"
+							data-toggle="tooltip" data-placement="right" title="Burette"></canvas>
 					</div>
 				</div>
 			</div>
 
-
-			<div class="modal" id="alertModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title">Alert message</h5>
-							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-						</div>
-						<div class="modal-body">
-							<p></p>
-						</div>
-						<div class="modal-footer">
-
-							<button type="button" class="btn btn-warning" onclick="cancelmsg()"
-								data-bs-dismiss="modal">OK</button>
-						</div>
+			<div class="col-md-6">
+				<div class="card card-body border border-1">
+					<div class="img-container">
+						<img src="./images/phmeter.png" id="phmeter">
+						<img src="./images/phprobe.png" id="phprobe" data-toggle="tooltip" data-placement="right"
+							title="pH probe">
+						<img src="./images/conicalflask.png" id="conicalflaskph" data-toggle="tooltip"
+							data-placement="right" title="Conical Flask">
+						<input type="input" class="form-control" value="0"
+							style="text-align: center; font-size: large; font-weight: bold;" id="phvaluetxt" />
+						<canvas width="10px" height="20px" id="phvaluetxt" style="border: 1px solid black;"></canvas>
+						<canvas width="10px" height="20px" id="phmterpon" style="border: 0px solid black;"
+							data-toggle="tooltip" data-placement="right" title="Power on"></canvas>
+						<div id="ld1"></div>
+						<div id="ld2"></div>
 					</div>
 				</div>
 			</div>
-		
 		</div>
 
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-		<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script-->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-		<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
-		
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
 
-		
-		<script src="./js/main.js"></script>
+		<div class="row">
 
-		<script>
-			$(function () {
-  $('[data-toggle="tooltip"]').tooltip(
-	{
+
+
+			<div class="col-md-6">
+				<div class="card card-body border border-1">
+
+					<div id="chartContainer" style="height: 500px; width: 100%;"></div>
+					<button class="btn btn-pastel-blue col-md-2" id="exportChart">Export Chart</button>
+
+				</div>
+
+			</div>
+			<div class="col-md-6">
+				<div class="card card-body ">
+					<button class="btn btn-info col-md-12 fs-5" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+						Table of pKa values
+					</button>
+
+					<div class="collapse" id="collapseExample2">
+						<div class="card card-body border-0">
+							<div class="table-responsive">
+								<table class="table table-bordered border-primary table-hover">
+									<thead>
+										<tr>
+											<th scope="col">Amino Acid</th>
+											<th>Side Chain</th>
+											<th scope="col">pka<sub>1</sub></th>
+											<th scope="col">pka<sub>2</sub></th>
+											<th scope="col">pka<sub>3</sub></th>
+											<!-- <th scope="col">pI</th> -->
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">Glycine (G)</th>
+											<td>H</td>
+											<td>2.34</td>
+											<td>9.60</td>
+											<td>-</td>
+											<!-- <td>5.97</td> -->
+										</tr>
+										<tr>
+											<th scope="row">Alanine (A)</th>
+											<td>CH<sub>3</sub></td>
+											<td> 2.34</td>
+											<td> 9.69</td>
+											<td> ---</td>
+											<!-- <td> 6.00</td> -->
+										</tr>
+										<tr>
+											<th scope="row">Valine (V)</th>
+											<td>(CH<sub>3</sub>)<sub>2</sub>CH</td>
+											<td> 2.32</td>
+											<td> 9.62 </td>
+											<td> ---</td>
+											<!-- <td> 5.96</td> -->
+										</tr>
+										<tr>
+											<th scope="row">Leucine (L)</th>
+											<td>(CH<sub>3</sub>)<sub>2</sub>CHCH<sub>2</sub></td>
+											<td> 2.36</td>
+											<td> 9.60</td>
+											<td> ---</td>
+											<!-- <td> 5.98</td> -->
+										</tr>
+										<tr>
+											<th scope="row">Isoleucine (I)</th>
+											<td>CH<sub>3</sub>CH<sub>2</sub>CH(CH<sub>3</sub>)</td>
+											<td> 2.36</td>
+											<td> 9.68 </td>
+											<td> ---</td>
+											<!-- <td> 6.02</td> -->
+										</tr>
+										<tr>
+											<th scope="row">Serine (S)</th>
+											<td>CH<sub>2</sub>OH</td>
+											<td> 2.21</td>
+											<td> 9.15</td>
+											<td> ---</td>
+											<!-- <td> 5.68</td> -->
+										</tr>
+										<tr>
+											<th scope="row">Threonine (T)</th>
+											<td>CH(OH)CH<sub>3</sub></td>
+											<td> 2.11</td>
+											<td> 9.62</td>
+											<td> ---</td>
+											<!-- <td> 5.60</td> -->
+										</tr>
+										<tr>
+											<th scope="row">Cysteine (C)</th>
+											<td>SH</td>
+											<td> 1.96</td>
+											<td> 10.28</td>
+											<td> 8.18</td>
+											<!-- <td> 5.07</td> -->
+										</tr>
+										<tr>
+											<th scope="row">Methionine (M)</th>
+											<td>SCH<sub>3</sub></td>
+											<td> 2.28</td>
+											<td> 9.21</td>
+											<td> ---</td>
+											<!-- <td> 5.74</td> -->
+										</tr>
+										<tr>
+											<th scope="row">Proline (P)</th>
+											<td>Fused to &alpha;-N</td>
+											<td> 1.99</td>
+											<td> 10.96</td>
+											<td> ---</td>
+											<!-- <td> 6.48</td> -->
+										</tr>
+										<tr>
+											<th scope="row">Phenylalanine (F)</th>
+											<td>C<sub>6</sub>H<sub>5</sub></td>
+											<td> 1.83</td>
+											<td> 9.13</td>
+											<td> ---</td>
+											<!-- <td> 5.48</td> -->
+										</tr>
+										<tr>
+											<th scope="row">Tyrosine (Y)</th>
+											<td>C<sub>6</sub>H<sub>4</sub>OH</td>
+											<td> 2.20</td>
+											<td> 9.11</td>
+											<td> 10.07</td>
+											<!-- <td> 5.66</td> -->
+										</tr>
+										
+										<tr>
+											<th scope="row">Tryptophan (W)</th>
+											<td>C<sub>8</sub>H<sub>6</sub>NCH<sub>2</sub></td>
+											<td> 2.83</td>
+											<td> 9.39</td>
+											<td> ---</td>
+											<!-- <td> 5.89</td> -->
+										</tr>
+										<tr>
+											<th scope="row">Histidine (H)</th>
+											<td>C<sub>5</sub>H<sub>4</sub>NCH</td>
+											<td> 1.82</td>
+											<td> 9.17</td>
+											<td> 6.00</td>
+											<!-- <td> 7.59</td> -->
+										</tr>
+										<tr>
+											<th scope="row">Glutamine (Q)</th>
+											<td>CH<sub>2</sub>CONH<sub>2</sub></td>
+											<td> 2.17</td>
+											<td> 9.13</td>
+											<td> ---</td>
+											<!-- <td> 5.65</td> -->
+										</tr>
+										
+										<tr>
+											<th scope="row">Asparagine (N)</th>
+											<td>CH<sub>2</sub>CONH<sub>2</sub></td>
+											<td> 2.02</td>
+											<td> 8.80 </td>
+											<td> ---</td>
+											<!-- <td> 5.41</td> -->
+										</tr>
+										
+										<tr>
+											<th scope="row">Glutamic acid (E)</th>
+											<td>CH<sub>2</sub>CH<sub>2</sub>COOH</td>
+											<td> 2.19</td>
+											<td> 9.67</td>
+											<td> ---</td>
+											<!-- <td> 3.22</td> -->
+										</tr>
+										
+										
+										<tr>
+											<th scope="row">Aspartic acid (D)</th>
+											<td>CH<sub>2</sub>COOH</td>
+											<td> 1.88</td>
+											<td> 9.60</td>
+											<td> 3.65</td>
+											<!-- <td> 2.77</td> -->
+										</tr>
+										
+										<tr>
+											<th scope="row">Lysine (K)</th>
+											<td>CH<sub>2</sub>CH<sub>2</sub>CH2NH<sub>3</sub>+</td>
+											<td> 2.18</td>
+											<td> 8.95</td>
+											<td> 10.53</td>
+											<!-- <td> 9.74</td> -->
+										</tr>
+										<tr>
+											<th scope="row">Arginine (R)</th>
+											<td>C4H<sub>6</sub>N<sub>3</sub>+(NH)<sub>2</sub></td>
+											<td> 2.17</td>
+											<td> 9.04</td>
+											<td> 12.48</td>
+											<!-- <td> 10.76</td> -->
+										</tr>
+										
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			<!--/div>
+
+			<div class="col-md-6"-->
+				<div class="card" id="pi1" >
+					<div class="card-header fs-5 fw-bold"> pI Calculation</div>
+					<div class="card-body">
+						<div class="row g-3 align-items-center">
+							<div class="col-auto">
+								<label for="inputpi" class="col-form-label fs-5">pI=</label>
+							</div>
+							<div class="col-auto">
+								<span class="form-text fs-5">
+									(pK<sub>1</sub> + pK<sub>2</sub>)/2
+								</span>
+							</div>
+
+							<div class="col-auto">
+								<span class="form-text fs-5">
+									=
+								</span>
+							</div>
+							<div class="col-auto">
+								<input type="input" id="inputpi12" placeholder="Enter calculated pI value "
+									class="form-control">
+							</div>
+
+
+						</div>
+						<button id="steppi1" type="button" class="btn btn-success border border-1  rounded-3 fs-6 m-1"
+							style="cursor: pointer; " onclick="check1()" disabled>Check</button>
+						<button id="showsteppi1" type="button"
+							class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
+							style="cursor: pointer; float: right;" onclick="showans1()" disabled>Show Answer</button>
+					</div>
+				</div>
+				<!-------------------------------------- Baic ---------------------------------------->
+				<div class="card" id="pi2" style="display: none;">
+					<div class="card-header fs-5 fw-bold"> pI Calculation</div>
+					<div class="card-body">
+						<label for="inputpi" class="col-form-label fs-5">For basic amino acids </label>
+						<div class="row g-3 align-items-center">
+							<div class="col-auto">
+								<label for="inputpi" class="col-form-label fs-5">pI=</label>
+							</div>
+							<div class="col-auto">
+								<span class="form-text fs-5">
+									(pK<sub>2</sub> + pK<sub>R</sub>)/2
+								</span>
+							</div>
+
+							<div class="col-auto">
+								<span class="form-text fs-5">
+									=
+								</span>
+							</div>
+							<div class="col-auto">
+								<input type="input" id="inputpi12b" placeholder="Enter calculated pI value "
+									class="form-control">
+							</div>
+						</div>
+						<button id="steppi2" type="button" class="btn btn-success border border-1  rounded-3 fs-6 m-1"
+							style="cursor: pointer; " onclick="check2()" disabled>Check</button>
+						<button id="showsteppi2" type="button"
+							class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
+							style="cursor: pointer; float: right;" onclick="showans2()" disabled>Show Answer</button>
+					</div>
+				</div>
+
+				<!-------------------------------------- Acidic ---------------------------------------->
+				<div class="card" id="pi3" style="display: none;">
+					<div class="card-header fs-5 fw-bold"> pI Calculation</div>
+					<div class="card-body">
+						<label for="inputpi" class="col-form-label fs-5">For acidic amino acids </label>
+						<div class="row g-3 align-items-center">
+
+							<div class="col-auto">
+								<label for="inputpi" class="col-form-label fs-5">pI=</label>
+							</div>
+							<div class="col-auto">
+								<span class="form-text fs-5">
+									(pK<sub>1</sub> + pK<sub>R</sub>)/2
+								</span>
+							</div>
+
+							<div class="col-auto">
+								<span class="form-text fs-5">
+									=
+								</span>
+							</div>
+							<div class="col-auto">
+								<input type="input" id="inputpi12a" placeholder="Enter calculated pI value "
+									class="form-control">
+							</div>
+						</div>
+
+						<button id="steppi3" type="button" class="btn btn-success border border-1  rounded-3 fs-6 m-1"
+							style="cursor: pointer; " onclick="check3()" disabled>Check</button>
+						<button id="showsteppi3" type="button"
+							class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
+							style="cursor: pointer; float: right;" onclick="showans3()" disabled>Show Answer</button>
+					</div>
+				</div>
+
+
+				<div class="card" id="presult" style="display: block;">
+					
+					<div class="card-body">
+						
+						<div class="row g-3 align-items-center">
+							<div class="col-auto">
+								<label for="inputpi" class="col-form-label fs-5">pI for  </label>
+							</div>
+							<div class="col-auto">
+								<input type="input" id="inputpiresult" placeholder="Chosen amino acid "
+									class="form-control" readonly>
+							</div>
+							<div class="col-auto">
+								<span class="form-text fs-5">
+									 is
+								</span>
+							</div>
+
+							
+							<div class="col-auto">
+								<input type="input" id="inputpiresultpi" placeholder="pI "
+									class="form-control" readonly>
+							</div>
+						</div>
+
+						
+					</div>
+				</div>
+
+
+			</div>
+
+
+		</div>
+
+
+
+
+
+
+		<div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Viewing message</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p>A desktop or laptop is the preferred choice for an enhanced viewing experience.</p>
+						<p> When using a phone, it is recommended to enable the auto-rotate feature for an improved
+							viewing experience.</p>
+					</div>
+					<div class="modal-footer">
+
+						<button type="button" class="btn btn-warning" onclick="start()"
+							data-bs-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="modal" id="alertModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Alert message</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p></p>
+					</div>
+					<div class="modal-footer">
+
+						<button type="button" class="btn btn-warning" onclick="cancelmsg()"
+							data-bs-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+
+	<script src="./js/jsplumb.js"></script>
+	<script src="./js/volconnection.js"></script>
+	<script src="./js/main.js"></script>
+
+	<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip(
+				{
 					placement: 'right'
 				}
 			);
-			})
+		})
 
-		</script>
+	</script>
 </body>
 
 </html>
