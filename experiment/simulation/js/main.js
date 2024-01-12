@@ -87,9 +87,9 @@ function showcon() {
     $('.modal-body').text('Select any amino acid from the dropdown');
   }
 
-  else if ((aminoacid.options[aminoacid.selectedIndex].value == 13) || (aminoacid.options[aminoacid.selectedIndex].value == 19) || (aminoacid.options[aminoacid.selectedIndex].value == 20)) {
+  else if ((aminoacid.options[aminoacid.selectedIndex].value == 14) || (aminoacid.options[aminoacid.selectedIndex].value == 19) || (aminoacid.options[aminoacid.selectedIndex].value == 20)) {
     window.scrollBy(0, 500);
-    valuesArray= [12.01,11.85,11.61];
+    valuesArray = [1.15, 1.20, 1.30, 1.40, 1.46, 1.51, 1.58, 1.76, 2.10, 2.14, 2.15, 2.16, 2.20, 2.32, 2.50, 2.60, 2.67, 2.85, 3.12, 3.47, 3.66, 3.79, 3.98, 4.08, 4.16, 4.24, 4.39, 4.55, 4.71, 4.95, 5.17, 5.40, 6.04, 8.13, 8.56, 8.78, 8.95, 9.07, 9.32, 9.41, 9.52, 9.59, 9.67, 9.79, 9.95, 10.20, 10.40, 10.52, 10.58, 10.71, 10.79, 10.91, 11.00, 11.33, 11.61, 11.85, 12.01, 12.08, 12.14, 12.21, 12.26, 12.32, 12.40, 12.44, 12.47, 12.49, 12.50];
     document.getElementById("conicalflaskph").style.display = "block";
     document.getElementById("phprobe").setAttribute("onclick", "phprobedown()");
     document.getElementById("step42").style.display = "block";
@@ -99,11 +99,11 @@ function showcon() {
     document.getElementById("pi1").style.display = "none";
     document.getElementById("pi2").style.display = "block";
     document.getElementById("pi3").style.display = "none";
-    document.getElementById("inputpiresult").value=aminoacid.options[aminoacid.selectedIndex].text;
+    document.getElementById("inputpiresult").value = aminoacid.options[aminoacid.selectedIndex].text;
   }
   else if ((aminoacid.options[aminoacid.selectedIndex].value == 17) || (aminoacid.options[aminoacid.selectedIndex].value == 18)) {
     window.scrollBy(0, 500);
-    valuesArray= [12.5,12.49,12.47];
+    valuesArray = [1.15, 1.20, 1.30, 1.40, 1.46, 1.51, 1.58, 1.76, 2.10, 2.14, 2.15, 2.16, 2.20, 2.32, 2.50, 2.60, 2.67, 2.85, 3.12, 3.47, 3.66, 3.79, 3.98, 4.08, 4.16, 4.24, 4.39, 4.55, 4.71, 4.95, 5.17, 5.40, 6.04, 8.13, 8.56, 8.78, 8.95, 9.07, 9.32, 9.41, 9.52, 9.59, 9.67, 9.79, 9.95, 10.20, 10.40, 10.52, 10.58, 10.71, 10.79, 10.91, 11.00, 11.33, 11.61, 11.85, 12.01, 12.08, 12.14, 12.21, 12.26, 12.32, 12.40, 12.44, 12.47, 12.49, 12.50];
     document.getElementById("conicalflaskph").style.display = "block";
     document.getElementById("phprobe").setAttribute("onclick", "phprobedown()");
     document.getElementById("step43").style.display = "block";
@@ -113,11 +113,11 @@ function showcon() {
     document.getElementById("pi3").style.display = "block";
     document.getElementById("pi1").style.display = "none";
     document.getElementById("pi2").style.display = "none";
-    document.getElementById("inputpiresult").value=aminoacid.options[aminoacid.selectedIndex].text;
-    
+    document.getElementById("inputpiresult").value = aminoacid.options[aminoacid.selectedIndex].text;
+
   }
   else {
-    valuesArray= [1.5, 1.64,1.81];
+    valuesArray = [1.5, 1.64, 1.81, 1.98, 2.15, 2.31, 2.48, 2.67, 2.9, 3.23, 4.22, 8.58, 8.99, 9.24, 9.46, 9.82, 10.03, 10.29, 10.69, 11.6, 12.05, 12.36, 12.45];
     window.scrollBy(0, 500);
     document.getElementById("step41").style.display = "block";
     document.getElementById("phprobe").setAttribute("onclick", "phprobedown()");
@@ -128,7 +128,7 @@ function showcon() {
     document.getElementById("pi1").style.display = "block";
     document.getElementById("pi2").style.display = "none";
     document.getElementById("pi3").style.display = "none";
-    document.getElementById("inputpiresult").value=aminoacid.options[aminoacid.selectedIndex].text;
+    document.getElementById("inputpiresult").value = aminoacid.options[aminoacid.selectedIndex].text;
   }
 
 }
@@ -142,7 +142,7 @@ function titration() {
 
 
 var imgobjpdrop = null;
-var imgobjb= null;
+var imgobjb = null;
 function buretteswitch() {
   document.getElementById("conicalflask").removeAttribute("onclick", "conicalflaskmovetoph()");
   var currenttop = 67;
@@ -169,26 +169,26 @@ function buretteswitch() {
     }
   }
 
-canvasstb1 = document.getElementById("canvasburetteempty");
-/*var currentheight = 37;
-
-clearInterval(imgobjb);
-imgobjb = setInterval(frameb, 80);
-
-
-  function frameb() {
-    if (currentheight == 50) {
-      
-     
-      clearInterval(imgobjpdrop);
-
-    }
-    else {
-      currentheight--;
-      canvasstb1.style.height = currentheight + '%';
-
-    }
-  }*/
+  canvasstb1 = document.getElementById("canvasburetteempty");
+  /*var currentheight = 37;
+  
+  clearInterval(imgobjb);
+  imgobjb = setInterval(frameb, 80);
+  
+  
+    function frameb() {
+      if (currentheight == 50) {
+        
+       
+        clearInterval(imgobjpdrop);
+  
+      }
+      else {
+        currentheight--;
+        canvasstb1.style.height = currentheight + '%';
+  
+      }
+    }*/
   ctxgstb1 = canvasstb.getContext("2d");
   var posY1 = 0;
   var speed1 = 0.01;
@@ -272,34 +272,35 @@ function buretteswitchstop() {
 }
 var currentIndex = 0;
 var imgobjcphprobe = null;
+
 function phprobedown() {
   var currentltop = 45;
   document.getElementById("phprobe").style.display = "block";
   var imagecprobe = document.getElementById("phprobe");
   clearInterval(imgobjcphprobe);
   imgobjcphprobe = setInterval(frame, 140);
-  
- 
+
+
   function frame() {
     if (currentltop == 65) {
-      document.getElementById("phprobe").removeAttribute("onclick", "phprobedown()");
+      // document.getElementById("phprobe").removeAttribute("onclick", "phprobedown()");
       document.getElementById("phprobe").setAttribute("onclick", "phprobemoveup()");
       document.getElementById("conicalflaskph").removeAttribute("onclick", "conicalflaskmain()");
       document.getElementById("phvaluetxt").value = valuesArray[currentIndex];
-      currentIndex = currentIndex +1 ;
-     //(currentIndex + 1) % valuesArray.length
+      currentIndex = currentIndex + 1;
+      //(currentIndex + 1) % valuesArray.length
 
-      if (currentIndex == valuesArray.length) {
+      if (currentIndex == 3) {
         $('#alertModal').modal('show');
-  $('.modal-body').text('With addition of NaOH, pH is measured upto 14. To view the plot, click on the "Data Analysis" button.');
-  document.getElementById("step41").disabled = false;
-  document.getElementById("step42").disabled = false;
-  document.getElementById("step43").disabled = false;
+        $('.modal-body').text('With addition of NaOH, pH is measured upto 14. To view the plot, click on the "Data Analysis" button.');
+        document.getElementById("step41").disabled = false;
+        document.getElementById("step42").disabled = false;
+        document.getElementById("step43").disabled = false;
       }
 
       clearInterval(imgobjcphprobe);
 
-       
+
     }
     else {
       currentltop++;
@@ -307,7 +308,8 @@ function phprobedown() {
 
     }
   }
-  
+
+
 
 }
 
@@ -325,7 +327,7 @@ function phprobemoveup() {
   function frame() {
     if (currentltop == 45) {
 
-      document.getElementById("phprobe").setAttribute("onclick", "phprobedown()");
+      //document.getElementById("phprobe").setAttribute("onclick", "phprobedown()");
       document.getElementById("conicalflaskph").setAttribute("onclick", "conicalflaskmain()");
       document.getElementById("phprobe").removeAttribute("onclick", "phprobemoveup()");
       clearInterval(imgobjcphprobeup);
@@ -345,7 +347,7 @@ function conicalflaskmain() {
   $('.modal-body').text('Click on the stopcock of the burette.');
   document.getElementById("conicalflaskph").style.display = "none";
   document.getElementById("conicalflask").style.display = "block";
-//  document.getElementById("step3").disabled = false;
+  //  document.getElementById("step3").disabled = false;
   document.getElementById("conicalflaskph").removeAttribute("onclick", "conicalflaskmain()");
   document.getElementById("conicalflask").removeAttribute("onclick", "conicalflaskmovetoph()");
   document.getElementById("phprobe").removeAttribute("onclick", "phprobedown()");
@@ -354,6 +356,7 @@ function conicalflaskmain() {
 
 function conicalflaskmovetoph() {
   document.getElementById("phprobe").setAttribute("onclick", "phprobedown()");
+
   document.getElementById("conicalflaskph").removeAttribute("onclick", "conicalflaskmain()");
   document.getElementById("conicalflaskph").style.display = "block";
   document.getElementById("conicalflask").style.display = "none";
@@ -379,7 +382,7 @@ function dataanalysisgraph1() {
       title: "pH",
       minimum: 0,
       maximum: 14,
-      interval: 1,
+      interval: 2,
       gridThickness: 0.5
 
     },
@@ -387,7 +390,7 @@ function dataanalysisgraph1() {
       title: "OH equivalents",
       minimum: 0,
       maximum: 10,
-      interval: 0.5,
+      interval: 5,
 
 
     },
@@ -407,9 +410,9 @@ function dataanalysisgraph1() {
 }
 
 function dataanalysisgraph2() {
-  x =[0,0.2,0.5,0.7,0.9,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,2,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,3,3.2,3.4,3.5,3.6,3.7,3.8,3.9,4.1,4.2,4.3,4.4,4.5,4.6,4.7,4.8,4.9,5.1,5.3,5.5,5.7,5.8,5.9,6.1,6.3,6.5,6.7,6.9,
-    7.1,7.3,7.4,7.6,7.9,8,8.1,8.2,8.4,8.6,8.9,9.2,9.4,9.5,9.6,10.2,10.7,11.7]
-y=[1.15, 1.20, 1.30, 1.40, 1.46, 1.51, 1.58, 1.76, 2.10, 2.14, 2.15, 2.16, 2.20, 2.32, 2.50, 2.60, 2.67, 2.85, 3.12, 3.47, 3.66, 3.79, 3.98, 4.08, 4.16, 4.24, 4.39, 4.55, 4.71, 4.95, 5.17, 5.40, 6.04, 8.13, 8.56, 8.78, 8.95, 9.07, 9.32, 9.41, 9.52, 9.59, 9.67, 9.79, 9.95, 10.20, 10.40, 10.52, 10.58, 10.71, 10.79, 10.91, 11.00, 11.33, 11.61, 11.85, 12.01, 12.08, 12.14, 12.21, 12.26, 12.32, 12.40, 12.44, 12.47, 12.49, 12.50]
+  x = [0, 0.2, 0.5, 0.7, 0.9, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 3, 3.2, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 5.1, 5.3, 5.5, 5.7, 5.8, 5.9, 6.1, 6.3, 6.5, 6.7, 6.9,
+    7.1, 7.3, 7.4, 7.6, 7.9, 8, 8.1, 8.2, 8.4, 8.6, 8.9, 9.2, 9.4, 9.5, 9.6, 10.2, 10.7, 11.7]
+  y = [1.15, 1.20, 1.30, 1.40, 1.46, 1.51, 1.58, 1.76, 2.10, 2.14, 2.15, 2.16, 2.20, 2.32, 2.50, 2.60, 2.67, 2.85, 3.12, 3.47, 3.66, 3.79, 3.98, 4.08, 4.16, 4.24, 4.39, 4.55, 4.71, 4.95, 5.17, 5.40, 6.04, 8.13, 8.56, 8.78, 8.95, 9.07, 9.32, 9.41, 9.52, 9.59, 9.67, 9.79, 9.95, 10.20, 10.40, 10.52, 10.58, 10.71, 10.79, 10.91, 11.00, 11.33, 11.61, 11.85, 12.01, 12.08, 12.14, 12.21, 12.26, 12.32, 12.40, 12.44, 12.47, 12.49, 12.50]
   var datapoints = [];
   for (var i = 0; i < x.length; i++) {
     datapoints.push({ x: x[i], y: y[i] });
@@ -454,9 +457,9 @@ y=[1.15, 1.20, 1.30, 1.40, 1.46, 1.51, 1.58, 1.76, 2.10, 2.14, 2.15, 2.16, 2.20,
 }
 
 function dataanalysisgraph3() {
-  x =[0,0.2,0.5,0.7,0.9,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,2,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,3,3.2,3.4,3.5,3.6,3.7,3.8,3.9,4.1,4.2,4.3,4.4,4.5,4.6,4.7,4.8,4.9,5.1,5.3,5.5,5.7,5.8,5.9,6.1,6.3,6.5,6.7,6.9,
-    7.1,7.3,7.4,7.6,7.9,8,8.1,8.2,8.4,8.6,8.9,9.2,9.4,9.5,9.6,10.2,10.7,11.7]
-y=[1.15, 1.20, 1.30, 1.40, 1.46, 1.51, 1.58, 1.76, 2.10, 2.14, 2.15, 2.16, 2.20, 2.32, 2.50, 2.60, 2.67, 2.85, 3.12, 3.47, 3.66, 3.79, 3.98, 4.08, 4.16, 4.24, 4.39, 4.55, 4.71, 4.95, 5.17, 5.40, 6.04, 8.13, 8.56, 8.78, 8.95, 9.07, 9.32, 9.41, 9.52, 9.59, 9.67, 9.79, 9.95, 10.20, 10.40, 10.52, 10.58, 10.71, 10.79, 10.91, 11.00, 11.33, 11.61, 11.85, 12.01, 12.08, 12.14, 12.21, 12.26, 12.32, 12.40, 12.44, 12.47, 12.49, 12.50]
+  x = [0, 0.2, 0.5, 0.7, 0.9, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 3, 3.2, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 5.1, 5.3, 5.5, 5.7, 5.8, 5.9, 6.1, 6.3, 6.5, 6.7, 6.9,
+    7.1, 7.3, 7.4, 7.6, 7.9, 8, 8.1, 8.2, 8.4, 8.6, 8.9, 9.2, 9.4, 9.5, 9.6, 10.2, 10.7, 11.7]
+  y = [1.15, 1.20, 1.30, 1.40, 1.46, 1.51, 1.58, 1.76, 2.10, 2.14, 2.15, 2.16, 2.20, 2.32, 2.50, 2.60, 2.67, 2.85, 3.12, 3.47, 3.66, 3.79, 3.98, 4.08, 4.16, 4.24, 4.39, 4.55, 4.71, 4.95, 5.17, 5.40, 6.04, 8.13, 8.56, 8.78, 8.95, 9.07, 9.32, 9.41, 9.52, 9.59, 9.67, 9.79, 9.95, 10.20, 10.40, 10.52, 10.58, 10.71, 10.79, 10.91, 11.00, 11.33, 11.61, 11.85, 12.01, 12.08, 12.14, 12.21, 12.26, 12.32, 12.40, 12.44, 12.47, 12.49, 12.50]
   var datapoints = [];
   for (var i = 0; i < x.length; i++) {
     datapoints.push({ x: x[i], y: y[i] });
@@ -510,7 +513,7 @@ window.onload = function () {
       title: "pH",
       minimum: 0,
       maximum: 14,
-      interval: 1,
+      interval: 2,
       gridThickness: 0
 
     },
@@ -518,7 +521,7 @@ window.onload = function () {
       title: "OH equivalents",
       minimum: 0,
       maximum: 10,
-      interval: 0.5,
+      interval: 2,
 
     },
 
@@ -531,4 +534,596 @@ window.onload = function () {
     }]
   });
   chart.render();
+}
+
+
+/***********************************************************    pI check 1  **************************************************************************/
+function check1() {
+  var aminoacid = document.getElementById("aminoacidsel");
+  aaobj = aminoacid.options[aminoacid.selectedIndex].text;
+  var userinpt = document.getElementById("inputpi12").value;
+
+
+  if (userinpt == "") {
+    $('#alertModal').modal('show');
+    $('.modal-body').html('Enter the calculated pI value in the input box. Consider pK<sub>1</sub> and pK<sub>2</sub> values of chosen amino acid from the table.');
+  }
+  else {
+    if (aminoacid.options[aminoacid.selectedIndex].value == 1) {
+
+      if (userinpt == "5.97") {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Correct');
+        document.getElementById("inputpiresultpi").value = "5.97";
+        document.getElementById("inputpi12").value = "5.97";
+      }
+      else {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Incorrect pI value');
+        document.getElementById("showsteppi1").disabled = false;
+        document.getElementById("inputpi12").value = " ";
+      }
+    }
+
+    if (aminoacid.options[aminoacid.selectedIndex].value == 2) {
+
+      if (userinpt == "6.01") {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Correct');
+        document.getElementById("inputpiresultpi").value = "6.01";
+        document.getElementById("inputpi12").value = "6.01";
+      }
+      else {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Incorrect pI value');
+        document.getElementById("showsteppi1").disabled = false;
+        document.getElementById("inputpi12").value = " ";
+      }
+    }
+
+    if (aminoacid.options[aminoacid.selectedIndex].value == 3) {
+
+      if (userinpt == "6.48") {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Correct');
+        document.getElementById("inputpiresultpi").value = "6.48";
+        document.getElementById("inputpi12").value = "6.48";
+      }
+      else {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Incorrect pI value');
+        document.getElementById("showsteppi1").disabled = false;
+        document.getElementById("inputpi12").value = " ";
+      }
+    }
+
+    if (aminoacid.options[aminoacid.selectedIndex].value == 4) {
+
+      if (userinpt == "5.98") {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Correct');
+        document.getElementById("inputpiresultpi").value = "5.98";
+        document.getElementById("inputpi12").value = "5.98";
+      }
+      else {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Incorrect pI value');
+        document.getElementById("showsteppi1").disabled = false;
+        document.getElementById("inputpi12").value = " ";
+      }
+    }
+    if (aminoacid.options[aminoacid.selectedIndex].value == 5) {
+
+      if (userinpt == "6.02") {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Correct');
+        document.getElementById("inputpiresultpi").value = "6.02";
+        document.getElementById("inputpi12").value = "6.02";
+      }
+      else {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Incorrect pI value');
+        document.getElementById("showsteppi1").disabled = false;
+        document.getElementById("inputpi12").value = " ";
+      }
+    }
+    if (aminoacid.options[aminoacid.selectedIndex].value == 6) {
+
+      if (userinpt == "5.68") {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Correct');
+        document.getElementById("inputpiresultpi").value = "5.68";
+        document.getElementById("inputpi12").value = "5.68";
+      }
+      else {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Incorrect pI value');
+        document.getElementById("showsteppi1").disabled = false;
+        document.getElementById("inputpi12").value = " ";
+      }
+    }
+    if (aminoacid.options[aminoacid.selectedIndex].value == 7) {
+
+      if (userinpt == "5.60") {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Correct');
+        document.getElementById("inputpiresultpi").value = "5.60";
+        document.getElementById("inputpi12").value = "5.60";
+      }
+      else {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Incorrect pI value');
+        document.getElementById("showsteppi1").disabled = false;
+        document.getElementById("inputpi12").value = " ";
+      }
+    }
+
+    if (aminoacid.options[aminoacid.selectedIndex].value == 8) {
+
+      if (userinpt == "5.07") {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Correct');
+        document.getElementById("inputpiresultpi").value = "5.07";
+        document.getElementById("inputpi12").value = "5.07";
+      }
+      else {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Incorrect pI value');
+        document.getElementById("showsteppi1").disabled = false;
+        document.getElementById("inputpi12").value = " ";
+      }
+    }
+
+
+    if (aminoacid.options[aminoacid.selectedIndex].value == 9) {
+
+      if (userinpt == "5.74") {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Correct');
+        document.getElementById("inputpiresultpi").value = "5.74";
+        document.getElementById("inputpi12").value = "5.74";
+      }
+      else {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Incorrect pI value');
+        document.getElementById("showsteppi1").disabled = false;
+        document.getElementById("inputpi12").value = " ";
+      }
+    }
+
+    if (aminoacid.options[aminoacid.selectedIndex].value == 10) {
+
+      if (userinpt == "6.48") {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Correct');
+        document.getElementById("inputpiresultpi").value = "6.48";
+        document.getElementById("inputpi12").value = "6.48";
+      }
+      else {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Incorrect pI value');
+        document.getElementById("showsteppi1").disabled = false;
+        document.getElementById("inputpi12").value = " ";
+      }
+    }
+
+    if (aminoacid.options[aminoacid.selectedIndex].value == 11) {
+
+      if (userinpt == "5.48") {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Correct');
+        document.getElementById("inputpiresultpi").value = "5.48";
+        document.getElementById("inputpi12").value = "5.48";
+      }
+      else {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Incorrect pI value');
+        document.getElementById("showsteppi1").disabled = false;
+        document.getElementById("inputpi12").value = " ";
+      }
+    }
+
+
+    if (aminoacid.options[aminoacid.selectedIndex].value == 12) {
+
+      if (userinpt == "5.66") {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Correct');
+        document.getElementById("inputpiresultpi").value = "5.66";
+        document.getElementById("inputpi12").value = "5.66";
+      }
+      else {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Incorrect pI value');
+        document.getElementById("showsteppi1").disabled = false;
+        document.getElementById("inputpi12").value = " ";
+      }
+    }
+
+
+    if (aminoacid.options[aminoacid.selectedIndex].value == 13) {
+
+      if (userinpt == "5.89") {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Correct');
+        document.getElementById("inputpiresultpi").value = "5.89";
+        document.getElementById("inputpi12").value = "5.89";
+      }
+      else {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Incorrect pI value');
+        document.getElementById("showsteppi1").disabled = false;
+        document.getElementById("inputpi12").value = " ";
+      }
+    }
+
+    if (aminoacid.options[aminoacid.selectedIndex].value == 15) {
+
+      if (userinpt == "5.65") {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Correct');
+        document.getElementById("inputpiresultpi").value = "5.65";
+        document.getElementById("inputpi12").value = "5.65";
+      }
+      else {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Incorrect pI value');
+        document.getElementById("showsteppi1").disabled = false;
+        document.getElementById("inputpi12").value = " ";
+      }
+    }
+
+    if (aminoacid.options[aminoacid.selectedIndex].value == 16) {
+
+      if (userinpt == "5.41") {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Correct');
+        document.getElementById("inputpiresultpi").value = "5.41";
+        document.getElementById("inputpi12").value = "5.41";
+      }
+      else {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Incorrect pI value');
+        document.getElementById("showsteppi1").disabled = false;
+        document.getElementById("inputpi12").value = " ";
+      }
+    }
+  }
+}
+
+function showans1() {
+
+
+  var aminoacid = document.getElementById("aminoacidsel");
+  aaobj = aminoacid.options[aminoacid.selectedIndex].text;
+
+
+  if (aminoacid.options[aminoacid.selectedIndex].value == 1) {
+
+
+    document.getElementById("inputpiresultpi").value = "5.97";
+    document.getElementById("inputpi12").value = "5.97";
+
+    document.getElementById("showsteppi1").disabled = true;
+
+
+  }
+
+  if (aminoacid.options[aminoacid.selectedIndex].value == 2) {
+
+
+    document.getElementById("inputpiresultpi").value = "6.01";
+    document.getElementById("inputpi12").value = "6.01";
+
+    document.getElementById("showsteppi1").disabled = true;
+
+  }
+
+  if (aminoacid.options[aminoacid.selectedIndex].value == 3) {
+
+
+    document.getElementById("inputpiresultpi").value = "6.48";
+    document.getElementById("inputpi12").value = "6.48";
+
+    document.getElementById("showsteppi1").disabled = true;
+
+  }
+
+  if (aminoacid.options[aminoacid.selectedIndex].value == 4) {
+
+
+    document.getElementById("inputpiresultpi").value = "5.98";
+    document.getElementById("inputpi12").value = "5.98";
+
+    document.getElementById("showsteppi1").disabled = true;
+
+  }
+  if (aminoacid.options[aminoacid.selectedIndex].value == 5) {
+
+
+    document.getElementById("inputpiresultpi").value = "6.02";
+    document.getElementById("inputpi12").value = "6.02";
+
+    document.getElementById("showsteppi1").disabled = true;
+
+  }
+  if (aminoacid.options[aminoacid.selectedIndex].value == 6) {
+
+
+    document.getElementById("inputpiresultpi").value = "5.68";
+    document.getElementById("inputpi12").value = "5.68";
+
+    document.getElementById("showsteppi1").disabled = true;
+
+  }
+  if (aminoacid.options[aminoacid.selectedIndex].value == 7) {
+
+
+    document.getElementById("inputpiresultpi").value = "5.60";
+    document.getElementById("inputpi12").value = "5.60";
+
+    document.getElementById("showsteppi1").disabled = true;
+
+  }
+
+  if (aminoacid.options[aminoacid.selectedIndex].value == 8) {
+
+
+    document.getElementById("inputpiresultpi").value = "5.07";
+
+    document.getElementById("showsteppi1").disabled = true;
+
+  }
+
+
+  if (aminoacid.options[aminoacid.selectedIndex].value == 9) {
+
+
+    document.getElementById("inputpiresultpi").value = "5.74";
+    document.getElementById("inputpi12").value = "5.74";
+
+    document.getElementById("showsteppi1").disabled = true;
+
+  }
+
+  if (aminoacid.options[aminoacid.selectedIndex].value == 10) {
+
+
+    document.getElementById("inputpiresultpi").value = "6.48";
+    document.getElementById("inputpi12").value = "6.48";
+
+    document.getElementById("showsteppi1").disabled = true;
+
+  }
+
+  if (aminoacid.options[aminoacid.selectedIndex].value == 11) {
+
+
+
+    document.getElementById("inputpiresultpi").value = "5.48";
+    document.getElementById("inputpi12").value = "5.48";
+
+    document.getElementById("showsteppi1").disabled = true;
+  }
+
+
+  if (aminoacid.options[aminoacid.selectedIndex].value == 12) {
+
+
+    document.getElementById("inputpiresultpi").value = "5.66";
+    document.getElementById("inputpi12").value = "5.66";
+
+    document.getElementById("showsteppi1").disabled = true;
+
+  }
+
+
+  if (aminoacid.options[aminoacid.selectedIndex].value == 13) {
+
+
+
+    document.getElementById("inputpiresultpi").value = "5.89";
+    document.getElementById("inputpi12").value = "5.89";
+
+    document.getElementById("showsteppi1").disabled = true;
+
+  }
+
+  if (aminoacid.options[aminoacid.selectedIndex].value == 15) {
+
+
+    document.getElementById("inputpiresultpi").value = "5.65";
+    document.getElementById("inputpi12").value = "5.65";
+
+    document.getElementById("showsteppi1").disabled = true;
+
+  }
+
+  if (aminoacid.options[aminoacid.selectedIndex].value == 16) {
+
+
+    document.getElementById("inputpiresultpi").value = "5.41";
+    document.getElementById("inputpi12").value = "5.41";
+
+    document.getElementById("showsteppi1").disabled = true;
+
+  }
+
+
+
+}
+
+
+
+/***********************************************************    pI check 2  **************************************************************************/
+function check2() {
+  var aminoacid = document.getElementById("aminoacidsel");
+  aaobj = aminoacid.options[aminoacid.selectedIndex].text;
+  var userinpt = document.getElementById("inputpi12basic").value;
+  if (userinpt == "") {
+    $('#alertModal').modal('show');
+    $('.modal-body').html('Enter the calculated pI value in the input box. Consider pK<sub>2</sub> and pK<sub>R</sub> values of chosen amino acid from the table.');
+  }
+  else {
+
+
+    if (aminoacid.options[aminoacid.selectedIndex].value == 14) {
+
+      if (userinpt == "7.59") {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Correct');
+        document.getElementById("inputpiresultpi").value = "7.59";
+        document.getElementById("inputpi12basic").value = "7.59";
+      }
+      else {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Incorrect pI value');
+        document.getElementById("showsteppi2").disabled = false;
+        document.getElementById("inputpi12basic").value = " ";
+
+      }
+    }
+
+    if (aminoacid.options[aminoacid.selectedIndex].value == 19) {
+
+      if (userinpt == "9.74") {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Correct');
+        document.getElementById("inputpiresultpi").value = "9.74";
+        document.getElementById("inputpi12basic").value = "9.74";
+      }
+      else {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Incorrect pI value');
+        document.getElementById("showsteppi2").disabled = false;
+        document.getElementById("inputpi12basic").value = " ";
+
+      }
+    }
+
+    if (aminoacid.options[aminoacid.selectedIndex].value == 20) {
+
+      if (userinpt == "10.76") {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Correct');
+        document.getElementById("inputpiresultpi").value = "10.76";
+        document.getElementById("inputpi12basic").value = "10.76";
+      }
+      else {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Incorrect pI value');
+        document.getElementById("showsteppi2").disabled = false;
+        document.getElementById("inputpi12basic").value = " ";
+
+      }
+    }
+  }
+
+}
+
+function showans2() {
+  var aminoacid = document.getElementById("aminoacidsel");
+  aaobj = aminoacid.options[aminoacid.selectedIndex].text;
+
+
+  if (aminoacid.options[aminoacid.selectedIndex].value == 14) {
+
+
+    document.getElementById("inputpiresultpi").value = "7.59";
+    document.getElementById("inputpi12basic").value = "7.59";
+    document.getElementById("showsteppi2").disabled = true;
+
+  }
+
+  if (aminoacid.options[aminoacid.selectedIndex].value == 19) {
+
+
+    document.getElementById("inputpiresultpi").value = "9.74";
+    document.getElementById("inputpi12basic").value = "9.74";
+    document.getElementById("showsteppi2").disabled = true;
+
+  }
+
+
+  if (aminoacid.options[aminoacid.selectedIndex].value == 20) {
+
+
+    document.getElementById("inputpiresultpi").value = "10.76";
+    document.getElementById("inputpi12basic").value = "10.76";
+    document.getElementById("showsteppi2").disabled = true;
+
+  }
+
+}
+
+/***********************************************************    pI check 3  **************************************************************************/
+function check3() {
+  var aminoacid = document.getElementById("aminoacidsel");
+  aaobj = aminoacid.options[aminoacid.selectedIndex].text;
+  var userinpt = document.getElementById("inputpi12acid").value;
+  if (userinpt == "") {
+    $('#alertModal').modal('show');
+    $('.modal-body').html('Input box cannot be empty. Enter the calculated pI value in the input box. Consider pK<sub>1</sub> and pK<sub>R</sub> values of chosen amino acid from the table ');
+  }
+  else {
+    if (aminoacid.options[aminoacid.selectedIndex].value == 17) {
+
+      if (userinpt == "3.22") {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Correct');
+        document.getElementById("inputpiresultpi").value = "3.22";
+        document.getElementById("inputpi12acid").value = "3.22";
+      }
+      else {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Incorrect pI value');
+        document.getElementById("showsteppi3").disabled = false;
+        document.getElementById("inputpi12acid").value = " ";
+
+      }
+    }
+
+
+    if (aminoacid.options[aminoacid.selectedIndex].value == 18) {
+
+      if (userinpt == "2.77") {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Correct');
+        document.getElementById("inputpiresultpi").value = "2.77";
+        document.getElementById("inputpi12acid").value = "2.77";
+      }
+      else {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Incorrect pI value');
+        document.getElementById("showsteppi3").disabled = false;
+        document.getElementById("inputpi12acid").value = " ";
+
+
+      }
+    }
+  }
+}
+
+
+function showans3() {
+  var aminoacid = document.getElementById("aminoacidsel");
+  aaobj = aminoacid.options[aminoacid.selectedIndex].text;
+
+  if (aminoacid.options[aminoacid.selectedIndex].value == 17) {
+
+
+    document.getElementById("inputpiresultpi").value = "3.22";
+    document.getElementById("inputpi12acid").value = "3.22";
+    document.getElementById("showsteppi3").disabled = true;
+
+  }
+
+  if (aminoacid.options[aminoacid.selectedIndex].value == 18) {
+
+
+    document.getElementById("inputpiresultpi").value = "2.77";
+    document.getElementById("inputpi12acid").value = "2.77";
+    document.getElementById("showsteppi3").disabled = true;
+
+  }
 }

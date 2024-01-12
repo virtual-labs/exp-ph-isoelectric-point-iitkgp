@@ -83,8 +83,8 @@ jsPlumb.ready(function () {
             return instance.addEndpoint(elId, endpointblack);
         },
 
-       
-        
+
+
 
 
         // this is overridden by the YUI demo.
@@ -124,14 +124,14 @@ jsPlumb.ready(function () {
         var e1 = prepare_negv("ld1"), // negative in case
 
             e2 = prepare_negv("ld2"); // positive in case
-         
+
 
 
         instance.connect({ source: e1, target: e2 });
         // instance.connect({ source: e2, target: e4 });
 
 
-        
+
     });
 
 
@@ -140,7 +140,7 @@ jsPlumb.ready(function () {
     jsPlumb.fire("jsPlumbDemoLoaded", instance);
     //jsPlumb.fire("jsPlumbDemoLoaded", instance1);
 
-    window.onload= function () {
+    window.onload = function () {
         //var d = instance.exportData();
         //console.log(instance.getAllConnections());
 
@@ -156,8 +156,8 @@ jsPlumb.ready(function () {
                 "target": "ld1"
             }
         ];
-        
-      
+
+
 
         //a connection outside this will invalidate the circuit
         var allowed_connections = [
@@ -177,7 +177,7 @@ jsPlumb.ready(function () {
         var actual_connections = instance.getAllConnections();
 
         var is_connected_1_2 = false;
-        
+
 
         var unallowed_connection_present = false;
         var count = 0; // counts number of connection
@@ -208,22 +208,22 @@ jsPlumb.ready(function () {
             // return false
 
         });
-       
-   
-      
-      
 
 
 
 
 
 
-        if (((is_connected_1_2 )) && !unallowed_connection_present) {
 
 
 
 
-           // alert("RIGHT CONNECTION.");
+        if (((is_connected_1_2)) && !unallowed_connection_present) {
+
+
+
+
+            // alert("RIGHT CONNECTION.");
             //document.getElementById("samplerun").disabled = true;
         } else {
             $('#voltalertmessage').modal('show');
@@ -233,23 +233,23 @@ jsPlumb.ready(function () {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             // Set font properties
             ctx.font = 'bold 80px Arial'; // You can adjust the font weight, size and family
-          
+
             // Set text properties
             ctx.fillStyle = 'black'; // Text color
             ctx.textAlign = 'center'; // Text alignment (centered horizontally)
             ctx.textBaseline = 'middle'; // Text baseline (centered vertically)
-          
+
             // Define the text to be displayed
             const text = " ";
-          
+
             // Get the position to place the text (in this case, centered on the canvas)
             const x = canvas.width / 2;
             const y = canvas.height / 2;
-          
+
             // Draw the text on the canvas
             ctx.fillText(text, x, y);
-                      return;
-    
+            return;
+
             return;
         }
 
@@ -258,36 +258,64 @@ jsPlumb.ready(function () {
     }
 
 
-    document.getElementById('phmterpon').addEventListener('click', function () {
-        // Delete all connections
-        //instance.deleteEveryConnection();
+    /*document.getElementById('phprobe').addEventListener('click', function () {
 
-        document.getElementById("viewsample").disabled=false;
-        document.getElementById('agel1').setAttribute('onclick', "moveImage1()");;
-        const canvas = document.getElementById('textvoltimer');
-        const ctx = canvas.getContext('2d');
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        // Set font properties
-        ctx.font = 'bold 80px Arial'; // You can adjust the font weight, size and family
-      
-        // Set text properties
-        ctx.fillStyle = 'black'; // Text color
-        ctx.textAlign = 'center'; // Text alignment (centered horizontally)
-        ctx.textBaseline = 'middle'; // Text baseline (centered vertically)
-      
-        // Define the text to be displayed
-        const text = " ";
-      
-        // Get the position to place the text (in this case, centered on the canvas)
-        const x = canvas.width / 2;
-        const y = canvas.height / 2;
-      
-        // Draw the text on the canvas
-        ctx.fillText(text, x, y);
-                  return;
+        var imgobjdivld1 = null;
+        var currentltopld1 = 45;
+        var imageld1 = document.getElementById("ld1");
+        clearInterval(imgobjdivld1);
+        imgobjdivld1 = setInterval(frameld, 140);
+
+
+        function frameld() {
+            if (currentltopld1 == 65) {
+                clearInterval(imgobjdivld1);
+                document.getElementById('phprobe').setAttribute("id", "phprobeup")
+            }
+            else {
+                currentltopld1++;
+                imageld1.style.top = currentltopld1 + '%';
+                instance.repaintEverything();
+
+            }
+        }
+
+
+
 
 
     });
+
+
+
+    document.getElementById('phprobeup').addEventListener('click', function () {
+
+        var imgobjdivld1 = null;
+        var currentltopld1 = 65;
+        var imageld1 = document.getElementById("ld1");
+        clearInterval(imgobjdivld1);
+        imgobjdivld1 = setInterval(frameld, 140);
+
+
+        function frameld() {
+            if (currentltopld1 == 45) {
+                clearInterval(imgobjdivld1);
+
+            }
+            else {
+                currentltopld1--;
+                imageld1.style.top = currentltopld1 + '%';
+                instance.repaintEverything();
+
+            }
+        }
+
+
+
+
+
+    });*/
+
 
 
 });
@@ -296,3 +324,4 @@ jsPlumb.ready(function () {
 
 
 
+// Repaint the connections
