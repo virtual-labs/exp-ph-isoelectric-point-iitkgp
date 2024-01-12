@@ -234,12 +234,11 @@ sub {
 
 .bigdot {
     cursor: pointer;
-    width: 5%;
-    height: 5%;
+    width: 0.1%;
+    height: 0.1%;
     /* background-image: url(./images/littledot.png);*/
-    
     position: absolute;
-    border-radius: 2%;
+    border-radius: 1%;
 
 }
 
@@ -253,7 +252,7 @@ sub {
 
 #ld1 {
     position: absolute;
-    width: 1%;
+    width: 0.1%;
     top:63%; /* 44 - 63 */
     left: 31.6%;
     
@@ -261,7 +260,7 @@ sub {
 
 #ld2 {
     position: absolute;
-    width: 1%;
+    width: 0.1%;
     top: 31%;
     left: 50%;
 
