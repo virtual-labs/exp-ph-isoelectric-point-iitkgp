@@ -259,8 +259,8 @@ jsPlumb.ready(function () {
 
 
     /*document.getElementById('phprobe').addEventListener('click', function () {
-
         var imgobjdivld1 = null;
+        
         var currentltopld1 = 45;
         var imageld1 = document.getElementById("ld1");
         clearInterval(imgobjdivld1);
@@ -270,7 +270,7 @@ jsPlumb.ready(function () {
         function frameld() {
             if (currentltopld1 == 65) {
                 clearInterval(imgobjdivld1);
-                document.getElementById('phprobe').setAttribute("id", "phprobeup")
+                
             }
             else {
                 currentltopld1++;
@@ -284,11 +284,11 @@ jsPlumb.ready(function () {
 
 
 
-    });
+    });*/
 
 
 
-    document.getElementById('phprobeup').addEventListener('click', function () {
+   /* document.getElementById('phprobeup').addEventListener('click', function () {
 
         var imgobjdivld1 = null;
         var currentltopld1 = 65;
