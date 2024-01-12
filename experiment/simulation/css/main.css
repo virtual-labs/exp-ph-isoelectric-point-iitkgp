@@ -144,6 +144,16 @@ Developer: Prakriti Dhang
     z-index: 2;
 }
 
+#phprobeup{
+    position: absolute;
+    top:45%;  /*45- 64*/
+    left:31.5%;
+    width:1.5%;
+    height:25%;
+    cursor: pointer;
+    z-index: 2;
+}
+
 #pdrop{
     position: absolute;
     top:67%; /*67- 86*/
@@ -243,7 +253,7 @@ sub {
 #ld1 {
     position: absolute;
     width: 1%;
-    top: 63%;
+    top: 63%; /* 44 - 63 */
     left: 31.6%;
     
 }
