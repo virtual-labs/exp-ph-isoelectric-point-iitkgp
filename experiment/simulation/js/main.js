@@ -432,7 +432,7 @@ function dataanalysisgraph1() {
 
     },
     axisX: {
-      title: "OH equivalents",
+      title: "NaOH equivalents",
       minimum: 0,
       maximum: 10,
       interval: 5,
@@ -487,7 +487,7 @@ function dataanalysisgraph2() {
 
     },
     axisX: {
-      title: "OH equivalents",
+      title: "NaOH equivalents",
       minimum: 0,
       maximum: 10,
       interval: 0.5,
@@ -534,7 +534,7 @@ function dataanalysisgraph3() {
 
     },
     axisX: {
-      title: "OH equivalents",
+      title: "NaOH equivalents",
       minimum: 0,
       maximum: 10,
       interval: 0.5,
@@ -571,7 +571,7 @@ window.onload = function () {
 
     },
     axisX: {
-      title: "OH equivalents",
+      title: "NaOH equivalents",
       minimum: 0,
       maximum: 10,
       interval: 2,
