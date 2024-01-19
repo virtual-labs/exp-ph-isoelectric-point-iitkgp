@@ -389,7 +389,7 @@ function phprobemoveup() {
 function conicalflaskmain() {
   document.getElementById("buretteswitch").removeAttribute("onclick", "buretteswitch()");
   $('#alertModal').modal('show');
-  $('.modal-body').text('Click on the titration button. ');
+  $('.modal-body').text('Click on the titrate button. ');
   document.getElementById("conicalflaskph").style.display = "none";
   document.getElementById("conicalflask").style.display = "block";
   document.getElementById("step3").disabled = false;
