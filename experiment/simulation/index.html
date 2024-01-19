@@ -41,8 +41,8 @@ Developer: Prakriti Dhang
 							</li>
 							<li>Select any amino acid from the dropdown. Next, click on "Show Conical Flask" button.</li>
 							<li>Click on the the probe image to immerse it in the conical flask for pH measurement. Click on the probe image to remove it from the conical flask.</li>
-							<li>Next click on the conical flask to position it beneath the burette.</li>
-							<li>Click on the burette's stopcock to initiate titration. After initiation, select the conical flask to mix NaOH with the amino acid. 
+							<li>Click on the conical flask to position it beneath the burette. </li>
+							<li>Next click on the "titration" button. Click on the burette's stopcock to initiate titration. After initiation, select the conical flask to mix NaOH with the amino acid. 
 							Terminate the titration by clicking on the burette's stopcock. </li>	
 								<li>Click on the conical flask to place it under the probe and measure the pH value.
 							</li>
@@ -51,17 +51,18 @@ Developer: Prakriti Dhang
 						</ol>
 						<p class="h5">pI calculation instruction</p>
 						<ol>
+							<li>Check "Table to get pK<sub>1</sub>,pK<sub>2</sub>,and pK<sub>R</sub> values" checkbox.</li>
 
-							<li>Enter the pI value in the input box. Consider pK<sub>1</sub> and
+							<li>Calculate and enter the pI value in the input box. Consider pK<sub>1</sub> and
 								pK<sub>2</sub> values of chosen amino acid from the table . Next click on "Check" button to display a message
 								indicating correctness. To reveal the correct answer, click on the "Show Answer" button.
 							</li>
 							<li>For basic amino acids consider
-								pK<sub>2</sub> and pK<sub>R</sub> values of chosen amino acid from the table. Next click on "Check" button to
+								pK<sub>2</sub> and pK<sub>R</sub> values of chosen amino acid from the table. Calculate and enter pI value in the input box. Next click on "Check" button to
 								display a message indicating correctness. To reveal the correct answer, click on the
 								"Show Answer" button.</li>
 							<li>For acidic amino acids consider
-								pK<sub>1</sub> and pK<sub>R</sub> values of chosen amino acid from the table. Next click on "Check" button to
+								pK<sub>1</sub> and pK<sub>R</sub> values of chosen amino acid from the table. Calculate and enter pI value in the input box. Next click on "Check" button to
 								display a message indicating correctness. To reveal the correct answer, click on the
 								"Show Answer" button.</li>
 
@@ -97,7 +98,7 @@ Developer: Prakriti Dhang
 										<input class="custom-check-input" type="checkbox" value="" id="check1"
 											disabled />
 										<label class="custom-check-label" for="Check1">
-											NaOH
+											1M NaOH
 										</label>
 									</div>
 									<button id="step1" type="button"
@@ -113,7 +114,7 @@ Developer: Prakriti Dhang
 									<div>
 										<select class="form-select" id="aminoacidsel"
 											aria-label="Default select example" disabled>
-											<option value="0" selected>Select any Amino Acid</option>
+											<option value="0" selected>Select an Amino Acid</option>
 											<option value="1">Glycine (G)</option>
 											<option value="2">Alanine (A)</option>
 											<option value="3">Valine (V)</option>
@@ -143,17 +144,17 @@ Developer: Prakriti Dhang
 								</td>
 
 							</tr>
-							<!--tr>
+							<tr>
 								<td>Step 3</td>
 
 								<td>
 									<button id="step3" type="button"
 										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " disabled onclick="titration()">Titration</button>
+										style="cursor: pointer; " disabled onclick="titration()">Titrate</button>
 										
 								</td>
 
-							</tr-->
+							</tr>
 							<tr>
 								<td>Step 4</td>
 								<td><button id="step41" type="button"
@@ -175,6 +176,20 @@ Developer: Prakriti Dhang
 								</td>
 
 							</tr>
+							<tr>
+								<td>Step 5</td>
+								<td>
+									<div class="form-check form-check-inline">
+										<input class="custom-check-input" type="checkbox" value="" id="check1"
+											onclick="tableshow()" data-bs-toggle="collapse"
+											data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample"/>
+										<label class="custom-check-label" for="Check1">
+											Table to get pK<sub>1</sub>,pK<sub>2</sub>, and pK<sub>R</sub> values of amino acid
+										</label>
+									</div>
+								</td>
+
+							</tr>
 						</table>
 					</div>
 				</div>
@@ -184,22 +199,31 @@ Developer: Prakriti Dhang
 		</div>
 		<div class="row">
 
-
+<div class="col-md-3"></div>
 
 
 			<div class="col-md-6">
-				<div class="card card-body border border-1">
+				<div class="card card-body border border-0">
 					<div class="img-container">
-						<img src="./images/burette_stand.png" id="burette">
+						<img src="./images/burette_stand.png"  id="burette">
 						<img src="./images/burette_stand_holder.png" id="burettestndholder">
 						<img src="./images/burette_switch.png" id="buretteswitch" data-toggle="tooltip"
 							data-placement="right" title="Stopcock">
+							<!--img src="./images/table.png" id="table" data-toggle="tooltip"
+							data-placement="right" title="Table"-->
 
 						<img src="./images/conicalflask.png" id="conicalflask" data-toggle="tooltip"
-							data-placement="right" title="Conical Flask">
-
+							data-placement="right" title="Conical Flask with 1 M of amino acid ">
+							<input type="input" class="form-control" value="0"
+					style="text-align: center;  font-weight: bold;" id="phvaluetxt"  data-toggle="tooltip"
+					data-placement="right" title="Measured pH value" readonly/>
+							<img src="./images/pH_meter.png" id="phprobe" data-toggle="tooltip"
+							data-placement="right" title="pH meter">
+							<img src="./images/conicalflask.png" id="conicalflaskph" data-toggle="tooltip"
+							data-placement="right" title="Conical Flask with 1 M of amino acid">
 						<img src="./images/probdrop.png" id="pdrop">
-						<canvas width="10px" height="20px" id="canvasburette" style="border: 0px solid black;"></canvas>
+						<canvas width="10px" height="20px" id="canvasburette" style="border: 0px solid black;" data-toggle="tooltip"
+						data-placement="right" title="1M of NaOH"></canvas>
 						<canvas width="10px" height="20px" id="canvasburetteempty"
 							style="border: 0px solid black;"></canvas>
 						<canvas width="10px" height="20px" id="canvasburettelabel" style="border: 0px solid black;"
@@ -207,9 +231,13 @@ Developer: Prakriti Dhang
 					</div>
 				</div>
 			</div>
+			<div class="col-md-3"></div>
 
-			<div class="col-md-6">
-				<div class="card card-body border border-1">
+			<!--div class="col-md-2">
+				<div class="card card-body border border-0">
+					
+					
+
 					<div class="img-container">
 						<img src="./images/phmeter.png" id="phmeter">
 						<img src="./images/phprobe.png" id="phprobe" data-toggle="tooltip" data-placement="right"
@@ -227,7 +255,7 @@ Developer: Prakriti Dhang
 						<div id="ld2"></div>
 					</div>
 				</div>
-			</div>
+			</div-->
 		</div>
 
 
@@ -240,7 +268,7 @@ Developer: Prakriti Dhang
 				<div class="card card-body border border-1">
 
 					<div id="chartContainer" style="height: 500px; width: 100%;"></div>
-					<button class="btn btn-pastel-blue col-md-2" id="exportChart">Export Chart</button>
+					<!--button class="btn btn-pastel-blue col-md-2" id="exportChart">Export Chart</button-->
 
 				</div>
 
@@ -249,7 +277,7 @@ Developer: Prakriti Dhang
 				<div class="card card-body ">
 					<button class="btn btn-info col-md-12 fs-5" type="button" data-bs-toggle="collapse"
 						data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
-						Table of pK<sub>1</sub>, pK<sub>2</sub>, pK<sub>R</sub> values of amino acid
+						Table showing pK<sub>1</sub>, pK<sub>2</sub>,  and pK<sub>R</sub> values of amino acid
 					</button>
 
 					<div class="collapse" id="collapseExample2">
@@ -260,9 +288,9 @@ Developer: Prakriti Dhang
 										<tr>
 											<th scope="col">Amino Acid</th>
 											<th>Side Chain</th>
-											<th scope="col">pka<sub>1</sub></th>
-											<th scope="col">pka<sub>2</sub></th>
-											<th scope="col">pka<sub>3</sub></th>
+											<th scope="col">pK<sub>1</sub></th>
+											<th scope="col">pK<sub>2</sub></th>
+											<th scope="col">pK<sub>R</sub></th>
 											<!-- <th scope="col">pI</th> -->
 										</tr>
 									</thead>

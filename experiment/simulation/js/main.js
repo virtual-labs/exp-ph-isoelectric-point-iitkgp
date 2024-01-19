@@ -25,10 +25,10 @@ function switchburette() {
 
   if (document.getElementById("check1").checked) {
     window.scrollBy(0, 500);
-    canvasstb = document.getElementById("canvasburette");
-    ctxgstb = canvasstb.getContext("2d");
+    var canvasstb = document.getElementById("canvasburette");
+    var ctxgstb = canvasstb.getContext("2d");
     var posY = 0;
-    var speed = 0.2;
+    var speed = 0.1;
 
 
 
@@ -144,6 +144,7 @@ function titration() {
 var imgobjpdrop = null;
 var imgobjb = null;
 function buretteswitch() {
+
   document.getElementById("conicalflask").removeAttribute("onclick", "conicalflaskmovetoph()");
   var currenttop = 67;
   document.getElementById("pdrop").style.display = "block";
@@ -169,7 +170,7 @@ function buretteswitch() {
     }
   }
 
-  canvasstb1 = document.getElementById("canvasburetteempty");
+
   /*var currentheight = 37;
   
   clearInterval(imgobjb);
@@ -180,7 +181,7 @@ function buretteswitch() {
       if (currentheight == 50) {
         
        
-        clearInterval(imgobjpdrop);
+        clearInterval(imgobjb);
   
       }
       else {
@@ -189,7 +190,9 @@ function buretteswitch() {
   
       }
     }*/
-  ctxgstb1 = canvasstb.getContext("2d");
+
+ var canvasstb1 = document.getElementById("canvasburetteempty");
+  var ctxgstb1 = canvasstb1.getContext("2d");
   var posY1 = 0;
   var speed1 = 0.01;
 
@@ -268,21 +271,25 @@ function buretteswitchstop() {
   document.getElementById("pdrop").style.display = "none";
   document.getElementById("conicalflask").removeAttribute("onclick", "conicalflaskstir()");
   document.getElementById("conicalflask").setAttribute("onclick", "conicalflaskmovetoph()");
-  document.getElementById("buretteswitch").setAttribute("onclick", "buretteswitch()");
+  //document.getElementById("buretteswitch").setAttribute("onclick", "buretteswitch()");
 }
 var currentIndex = 0;
 var imgobjcphprobe = null;
-
+var txtph= null;
 function phprobedown() {
-  var currentltop = 45;
+  var currentltop = 30;
+  var currentltoptxt = 36;
   document.getElementById("phprobe").style.display = "block";
   var imagecprobe = document.getElementById("phprobe");
   clearInterval(imgobjcphprobe);
   imgobjcphprobe = setInterval(frame, 140);
 
+  var textph = document.getElementById("phvaluetxt");
+  clearInterval(txtph);
+  txtph = setInterval(frametxt, 140);
 
   function frame() {
-    if (currentltop == 65) {
+    if (currentltop == 51) {
       // document.getElementById("phprobe").removeAttribute("onclick", "phprobedown()");
       document.getElementById("phprobe").setAttribute("onclick", "phprobemoveup()");
       document.getElementById("conicalflaskph").removeAttribute("onclick", "conicalflaskmain()");
@@ -290,9 +297,9 @@ function phprobedown() {
       currentIndex = currentIndex + 1;
       //(currentIndex + 1) % valuesArray.length
 
-      if (currentIndex == 3) {
+      if (currentIndex >= 3) {
         $('#alertModal').modal('show');
-        $('.modal-body').text('With addition of NaOH, pH is measured upto 14. To view the plot, click on the "Data Analysis" button.');
+        $('.modal-body').text('With addition of NaOH, pH is measured upto 12. To view the plot, click on the "Data Analysis" button.');
         document.getElementById("step41").disabled = false;
         document.getElementById("step42").disabled = false;
         document.getElementById("step43").disabled = false;
@@ -310,6 +317,21 @@ function phprobedown() {
   }
 
 
+  function frametxt() {
+    if (currentltoptxt == 57) {
+     
+      clearInterval(txtph);
+
+
+    }
+    else {
+      currentltoptxt++;
+      textph.style.top = currentltoptxt + '%';
+
+    }
+  }
+
+
 
 }
 
@@ -317,15 +339,21 @@ function phprobedown() {
 
 
 var imgobjcphprobeup = null;
+var txtphup=null;
 function phprobemoveup() {
-  var currentltop = 65;
+  var currentltop = 51;
+  var currentltoptxt = 57;
   document.getElementById("phprobe").style.display = "block";
   var imagecprobeup = document.getElementById("phprobe");
   clearInterval(imgobjcphprobeup);
   imgobjcphprobeup = setInterval(frame, 140);
 
+  var textphup = document.getElementById("phvaluetxt");
+  clearInterval(txtphup);
+  txtphup = setInterval(frametxtup, 140);
+
   function frame() {
-    if (currentltop == 45) {
+    if (currentltop == 30) {
 
       //document.getElementById("phprobe").setAttribute("onclick", "phprobedown()");
       document.getElementById("conicalflaskph").setAttribute("onclick", "conicalflaskmain()");
@@ -340,16 +368,31 @@ function phprobemoveup() {
     }
   }
 
-  
+
+  function frametxtup() {
+    if (currentltoptxt == 36) {
+
+      
+      clearInterval(txtphup);
+
+    }
+    else {
+      currentltoptxt--;
+      textphup.style.top = currentltoptxt + '%';
+
+    }
+  }
+
+
 }
 
 function conicalflaskmain() {
-  document.getElementById("buretteswitch").setAttribute("onclick", "buretteswitch()");
+  document.getElementById("buretteswitch").removeAttribute("onclick", "buretteswitch()");
   $('#alertModal').modal('show');
-  $('.modal-body').text('Click on the stopcock of the burette.');
+  $('.modal-body').text('Click on the titration button. ');
   document.getElementById("conicalflaskph").style.display = "none";
   document.getElementById("conicalflask").style.display = "block";
-  //  document.getElementById("step3").disabled = false;
+  document.getElementById("step3").disabled = false;
   document.getElementById("conicalflaskph").removeAttribute("onclick", "conicalflaskmain()");
   document.getElementById("conicalflask").removeAttribute("onclick", "conicalflaskmovetoph()");
   document.getElementById("phprobe").removeAttribute("onclick", "phprobedown()");
@@ -401,22 +444,22 @@ function dataanalysisgraph1() {
       type: "spline",
 
       dataPoints: datapoints
-    /*}
-    {
-      type: "spline",
-      lineColor: "white",
-      dataPoints: [
-        { x: 0, y: 2.34, indexLabel: "pK1", indexLabelFontColor: "orangered" },
-
-        { x: 0, y: 9.60, indexLabel: "pK2", indexLabelFontColor: "orangered" },
-      ]*/
+      /*}
+      {
+        type: "spline",
+        lineColor: "white",
+        dataPoints: [
+          { x: 0, y: 2.34, indexLabel: "pK1", indexLabelFontColor: "orangered" },
+  
+          { x: 0, y: 9.60, indexLabel: "pK2", indexLabelFontColor: "orangered" },
+        ]*/
 
     }]
   });
   chart.render();
-  document.getElementById("exportChart").addEventListener("click", function () {
-    chart.exportChart({ format: "jpg" });
-  });
+  //document.getElementById("exportChart").addEventListener("click", function () {
+   // chart.exportChart({ format: "jpg" });
+  //});
 }
 
 function dataanalysisgraph2() {
@@ -461,9 +504,9 @@ function dataanalysisgraph2() {
     }]
   });
   chart.render();
-  document.getElementById("exportChart").addEventListener("click", function () {
-    chart.exportChart({ format: "jpg" });
-  });
+  //document.getElementById("exportChart").addEventListener("click", function () {
+   // chart.exportChart({ format: "jpg" });
+  //});
 }
 
 function dataanalysisgraph3() {
@@ -508,9 +551,9 @@ function dataanalysisgraph3() {
     }]
   });
   chart.render();
-  document.getElementById("exportChart").addEventListener("click", function () {
-    chart.exportChart({ format: "jpg" });
-  });
+ // document.getElementById("exportChart").addEventListener("click", function () {
+   // chart.exportChart({ format: "jpg" });
+  //});
 }
 
 window.onload = function () {
@@ -546,6 +589,9 @@ window.onload = function () {
   chart.render();
 }
 
+function tableshow(){
+  scrollBy(0,1000);
+}
 
 /***********************************************************    pI check 1  **************************************************************************/
 function check1() {
