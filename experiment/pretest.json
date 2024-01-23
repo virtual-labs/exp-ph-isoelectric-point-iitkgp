@@ -2,37 +2,124 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1. Which of the following configurations is commonly seen in the case of the amino acids that form human proteins?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "L",
+        "b": "D",
+        "c": "Can be either L or D",
+        "d": "Can be either R or S"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+      
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "2. Amino acids exist as ______ at neutral pH",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Cations",
+        "b": "Anions",
+        "c": "Neutral",
+        "d": "Zwitterions"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Zwitterions are ______ at neutral pH.",
+      "answers": {
+        "a": "Uncharged",
+        "b": "Positively charged",
+        "c": "Negatively charged",
+        "d": "Charged, but net charge is zero"
       },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. The titration curve of glycine represents ______.",
+      "answers": {
+        "a": "Two buffering regions",
+        "b": "Two pKa values",
+        "c": "Both a and b",
+        "d": "One buffering region at neutral pH"
+      },
+      
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. Which of the following amino acids exist as negatively charged ions at neutral pH?",
+      "answers": {
+        "a": "Histidine",
+        "b": "Lysine",
+        "c": "Glutamic acid",
+        "d": "Proline"
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "6. Which of the following amino acids exist as positively charged ions at neutral pH?",
+      "answers": {
+        "a": "Histidine",
+        "b": "Lysine",
+        "c": "Glutamic acid",
+        "d": "Proline"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+
+    {
+      "question": "7. Which of the following properties of a protein is least likely to be affected by changes in pH?",
+      "answers": {
+        "a": "Primary structure",
+        "b": "Secondary structure",
+        "c": "Tertiary structure",
+        "d": "Net charge"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "8. The dissociation constant of H2O at 25° C is ______.",
+      "answers": {
+        "a": "<p>10<sup>7</sup></p>",
+        "b": "10<sup>-7</sup>",
+        "c": "10<sup>14</sup>",
+        "d": "10<sup>-14</sup>"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "9. The naming is commonly done in the following manner",
+      "answers": {
+        "a": "pKa1 – COOH, pKa2 – NH2, pKa3 – R group",
+        "b": "pKa1 – NH2, pKa2 – R group, pKa3 – COOH",
+        "c": "pKa1 – NH2, pKa2 – COOH, pKa3 – R group",
+        "d": "Both a and b"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "10. Which of the following leads to the neutral charge of an amino acid?",
+      "answers": {
+        "a": "Deprotonation of COOH and protonation of NH2",
+        "b": "Deprotonation of NH3<sup>+</sup> and protonation of COO<sup>-</sup>",
+        "c": "Protonation of NH<sub>3</sub><sup>+<sup> and deprotonation of COO<sup>-</sup>",
+        "d": "Both a and b"
+      },
+      
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
   ]
