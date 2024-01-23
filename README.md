@@ -12,7 +12,7 @@
 
 ### About the Experiment 
 
-Fill a brief description of this experiment here
+To determine the isoelectric point of amino acids and peptides using a titration experiment.
 
 ### Subject Matter Experts
 
