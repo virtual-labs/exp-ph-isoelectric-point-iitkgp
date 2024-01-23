@@ -89,7 +89,7 @@
     {
       "question": "8. The dissociation constant of H2O at 25° C is ______.",
       "answers": {
-        "a": "<p>10<sup>7</sup></p>",
+        "a": "10<sup>7</sup>",
         "b": "10<sup>-7</sup>",
         "c": "10<sup>14</sup>",
         "d": "10<sup>-14</sup>"
@@ -101,9 +101,9 @@
     {
       "question": "9. The naming is commonly done in the following manner",
       "answers": {
-        "a": "pKa1 – COOH, pKa2 – NH2, pKa3 – R group",
-        "b": "pKa1 – NH2, pKa2 – R group, pKa3 – COOH",
-        "c": "pKa1 – NH2, pKa2 – COOH, pKa3 – R group",
+        "a": "pK<sub>a1</sub> – COOH, pK<sub>a2</sub> – NH<sub>2</sub>, pK<sub>a3</sub> – R group",
+        "b": "pK<sub>a1</sub> – NH<sub>2</sub>, pK<sub>a2</sub> – R group, pK<sub>a3</sub> – COOH",
+        "c": "pK<sub>a1</sub> – NH<sub>2</sub>, pK<sub>a2</sub> – COOH, pK<sub>a3</sub> – R group",
         "d": "Both a and b"
       },
       
@@ -115,7 +115,7 @@
       "answers": {
         "a": "Deprotonation of COOH and protonation of NH2",
         "b": "Deprotonation of NH3<sup>+</sup> and protonation of COO<sup>-</sup>",
-        "c": "Protonation of NH<sub>3</sub><sup>+<sup> and deprotonation of COO<sup>-</sup>",
+        "c": "Protonation of NH<sub>3</sub><sup>+</sup> and deprotonation of COO<sup>-</sup>",
         "d": "Both a and b"
       },
       
