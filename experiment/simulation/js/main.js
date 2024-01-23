@@ -1183,3 +1183,157 @@ function showans3() {
 
   }
 }
+
+
+/*****************************************  Part B ****************************************************/
+function checkb1(){
+
+  var usrinpnc1= document.getElementById("netcharge1").value;
+  var usrinpnc2= document.getElementById("netcharge2").value;
+  var usrinpnc3= document.getElementById("netcharge3").value;
+  var usrinpnc4= document.getElementById("netcharge4").value;
+  var usrinpnc5= document.getElementById("netcharge5").value;
+
+  if(usrinpnc1 == ""){
+    $('#alertModal').modal('show');
+    $('.modal-body').html('Input box cannot be empty');
+    document.getElementById("netcharge1").style.border="2px solid blue";
+   }
+   else if(usrinpnc1 == "+2"){
+    document.getElementById("netcharge1").value= "+2";
+    document.getElementById("netcharge1").style.border="2px solid green";
+    }
+  
+   else{
+    document.getElementById("netcharge1").style.border="2px solid red";
+    document.getElementById("showsteppb1").disabled=false;
+   }
+
+   if(usrinpnc2 == ""){
+    $('#alertModal').modal('show');
+    $('.modal-body').html('Input box cannot be empty');
+    document.getElementById("netcharge2").style.border="2px solid blue";
+   }
+   else if(usrinpnc2 == "+1"){
+    document.getElementById("netcharge2").value="+1";
+    document.getElementById("netcharge2").style.border="2px solid green";
+    }
+  
+   else{
+    
+    document.getElementById("netcharge2").style.border="2px solid red";
+    document.getElementById("showsteppb1").disabled=false;
+   }
+
+
+   if(usrinpnc3 == ""){
+    $('#alertModal').modal('show');
+    $('.modal-body').html('Input box cannot be empty');
+    document.getElementById("netcharge3").style.border="2px solid blue";
+   }
+   else if(usrinpnc3 == "0"){
+    document.getElementById("netcharge3").value="0";
+    document.getElementById("netcharge3").style.border="2px solid green";
+    }
+  
+   else{
+    
+    document.getElementById("netcharge3").style.border="2px solid red";
+    document.getElementById("showsteppb1").disabled=false;
+   }
+
+  
+   if(usrinpnc4 == ""){
+    $('#alertModal').modal('show');
+    $('.modal-body').html('Input box cannot be empty');
+    document.getElementById("netcharge4").style.border="2px solid blue";
+   }
+   else if(usrinpnc4 == "-1"){
+    document.getElementById("netcharge4").value="-1";
+    document.getElementById("netcharge4").style.border="2px solid green";
+    }
+  
+   else{
+    
+    document.getElementById("netcharge4").style.border="2px solid red";
+    document.getElementById("showsteppb1").disabled=false;
+   }
+
+   if(usrinpnc5 == ""){
+    $('#alertModal').modal('show');
+    $('.modal-body').html('Input box cannot be empty');
+    document.getElementById("netcharge5").style.border="2px solid blue";
+   }
+   else if(usrinpnc5 == "-2"){
+    document.getElementById("netcharge5").value="-2";
+    document.getElementById("netcharge5").style.border="2px solid green";
+    }
+  
+   else{
+    
+    document.getElementById("netcharge5").style.border="2px solid red";
+    document.getElementById("showsteppb1").disabled=false;
+   }
+
+
+}
+
+function showansb1(){
+  document.getElementById("netcharge1").value= "+2";
+  document.getElementById("netcharge2").value="+1";
+  document.getElementById("netcharge3").value="0";
+  document.getElementById("netcharge4").value="-1";
+  document.getElementById("netcharge5").value="-2";
+
+
+  document.getElementById("netcharge1").style.border="2px solid green";
+  document.getElementById("netcharge2").style.border="2px solid green";
+  document.getElementById("netcharge3").style.border="2px solid green";
+  document.getElementById("netcharge4").style.border="2px solid green";
+  document.getElementById("netcharge5").style.border="2px solid green";
+
+}
+
+
+function checkb2(){
+
+ var usrinpvalue1= document.getElementById("inputpib1").value;
+ var usrinpvalue2= document.getElementById("inputpib2").value;
+
+ if(usrinpvalue1 == ""){
+  $('#alertModal').modal('show');
+  $('.modal-body').html('Input box cannot be empty');
+  document.getElementById("inputpib1").style.border="2px solid blue";
+ }
+ else if(usrinpvalue1 == "4.8"){
+  document.getElementById("inputpib1").value=4.8;
+  document.getElementById("inputpib1").style.border="2px solid green";
+  
+ }
+
+ else{
+  
+  document.getElementById("inputpib1").style.border="2px solid red";
+  document.getElementById("showsteppb2").disabled=false;
+ }
+
+ if(usrinpvalue2 == ""){
+  $('#alertModal').modal('show');
+  $('.modal-body').html('Input box cannot be empty');
+  document.getElementById("inputpib2").style.border="2px solid blue";
+ }
+
+ else if(usrinpvalue2 == "9"){
+  document.getElementById("inputpib2").value=9;
+  document.getElementById("inputpib2").style.border="2px solid green";
+ }
+ else{
+  
+  document.getElementById("inputpib2").style.border="2px solid red";
+  document.getElementById("showsteppb2").disabled=false;
+ }
+}
+
+function showansb2(){
+  document.getElementById("partbans2").style.display="block";
+}
