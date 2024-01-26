@@ -18,7 +18,7 @@
 
 
 <div align="center">
-<img src="images/Fig9.png" class="img-fluid">
+<img src="images/9a2.png" class="img-fluid">
 <p>Titration curve for a triprotic acidic amino acid (Aspartic acid)</p>
 </div>
 
