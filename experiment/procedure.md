@@ -9,10 +9,26 @@
 **Step 6:** Similarly, do carry out the titration of arginine (or any other triprotic acid) and plot the titration curve.  
 **Step 7:** Determine the pKa and pI values from the plots and compare them with the standard values.  
 
+<div align="center">
+<img src="images/fig8.png" class="img-fluid">
+<img src="images/fig8b.png" class="img-fluid">
+<p>Titration curve for a diprotic amino acid (Alanine)</p>
+</div>
+
+<div align="center">
+<img src="images/fig8b.png" class="img-fluid">
+</div>
+
+<div align="center">
+<img src="images/fig9.png" class="img-fluid">
+<p>Titration curve for a triprotic acidic amino acid (Aspartic acid)</p>
+</div>
 
 **PART B: Titration of amino acids to determine the isoelectric point.**
 
 The same procedure can be carried out to determine the isoelectric point of peptides.
+
+
 
 
 

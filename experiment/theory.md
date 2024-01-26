@@ -15,6 +15,11 @@ the media.
 
 Based on the properties of the side chain, the amino acids are classified into various types (Figure
 2).
+<div align="center">
+<img src="images/fig2new.png" class="img-fluid">
+<p>Figure 2: Structure of 20 common naturally occurring amino acids</p>
+</div>
+
 1. Non-polar side-chain – These amino acids do not participate in intermolecular H-bonding with
 their side chain (e.g. Alanine).
 2. Polar uncharged side-chain – These amino acids have non-ionizable side chains that participate
@@ -43,6 +48,7 @@ Glycine (G)|H|2.34|9.60|-|5.97|Neutral
 
 
 **How is the isoelectric point of an amino acid determined?**
+
 According to Henderson Hesselbalch equation (Figure 4), the pH equals pKa (the quantitative measure of the strength of an acid) when the concentration of the acid (HA) is the same as that of its conjugate base (A-). Lower pKa values mean a stronger acid. The pKa is the pH at the mid-point of the flat buffering zones in a titration plot (pH vs volume of titrant). Table 1 lists out the pKa and pI values of each amino acid along with their properties.
 
 <div align="center">
@@ -78,12 +84,11 @@ Since zero net charge lies between pH of 2.19 and 3.86,
 Isoelectric point = (2.19 + 3.86)/2 = 3.03
 
 
-<div align="center">
-<img src="images/fig2new.png" class="img-fluid">
-<p>Figure 2: Structure of 20 common naturally occurring amino acids</p>
-</div>
+
 
 **What is the biological and physiological significance of the amino acid titration curves?**
+
 Understanding the titration curves of amino acids reaches far and wide within the realm of biology and medicine. The knowledge of pH-dependent charge of the constituent amino acids of a protein allows researchers to predict the folding, stability, and interaction of proteins, and unravel deeper insights into enzyme mechanisms.
+  
 
 From a clinical perspective, understanding the impact of pH alternations on proteins can influence diagnostic and treatment strategies. A notable example is the disease metabolic acidosis, where a lower blood pH could potentially affect the structure and function of essential proteins. These studies find applications in nutrition and hereditary diseases as they throw light on why some mutations cause disease and others do not or on developing therapeutic strategies that alter protein interactions.
