@@ -11,16 +11,14 @@
 
 <div align="center">
 <img src="images/fig8.png" class="img-fluid">
-<img src="images/fig8b.png" class="img-fluid">
+<img src="images/Fig8b.png" class="img-fluid">
 <p>Titration curve for a diprotic amino acid (Alanine)</p>
 </div>
 
-<div align="center">
-<img src="images/fig8b.png" class="img-fluid">
-</div>
+
 
 <div align="center">
-<img src="images/fig9.png" class="img-fluid">
+<img src="images/Fig9.png" class="img-fluid">
 <p>Titration curve for a triprotic acidic amino acid (Aspartic acid)</p>
 </div>
 
