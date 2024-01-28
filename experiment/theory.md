@@ -42,7 +42,7 @@ and acidic carboxylic group. The acid-base reactions are the following:
 1. Deprotonation (loss of H<sup>+</sup>) of COOH group as pH increases.
 2. Protonation (gain of H<sup>+</sup>) of NH<sub>2</sub> to give NH<sub>3</sub><sup>+</sup> as pH decreases.
 
-Amino Acid | Side Chain | pK<sub>1</sub> <br> (&alpha;- COOH) | pK<sub>a2</sub> <br>(&alpha;-NH<sub>3</sub> <sup>+</sup>) | pK<sub>R</sub><br> (R-group)| pI| Properties |
+Amino Acid | Side Chain | pK<sub>a1</sub> <br> (&alpha;- COOH) | pK<sub>a2</sub> <br>(&alpha;-NH <sub>3</sub><sup>+</sup>) | pK<sub>R</sub><br> (R-group)| pI| Properties |
 :--|:--|:--|:--|:--|:--|:--|
 Glycine (G)|H|2.34|9.60|-|5.97|Neutral
 Alanine (A) | CH<sub>3</sub> | 2.34 | 9.69 | - | 6.01 | Neutral
@@ -72,7 +72,7 @@ chain properties.</p>
 
 **How is the isoelectric point of an amino acid determined?**
 
-According to Henderson Hesselbalch equation (Figure 4), the pH equals pKa (the quantitative measure of the strength of an acid) when the concentration of the acid (HA) is the same as that of its conjugate base (A-). Lower pKa values mean a stronger acid. The pKa is the pH at the mid-point of the flat buffering zones in a titration plot (pH vs volume of titrant). Table 1 lists out the pKa and pI values of each amino acid along with their properties.
+According to Henderson Hesselbalch equation (Figure 4), the pH equals pK<sub>a</sub> (the quantitative measure of the strength of an acid) when the concentration of the acid (HA) is the same as that of its conjugate base (A-). Lower pK<sub>a</sub> values mean a stronger acid. The pK<sub>a</sub> is the pH at the mid-point of the flat buffering zones in a titration plot (pH vs volume of titrant). Table 1 lists out the pK<sub>a</sub> and pI values of each amino acid along with their properties.
 
 <div align="center">
 <img src="images/fig4.png" class="img-fluid">
@@ -84,24 +84,26 @@ According to Henderson Hesselbalch equation (Figure 4), the pH equals pKa (the q
 <p>Figure 5: The pI lies between the points A and B where the concentration of an acid is the same as that of its conjugate base</p>
 </div>
 
-To calculate the pI of a neutral amino acid, an average of the pKa1 and pKa2 values are taken. However, to find the pI of a triprotic acid, the average of the pKa values that are closest to the pH at which the amino acid assumes zero net charge is used (Figure 6).
+To calculate the pI of a neutral amino acid, an average of the pKa1 and pKa2 values are taken. However, to find the pI of a triprotic acid, the average of the pK<sub>a</sub> values that are closest to the pH at which the amino acid assumes zero net charge is used (Figure 6).
 
 <div align="center">
 <img src="images/fig6.png" class="img-fluid">
 <p>Figure 6: Calculation of the isoelectric point of amino acids</p>
 </div>
 
-Similarly, the isoelectric point of a peptide can be determined in this way. Let us take the example of a tripeptide Asp-Gly-Glu. The pK<sub>a</sub> values are listed below. As the pH increases from 1 to 10, the tripeptide transitions from net positive to negative charge. At pH above 2.2, net charge is zero. Therefore, the major contributors of the isoelectric point are the pK<sub>a</sub> values closest to pH 2.2 i.e. pK<sub>a</sub> 3.86 and 2.19. Therefore pI is calculated as an average of these 2 pK<sub>a</sub> values.
+**How is the isoelectric point of a peptide is determined?**
+
+The isoelectric point of a peptide can be determined in a similar fashion as described above. Let us take the example of a tripeptide Asp-Gly-Glu. The pK<sub>a</sub> values are listed below. As the pH increases from 1 to 10, the tripeptide transitions from net positive to negative charge. At pH above 2.2, net charge is zero. Therefore, the major contributors of the isoelectric point are the pK<sub>a</sub> values closest to pH 2.2 i.e. pK<sub>a</sub> 3.86 and 2.19. Therefore pI is calculated as an average of these 2 pK<sub>a</sub> values.
 
 
 <div align="center">
-<img src="images/.png" class="img-fluid">
+<img src="images/fig7.png" class="img-fluid">
 
 </div>
-
-pH | 1 | 2.5 | 4| 5| 10| 
+pK<sub>a</sub>| 2.19 | 3.86 | 4.25 | 9.82 | |
 :--|:--|:--|:--|:--|:--|
-Net Charge|+1|0|9.60|-1|-2|-3
+pH | 1 | 2.5 | 4 | 5 | 10| 
+Net Charge|+1|0|-1|-2|-3
 
 Since zero net charge lies between pH of 2.19 and 3.86,
 Isoelectric point = (2.19 + 3.86)/2 = 3.03

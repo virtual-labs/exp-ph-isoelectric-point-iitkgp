@@ -62,6 +62,7 @@ function switchburette() {
     }
     requestAnimationFrame(loop);
     document.getElementById("step2").disabled = false;
+    document.getElementById("checkph").disabled = false;
     document.getElementById("step1").disabled = true;
     document.getElementById("aminoacidsel").disabled = false;
   }
@@ -100,6 +101,25 @@ function showcon() {
     document.getElementById("pi2").style.display = "block";
     document.getElementById("pi3").style.display = "none";
     document.getElementById("inputpiresult").value = aminoacid.options[aminoacid.selectedIndex].text;
+   const conicalFlaskph = document.getElementById('conicalflaskph');
+    const currentTitleph = conicalFlaskph.getAttribute('title');
+    const newTitleph = currentTitleph === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text ;
+    conicalFlaskph.setAttribute('title', newTitleph);
+    // Trigger Bootstrap tooltip update (if you're using Bootstrap)
+    $(conicalFlaskph).tooltip('dispose').tooltip({
+      placement: 'right'
+    }).tooltip('show');
+
+
+    const conicalFlask = document.getElementById('conicalflask');
+    const currentTitle = conicalFlask.getAttribute('title');
+    const newTitle = currentTitle === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text ;
+    conicalFlask.setAttribute('title', newTitle);
+    // Trigger Bootstrap tooltip update (if you're using Bootstrap)
+    $(conicalFlask).tooltip('dispose').tooltip({
+      placement: 'right'
+    }).tooltip('show');
+    
   }
   else if ((aminoacid.options[aminoacid.selectedIndex].value == 17) || (aminoacid.options[aminoacid.selectedIndex].value == 18)) {
     window.scrollBy(0, 500);
@@ -115,6 +135,22 @@ function showcon() {
     document.getElementById("pi2").style.display = "none";
     document.getElementById("inputpiresult").value = aminoacid.options[aminoacid.selectedIndex].text;
 
+    const conicalFlaskph = document.getElementById('conicalflaskph');
+    const currentTitleph = conicalFlaskph.getAttribute('title');
+    const newTitleph = currentTitleph === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text ;
+    conicalFlaskph.setAttribute('title', newTitleph);
+    // Trigger Bootstrap tooltip update (if you're using Bootstrap)
+    $(conicalFlaskph).tooltip('dispose').tooltip({
+      placement: 'right'
+    }).tooltip('show');
+
+    const conicalFlask = document.getElementById('conicalflask');
+    const currentTitle = conicalFlask.getAttribute('title');
+    const newTitle = currentTitle === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text ;
+    conicalFlask.setAttribute('title', newTitle);
+    // Trigger Bootstrap tooltip update (if you're using Bootstrap)
+    $(conicalFlask).tooltip('update'); 
+
   }
   else {
     valuesArray = [1.5, 1.64, 1.81, 1.98, 2.15, 2.31, 2.48, 2.67, 2.9, 3.23, 4.22, 8.58, 8.99, 9.24, 9.46, 9.82, 10.03, 10.29, 10.69, 11.6, 12.05, 12.36, 12.45];
@@ -129,8 +165,29 @@ function showcon() {
     document.getElementById("pi2").style.display = "none";
     document.getElementById("pi3").style.display = "none";
     document.getElementById("inputpiresult").value = aminoacid.options[aminoacid.selectedIndex].text;
+
+    const conicalFlaskph = document.getElementById('conicalflaskph');
+    const currentTitleph = conicalFlaskph.getAttribute('title');
+    const newTitleph = currentTitleph === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text ;
+    conicalFlaskph.setAttribute('title', newTitleph);
+    // Trigger Bootstrap tooltip update (if you're using Bootstrap)
+    $(conicalFlaskph).tooltip('dispose').tooltip({
+      placement: 'right'
+    }).tooltip('show');
+    const conicalFlask = document.getElementById('conicalflask');
+    const currentTitle = conicalFlask.getAttribute('title');
+    const newTitle = currentTitle === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text ;
+    conicalFlask.setAttribute('title', newTitle);
+    // Trigger Bootstrap tooltip update (if you're using Bootstrap)
+    $(conicalFlask).tooltip('update');
   }
 
+}
+
+function checkpH(){
+  document.getElementById("phprobe").style.display = "block";
+  document.getElementById("phvaluetxt").style.display = "block";
+  document.getElementById("phvaluetxt").value="0";
 }
 
 function titration() {
@@ -577,14 +634,12 @@ window.onload = function () {
       interval: 2,
 
     },
-
     data: [{
-      type: "spline",
+      type: "line",
 
-      dataPoints: [
-
-      ]
     }]
+    
+    
   });
   chart.render();
 }
@@ -1305,8 +1360,8 @@ function checkb2(){
   $('.modal-body').html('Input box cannot be empty');
   document.getElementById("inputpib1").style.border="2px solid blue";
  }
- else if(usrinpvalue1 == "4.8"){
-  document.getElementById("inputpib1").value=4.8;
+ else if(usrinpvalue1 == "9.6"){
+  document.getElementById("inputpib1").value=9.6;
   document.getElementById("inputpib1").style.border="2px solid green";
   
  }
@@ -1323,8 +1378,8 @@ function checkb2(){
   document.getElementById("inputpib2").style.border="2px solid blue";
  }
 
- else if(usrinpvalue2 == "9"){
-  document.getElementById("inputpib2").value=9;
+ else if(usrinpvalue2 == "3.65"){
+  document.getElementById("inputpib2").value=3.65;
   document.getElementById("inputpib2").style.border="2px solid green";
  }
  else{
