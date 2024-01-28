@@ -111,7 +111,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "10. Calculate the pI of the tripeptide Asp-Gly-Glu. <br> Hint: Firstly, find out the net charge at pH = 0, 2.5, 4, 5 and 10 respectively. Then use the pKa values corresponding to the pH at which net charge of the tripeptide is zero to calculate the pI. <br> <p><img src=\"images/q10.png\"></p>",
+      "question": "10. Calculate the pI of the tripeptide Asp-Gly-Glu. <br> Hint: Firstly, find out the net charge at pH = 0, 2.5, 4, 5 and 10 respectively. Then use the pKa values corresponding to the pH at which net charge of the tripeptide is zero to calculate the pI. <br> <p><img src=\"images/fig7.png\"></p>",
       "answers": {
         "a": "3.03",
         "b": "4.05",

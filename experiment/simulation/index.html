@@ -46,7 +46,7 @@ Developer: Prakriti Dhang
 											</li>
 											<li>Select any amino acid from the dropdown. Next, click on "Show Conical
 												Flask" button.</li>
-											<li>Click on the the pH meter image to immerse it in the conical flask for
+											<li>Check "Show pH meter" checkbox to check pH of amino acid. Click on the the pH meter image to immerse it in the conical flask for
 												pH measurement. Click on the pH meter image to remove it from the
 												conical flask.</li>
 											<li>Click on the conical flask to position it beneath the burette. </li>
@@ -66,21 +66,21 @@ Developer: Prakriti Dhang
 												values of amino acid" checkbox.</li>
 
 											<li>Calculate and enter the pI value in the input box. Consider
-												pK<sub>1</sub> and
-												pK<sub>2</sub> values of chosen amino acid from the table . Next click
+												pK<sub>a1</sub> and
+												pK<sub>a2</sub> values of chosen amino acid from the table . Next click
 												on "Check" button to display a message
 												indicating correctness. To reveal the correct answer, click on the "Show
 												Answer" button.
 											</li>
 											<li>For basic amino acids consider
-												pK<sub>2</sub> and pK<sub>R</sub> values of chosen amino acid from the
+												pK<sub>a2</sub> and pK<sub>R</sub> values of chosen amino acid from the
 												table. Calculate and enter pI value in the input box. Next click on
 												"Check" button to
 												display a message indicating correctness. To reveal the correct answer,
 												click on the
 												"Show Answer" button.</li>
 											<li>For acidic amino acids consider
-												pK<sub>1</sub> and pK<sub>R</sub> values of chosen amino acid from the
+												pK<sub>a1</sub> and pK<sub>R</sub> values of chosen amino acid from the
 												table. Calculate and enter pI value in the input box. Next click on
 												"Check" button to
 												display a message indicating correctness. To reveal the correct answer,
@@ -162,10 +162,19 @@ Developer: Prakriti Dhang
 
 														</select>
 													</div>
+													
 													<button id="step2" type="button"
 														class="btn btn-info  border border-1  rounded-3 fs-6 m-1"
 														style="cursor: pointer; " onclick="showcon()" disabled>Show
 														Conical Flask</button>
+
+														<div class="form-check form-check-inline">
+															<input class="custom-check-input" type="checkbox" value=""
+																id="checkph"   onclick="checkpH()" disabled/>
+															<label class="custom-check-label" for="Check1">
+																Show pH meter
+															</label>
+														</div>
 												</td>
 
 											</tr>
@@ -214,7 +223,7 @@ Developer: Prakriti Dhang
 															data-bs-target="#collapseExample2" aria-expanded="false"
 															aria-controls="collapseExample" />
 														<label class="custom-check-label" for="Check1">
-															Table to get pK<sub>1</sub>,pK<sub>2</sub>, and
+															Table to get pK<sub>a1</sub>,pK<sub>a2</sub>, and
 															pK<sub>R</sub> values of amino acid
 														</label>
 													</div>
@@ -243,22 +252,21 @@ Developer: Prakriti Dhang
 										<!--img src="./images/table.png" id="table" data-toggle="tooltip"
 							data-placement="right" title="Table"-->
 
-										<img src="./images/conicalflask.png" id="conicalflask" data-toggle="tooltip"
-											data-placement="right" title="Conical Flask with 1 M of amino acid ">
-										<input type="input" class="form-control fw-bold" value="0"
+										<img src="./images/conicalflask.png" id="conicalflask" >
+										<input type="input" class="form-control fw-bold" value=""
 											style="text-align: center;  font-size: 9pt;" id="phvaluetxt"
 											data-toggle="tooltip" data-placement="right" title="Measured pH value"
-											readonly />
+											readonly  style="display: none;"/>
 										<img src="./images/pH_meter.png" id="phprobe" data-toggle="tooltip"
-											data-placement="right" title="pH meter">
-										<img src="./images/conicalflask.png" id="conicalflaskph" data-toggle="tooltip"
-											data-placement="right" title="Conical Flask with 1 M of amino acid">
+											data-placement="right" title="pH meter" style="display: none;">
+										<img src="./images/conicalflask.png" id="conicalflaskph"  >
 										<img src="./images/probdrop.png" id="pdrop">
 										<canvas width="10px" height="20px" id="canvasburette"
 											style="border: 0px solid black;" data-toggle="tooltip"
 											data-placement="right" title="1M of NaOH"></canvas>
 										<canvas width="10px" height="20px" id="canvasburetteempty"
 											style="border: 0px solid black;"></canvas>
+
 										<canvas width="10px" height="20px" id="canvasburettelabel"
 											style="border: 0px solid black;" data-toggle="tooltip"
 											data-placement="right" title="Burette"></canvas>
@@ -312,7 +320,7 @@ Developer: Prakriti Dhang
 									<button class="btn btn-info col-md-12 fs-5" type="button" data-bs-toggle="collapse"
 										data-bs-target="#collapseExample2" aria-expanded="false"
 										aria-controls="collapseExample">
-										Table showing pK<sub>1</sub>, pK<sub>2</sub>, and pK<sub>R</sub> values of amino
+										Table showing pK<sub>a1</sub>, pK<sub>a2</sub>, and pK<sub>R</sub> values of amino
 										acid
 									</button>
 
@@ -325,7 +333,7 @@ Developer: Prakriti Dhang
 															<th scope="col">Amino Acid</th>
 															<th>Side Chain</th>
 															<th scope="col">pK<sub>a1</sub> <br> (&alpha;- COOH)</th>
-															<th scope="col">pK<sub>a2</sub> <br>(&alpha;-NH<sub>3</sub> <sup>+</sup>)</th>
+															<th scope="col">pK<sub>a2</sub> <br>(&alpha;-NH<sub>3</sub></sub> <sup>+</sup>)</th>
 															<th scope="col">pK<sub>R</sub><br> (R-group)</th>
 															<!-- <th scope="col">pI</th> -->
 														</tr>
@@ -690,7 +698,7 @@ Developer: Prakriti Dhang
 										<div class="col-md-12">
 											<div class="card card-body">
 					<div class="img-container">
-					<img src="./images/peptide.png" id="peptide">
+					<img src="./images/Simulation_peptide.png" id="peptide" class="img-fluid">
 				</div>
 				</div>
 				</div>
@@ -706,7 +714,7 @@ Developer: Prakriti Dhang
 									<tr>
 										<td style="text-align: center;" class="fs-5 fw-bold">pH</td>
 										<td style="text-align: center;" class="fs-5 fw-bold">1</td>
-										<td style="text-align: center;" class="fs-5 fw-bold">3</td>
+										<td style="text-align: center;" class="fs-5 fw-bold">2.5</td>
 										<td style="text-align: center;" class="fs-5 fw-bold">7</td>
 										<td style="text-align: center;" class="fs-5 fw-bold">10</td>
 										<td style="text-align: center;" class="fs-5 fw-bold">13</td>
@@ -820,7 +828,7 @@ Developer: Prakriti Dhang
 						</span>
 					</div>
 					<div class="col-auto">
-						<input type="input" id="inputpibans1" placeholder=" " value="4.8"  class="form-control" readonly>
+						<input type="input" id="inputpibans1" placeholder=" " value="9.6"  class="form-control" readonly>
 					</div>
 					<div class="col-auto">
 						<span class="form-text fs-5">
@@ -828,7 +836,7 @@ Developer: Prakriti Dhang
 						</span>
 					</div>
 					<div class="col-auto">
-						<input type="input" id="inputpibans2" placeholder=" " value="9"  class="form-control" readonly>
+						<input type="input" id="inputpibans2" placeholder=" " value="3.65"  class="form-control" readonly>
 					</div>
 					<div class="col-auto">
 						<span class="form-text fs-5">
@@ -849,7 +857,7 @@ Developer: Prakriti Dhang
 					</div>
 					<div class="col-auto">
 						<span class="form-text fs-5">
-							= 6.9
+							= 6.625
 						</span>
 					</div>
 
@@ -910,10 +918,10 @@ Developer: Prakriti Dhang
 	</div>
 
 
-
+	<!--script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script-->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-	<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script-->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
 
