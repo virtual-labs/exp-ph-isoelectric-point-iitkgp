@@ -62,7 +62,7 @@ Glutamine (Q) | CH<sub>2</sub>CONH<sub>2</sub> | 2.17 | 9.13 | - | 5.65 | Polar,
 Asparagine (N) |CH<sub>2</sub>CONH<sub>2</sub> | 2.02 | 8.80 | - | 5.41 | Polar, Hydrophilic
 Glutamic acid (E) | CH<sub>2</sub>CH<sub>2</sub>COOH | 2.19 | 9.67 | - | 3.22 | Negatively charged at neutral pH
 Aspartic acid (D) | CH<sub>2</sub>COOH | 1.88 | 9.60 | 3.65 | 2.77 | Negatively charged at neutral pH
-Lysine (K) | CH<sub>2</sub>CH<sub>2</sub>CH2NH<sub>3</sub><sup>+</sup> | 2.18 | 8.95 | 10.53 | 9.74 | Positively charged at neutral pH
+Lysine (K) | CH<sub>2</sub>CH<sub>2</sub>CH<sub>2</sub>NH<sub>3</sub><sup>+</sup> | 2.18 | 8.95 | 10.53 | 9.74 | Positively charged at neutral pH
 Arginine (R) | C4H<sub>6</sub>N<sub>3</sub><sup>+</sup>(NH)<sub>2</sub> | 2.17 | 9.04 | 12.48 | 10.76 | Positively charged at neutral pH
 
 
@@ -100,10 +100,11 @@ The isoelectric point of a peptide can be determined in a similar fashion as des
 <img src="images/fig7.png" class="img-fluid">
 
 </div>
-pK<sub>a</sub>| 2.19 | 3.86 | 4.25 | 9.82 | |
+
+pK<sub>a</sub>| 2.19 | 3.86 | 4.25 | 9.82 |  |
 :--|:--|:--|:--|:--|:--|
-pH | 1 | 2.5 | 4 | 5 | 10| 
-Net Charge|+1|0|-1|-2|-3
+pH | 1 | 2.5 | 4 | 5 | 10 | 
+Net Charge| +1 | 0 | -1 | -2 | -3 |
 
 Since zero net charge lies between pH of 2.19 and 3.86,
 Isoelectric point = (2.19 + 3.86)/2 = 3.03

@@ -101,9 +101,9 @@ function showcon() {
     document.getElementById("pi2").style.display = "block";
     document.getElementById("pi3").style.display = "none";
     document.getElementById("inputpiresult").value = aminoacid.options[aminoacid.selectedIndex].text;
-   const conicalFlaskph = document.getElementById('conicalflaskph');
+    const conicalFlaskph = document.getElementById('conicalflaskph');
     const currentTitleph = conicalFlaskph.getAttribute('title');
-    const newTitleph = currentTitleph === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text ;
+    const newTitleph = currentTitleph === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text;
     conicalFlaskph.setAttribute('title', newTitleph);
     // Trigger Bootstrap tooltip update (if you're using Bootstrap)
     $(conicalFlaskph).tooltip('dispose').tooltip({
@@ -113,13 +113,13 @@ function showcon() {
 
     const conicalFlask = document.getElementById('conicalflask');
     const currentTitle = conicalFlask.getAttribute('title');
-    const newTitle = currentTitle === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text ;
+    const newTitle = currentTitle === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text;
     conicalFlask.setAttribute('title', newTitle);
     // Trigger Bootstrap tooltip update (if you're using Bootstrap)
     $(conicalFlask).tooltip('dispose').tooltip({
       placement: 'right'
     }).tooltip('show');
-    
+
   }
   else if ((aminoacid.options[aminoacid.selectedIndex].value == 17) || (aminoacid.options[aminoacid.selectedIndex].value == 18)) {
     window.scrollBy(0, 500);
@@ -137,7 +137,7 @@ function showcon() {
 
     const conicalFlaskph = document.getElementById('conicalflaskph');
     const currentTitleph = conicalFlaskph.getAttribute('title');
-    const newTitleph = currentTitleph === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text ;
+    const newTitleph = currentTitleph === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text;
     conicalFlaskph.setAttribute('title', newTitleph);
     // Trigger Bootstrap tooltip update (if you're using Bootstrap)
     $(conicalFlaskph).tooltip('dispose').tooltip({
@@ -146,10 +146,10 @@ function showcon() {
 
     const conicalFlask = document.getElementById('conicalflask');
     const currentTitle = conicalFlask.getAttribute('title');
-    const newTitle = currentTitle === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text ;
+    const newTitle = currentTitle === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text;
     conicalFlask.setAttribute('title', newTitle);
     // Trigger Bootstrap tooltip update (if you're using Bootstrap)
-    $(conicalFlask).tooltip('update'); 
+    $(conicalFlask).tooltip('update');
 
   }
   else {
@@ -168,7 +168,7 @@ function showcon() {
 
     const conicalFlaskph = document.getElementById('conicalflaskph');
     const currentTitleph = conicalFlaskph.getAttribute('title');
-    const newTitleph = currentTitleph === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text ;
+    const newTitleph = currentTitleph === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text;
     conicalFlaskph.setAttribute('title', newTitleph);
     // Trigger Bootstrap tooltip update (if you're using Bootstrap)
     $(conicalFlaskph).tooltip('dispose').tooltip({
@@ -176,7 +176,7 @@ function showcon() {
     }).tooltip('show');
     const conicalFlask = document.getElementById('conicalflask');
     const currentTitle = conicalFlask.getAttribute('title');
-    const newTitle = currentTitle === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text ;
+    const newTitle = currentTitle === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text;
     conicalFlask.setAttribute('title', newTitle);
     // Trigger Bootstrap tooltip update (if you're using Bootstrap)
     $(conicalFlask).tooltip('update');
@@ -184,10 +184,10 @@ function showcon() {
 
 }
 
-function checkpH(){
+function checkpH() {
   document.getElementById("phprobe").style.display = "block";
   document.getElementById("phvaluetxt").style.display = "block";
-  document.getElementById("phvaluetxt").value="0";
+  document.getElementById("phvaluetxt").value = "0";
 }
 
 function titration() {
@@ -248,7 +248,7 @@ function buretteswitch() {
       }
     }*/
 
- var canvasstb1 = document.getElementById("canvasburetteempty");
+  var canvasstb1 = document.getElementById("canvasburetteempty");
   var ctxgstb1 = canvasstb1.getContext("2d");
   var posY1 = 0;
   var speed1 = 0.01;
@@ -332,7 +332,7 @@ function buretteswitchstop() {
 }
 var currentIndex = 0;
 var imgobjcphprobe = null;
-var txtph= null;
+var txtph = null;
 function phprobedown() {
   var currentltop = 30;
   var currentltoptxt = 36;
@@ -376,7 +376,7 @@ function phprobedown() {
 
   function frametxt() {
     if (currentltoptxt == 57) {
-     
+
       clearInterval(txtph);
 
 
@@ -396,7 +396,7 @@ function phprobedown() {
 
 
 var imgobjcphprobeup = null;
-var txtphup=null;
+var txtphup = null;
 function phprobemoveup() {
   var currentltop = 51;
   var currentltoptxt = 57;
@@ -429,7 +429,7 @@ function phprobemoveup() {
   function frametxtup() {
     if (currentltoptxt == 36) {
 
-      
+
       clearInterval(txtphup);
 
     }
@@ -515,7 +515,7 @@ function dataanalysisgraph1() {
   });
   chart.render();
   //document.getElementById("exportChart").addEventListener("click", function () {
-   // chart.exportChart({ format: "jpg" });
+  // chart.exportChart({ format: "jpg" });
   //});
 }
 
@@ -562,7 +562,7 @@ function dataanalysisgraph2() {
   });
   chart.render();
   //document.getElementById("exportChart").addEventListener("click", function () {
-   // chart.exportChart({ format: "jpg" });
+  // chart.exportChart({ format: "jpg" });
   //});
 }
 
@@ -608,8 +608,8 @@ function dataanalysisgraph3() {
     }]
   });
   chart.render();
- // document.getElementById("exportChart").addEventListener("click", function () {
-   // chart.exportChart({ format: "jpg" });
+  // document.getElementById("exportChart").addEventListener("click", function () {
+  // chart.exportChart({ format: "jpg" });
   //});
 }
 
@@ -638,14 +638,14 @@ window.onload = function () {
       type: "line",
 
     }]
-    
-    
+
+
   });
   chart.render();
 }
 
-function tableshow(){
-  scrollBy(0,1000);
+function tableshow() {
+  scrollBy(0, 1000);
 }
 
 /***********************************************************    pI check 1  **************************************************************************/
@@ -1241,154 +1241,165 @@ function showans3() {
 
 
 /*****************************************  Part B ****************************************************/
-function checkb1(){
+function checkb1() {
 
-  var usrinpnc1= document.getElementById("netcharge1").value;
-  var usrinpnc2= document.getElementById("netcharge2").value;
-  var usrinpnc3= document.getElementById("netcharge3").value;
-  var usrinpnc4= document.getElementById("netcharge4").value;
-  var usrinpnc5= document.getElementById("netcharge5").value;
+  var usrinpnc1 = document.getElementById("netcharge1").value;
+  var usrinpnc2 = document.getElementById("netcharge2").value;
+  var usrinpnc3 = document.getElementById("netcharge3").value;
+  var usrinpnc4 = document.getElementById("netcharge4").value;
+  var usrinpnc5 = document.getElementById("netcharge5").value;
 
-  if(usrinpnc1 == ""){
+  if (usrinpnc1 == "") {
     $('#alertModal').modal('show');
     $('.modal-body').html('Input box cannot be empty');
-    document.getElementById("netcharge1").style.border="2px solid blue";
-   }
-   else if(usrinpnc1 == "+2"){
-    document.getElementById("netcharge1").value= "+2";
-    document.getElementById("netcharge1").style.border="2px solid green";
-    }
-  
-   else{
-    document.getElementById("netcharge1").style.border="2px solid red";
-    document.getElementById("showsteppb1").disabled=false;
-   }
+    document.getElementById("netcharge1").style.border = "2px solid blue";
+  }
+  else if (usrinpnc1 == "+2") {
+    document.getElementById("netcharge1").value = "+2";
+    document.getElementById("netcharge1").style.border = "2px solid green";
+  }
 
-   if(usrinpnc2 == ""){
+  else {
+    document.getElementById("netcharge1").style.border = "2px solid red";
+    document.getElementById("showsteppb1").disabled = false;
+  }
+
+  if (usrinpnc2 == "") {
     $('#alertModal').modal('show');
     $('.modal-body').html('Input box cannot be empty');
-    document.getElementById("netcharge2").style.border="2px solid blue";
-   }
-   else if(usrinpnc2 == "+1"){
-    document.getElementById("netcharge2").value="+1";
-    document.getElementById("netcharge2").style.border="2px solid green";
-    }
-  
-   else{
-    
-    document.getElementById("netcharge2").style.border="2px solid red";
-    document.getElementById("showsteppb1").disabled=false;
-   }
+    document.getElementById("netcharge2").style.border = "2px solid blue";
+  }
+  else if (usrinpnc2 == "+1") {
+    document.getElementById("netcharge2").value = "+1";
+    document.getElementById("netcharge2").style.border = "2px solid green";
+  }
+
+  else {
+
+    document.getElementById("netcharge2").style.border = "2px solid red";
+    document.getElementById("showsteppb1").disabled = false;
+  }
 
 
-   if(usrinpnc3 == ""){
+  if (usrinpnc3 == "") {
     $('#alertModal').modal('show');
     $('.modal-body').html('Input box cannot be empty');
-    document.getElementById("netcharge3").style.border="2px solid blue";
-   }
-   else if(usrinpnc3 == "0"){
-    document.getElementById("netcharge3").value="0";
-    document.getElementById("netcharge3").style.border="2px solid green";
-    }
-  
-   else{
-    
-    document.getElementById("netcharge3").style.border="2px solid red";
-    document.getElementById("showsteppb1").disabled=false;
-   }
+    document.getElementById("netcharge3").style.border = "2px solid blue";
+  }
+  else if (usrinpnc3 == "0") {
+    document.getElementById("netcharge3").value = "0";
+    document.getElementById("netcharge3").style.border = "2px solid green";
+  }
 
-  
-   if(usrinpnc4 == ""){
+  else {
+
+    document.getElementById("netcharge3").style.border = "2px solid red";
+    document.getElementById("showsteppb1").disabled = false;
+  }
+
+
+  if (usrinpnc4 == "") {
     $('#alertModal').modal('show');
     $('.modal-body').html('Input box cannot be empty');
-    document.getElementById("netcharge4").style.border="2px solid blue";
-   }
-   else if(usrinpnc4 == "-1"){
-    document.getElementById("netcharge4").value="-1";
-    document.getElementById("netcharge4").style.border="2px solid green";
-    }
-  
-   else{
-    
-    document.getElementById("netcharge4").style.border="2px solid red";
-    document.getElementById("showsteppb1").disabled=false;
-   }
+    document.getElementById("netcharge4").style.border = "2px solid blue";
+  }
+  else if (usrinpnc4 == "-1") {
+    document.getElementById("netcharge4").value = "-1";
+    document.getElementById("netcharge4").style.border = "2px solid green";
+  }
 
-   if(usrinpnc5 == ""){
+  else {
+
+    document.getElementById("netcharge4").style.border = "2px solid red";
+    document.getElementById("showsteppb1").disabled = false;
+  }
+
+  if (usrinpnc5 == "") {
     $('#alertModal').modal('show');
     $('.modal-body').html('Input box cannot be empty');
-    document.getElementById("netcharge5").style.border="2px solid blue";
-   }
-   else if(usrinpnc5 == "-2"){
-    document.getElementById("netcharge5").value="-2";
-    document.getElementById("netcharge5").style.border="2px solid green";
-    }
-  
-   else{
-    
-    document.getElementById("netcharge5").style.border="2px solid red";
-    document.getElementById("showsteppb1").disabled=false;
-   }
+    document.getElementById("netcharge5").style.border = "2px solid blue";
+  }
+  else if (usrinpnc5 == "-2") {
+    document.getElementById("netcharge5").value = "-2";
+    document.getElementById("netcharge5").style.border = "2px solid green";
+  }
+
+  else {
+
+    document.getElementById("netcharge5").style.border = "2px solid red";
+    document.getElementById("showsteppb1").disabled = false;
+  }
 
 
 }
 
-function showansb1(){
-  document.getElementById("netcharge1").value= "+2";
-  document.getElementById("netcharge2").value="+1";
-  document.getElementById("netcharge3").value="0";
-  document.getElementById("netcharge4").value="-1";
-  document.getElementById("netcharge5").value="-2";
+function showansb1() {
+  document.getElementById("netcharge1").value = "+2";
+  document.getElementById("netcharge2").value = "+1";
+  document.getElementById("netcharge3").value = "0";
+  document.getElementById("netcharge4").value = "-1";
+  document.getElementById("netcharge5").value = "-2";
 
 
-  document.getElementById("netcharge1").style.border="2px solid green";
-  document.getElementById("netcharge2").style.border="2px solid green";
-  document.getElementById("netcharge3").style.border="2px solid green";
-  document.getElementById("netcharge4").style.border="2px solid green";
-  document.getElementById("netcharge5").style.border="2px solid green";
+  document.getElementById("netcharge1").style.border = "2px solid green";
+  document.getElementById("netcharge2").style.border = "2px solid green";
+  document.getElementById("netcharge3").style.border = "2px solid green";
+  document.getElementById("netcharge4").style.border = "2px solid green";
+  document.getElementById("netcharge5").style.border = "2px solid green";
 
 }
 
 
-function checkb2(){
+function checkb2() {
 
- var usrinpvalue1= document.getElementById("inputpib1").value;
- var usrinpvalue2= document.getElementById("inputpib2").value;
+  var usrinpvalue1 = document.getElementById("inputpib1").value;
+  var usrinpvalue2 = document.getElementById("inputpib2").value;
 
- if(usrinpvalue1 == ""){
-  $('#alertModal').modal('show');
-  $('.modal-body').html('Input box cannot be empty');
-  document.getElementById("inputpib1").style.border="2px solid blue";
- }
- else if(usrinpvalue1 == "9.6"){
-  document.getElementById("inputpib1").value=9.6;
-  document.getElementById("inputpib1").style.border="2px solid green";
-  
- }
 
- else{
-  
-  document.getElementById("inputpib1").style.border="2px solid red";
-  document.getElementById("showsteppb2").disabled=false;
- }
 
- if(usrinpvalue2 == ""){
-  $('#alertModal').modal('show');
-  $('.modal-body').html('Input box cannot be empty');
-  document.getElementById("inputpib2").style.border="2px solid blue";
- }
 
- else if(usrinpvalue2 == "3.65"){
-  document.getElementById("inputpib2").value=3.65;
-  document.getElementById("inputpib2").style.border="2px solid green";
- }
- else{
-  
-  document.getElementById("inputpib2").style.border="2px solid red";
-  document.getElementById("showsteppb2").disabled=false;
- }
+  if (usrinpvalue1 == "") {
+    $('#alertModal').modal('show');
+    $('.modal-body').html('Input box cannot be empty');
+    document.getElementById("inputpib1").style.border = "2px solid blue";
+
+
+  }
+  else if (usrinpvalue1 == "9.6") {
+    document.getElementById("inputpib1").value = 9.6;
+    document.getElementById("inputpib1").style.border = "2px solid green";
+
+  }
+
+  else {
+
+    document.getElementById("inputpib1").style.border = "2px solid red";
+    document.getElementById("showsteppb2").disabled = false;
+  }
+
+  if (usrinpvalue2 == "") {
+    $('#alertModal').modal('show');
+    $('.modal-body').html('Input box cannot be empty');
+    document.getElementById("inputpib2").style.border = "2px solid blue";
+  }
+
+  else if (usrinpvalue2 == "3.65") {
+    document.getElementById("inputpib2").value = 3.65;
+    document.getElementById("inputpib2").style.border = "2px solid green";
+  }
+  else {
+
+    document.getElementById("inputpib2").style.border = "2px solid red";
+    document.getElementById("showsteppb2").disabled = false;
+  }
 }
 
-function showansb2(){
-  document.getElementById("partbans2").style.display="block";
+function showansb2() {
+  document.getElementById("partbans2").style.display = "block";
 }
+
+
+function formulashow() {
+  document.getElementById("formula").style.display = "block";
+}
+
