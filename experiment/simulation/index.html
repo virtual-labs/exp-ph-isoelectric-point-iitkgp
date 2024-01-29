@@ -256,9 +256,9 @@ Developer: Prakriti Dhang
 										<input type="input" class="form-control fw-bold" value=""
 											style="text-align: center;  font-size: 9pt;" id="phvaluetxt"
 											data-toggle="tooltip" data-placement="right" title="Measured pH value"
-											readonly  style="display: none;"/>
+											readonly  />
 										<img src="./images/pH_meter.png" id="phprobe" data-toggle="tooltip"
-											data-placement="right" title="pH meter" style="display: none;">
+											data-placement="right" title="pH meter" >
 										<img src="./images/conicalflask.png" id="conicalflaskph"  >
 										<img src="./images/probdrop.png" id="pdrop">
 										<canvas width="10px" height="20px" id="canvasburette"
@@ -685,8 +685,8 @@ Developer: Prakriti Dhang
 								<div class="card-header fs-5 fw-bold">Instructions</div>
 								<div class="card-body">
 									<ol>
-										<li> Enter net charge value in  the given input box. Click the "ckeck" button to indicate the correctness. To reveal the correct answer, click on the "Show Answer" button.</li>
-										<li> To calculate pI of the given peptide, enter the value in the given input box. Click the "ckeck" button to indicate the correctness. To reveal the correct answer, click on the "Show Answer" button.</li>
+										<li> Enter net charge value in  the given input box. Click the "check" button to indicate the correctness. To reveal the correct answer, click on the "Show Answer" button.</li>
+										<li> To calculate pI of the given peptide, enter the value in the given input box. Click the "check" button to indicate the correctness. To reveal the correct answer, click on the "Show Answer" button.</li>
 									</ol>
 									</div>
 									</div>
@@ -709,6 +709,7 @@ Developer: Prakriti Dhang
 						<div class="card">
 							
 							<div class="card-body">
+								<div class="table-responsive">
 								<table class="table table-bordered">
 
 									<tr>
@@ -735,7 +736,7 @@ Developer: Prakriti Dhang
 
 									</tr>
 								</table>
-
+							</div>
 
 								<button id="steppb1" type="button"
 											class="btn btn-success border border-1  rounded-3 fs-6 m-1"
@@ -757,6 +758,7 @@ Developer: Prakriti Dhang
 			</div>
 			<div class="card-body">
 
+
 				<div class="row g-3 align-items-center">
 					<div class="col-auto">
 						<label for="inputpi" class="col-form-label fs-5">pI=</label>
@@ -766,16 +768,24 @@ Developer: Prakriti Dhang
 							(
 						</span>
 					</div>
-					<div class="col-auto">
-						<input type="text" id="inputpib1" placeholder=" " class="form-control fs-5 fw-bold" >
+					<div class="col-md-2">
+						<span class="form-text fs-5 ">
+							pK<sub>a2</sub>
+						</span>
+						<input type="text" id="inputpib1"  class="form-control fs-5 fw-bold " >
+						
 					</div>
 					<div class="col-auto">
 						<span class="form-text fs-5">
 							+
 						</span>
 					</div>
-					<div class="col-auto">
+					<div class="col-md-2">
+						<span class="form-text fs-5">
+							pK<sub>R</sub>
+						</span>
 						<input type="text" id="inputpib2" placeholder=" " value="" class="form-control fs-5 fw-bold">
+						
 					</div>
 					<div class="col-auto">
 						<span class="form-text fs-5">
@@ -800,6 +810,7 @@ Developer: Prakriti Dhang
 				<button id="steppb2" type="button"
 											class="btn btn-success border border-1  rounded-3 fs-6 m-1"
 											style="cursor: pointer; " onclick="checkb2()">Check</button>
+											
 										<button id="showsteppb2" type="button"
 											class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
 											style="cursor: pointer; float: right;" onclick="showansb2()" disabled>Show

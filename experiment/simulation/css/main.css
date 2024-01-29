@@ -43,10 +43,10 @@ Developer: Prakriti Dhang
 }
 #canvasburetteempty{
     position: absolute;
-    top:15.1%;
+    top:13%;
     left:47.4%;
     width:5%;
-    height: 37%; /* 40- */
+    height: 39.6%; /* 40- */
     
    
     
@@ -111,7 +111,7 @@ Developer: Prakriti Dhang
     left:62.5%; 
     width:15%;
     height:40%;
-    display: block;
+    display: none;
     z-index: 2;
     cursor: pointer;
 }
@@ -119,8 +119,8 @@ Developer: Prakriti Dhang
 #phvaluetxt{
     position: absolute;
     top:36%; /* 36- 57 */
-    left:68%;
-    width:7%;
+    left:67%;
+    width:9%;
     height:4.1%;
     cursor: pointer;
     z-index: 5;
