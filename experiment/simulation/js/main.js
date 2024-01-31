@@ -188,6 +188,7 @@ function checkpH() {
   document.getElementById("phprobe").style.display = "block";
   document.getElementById("phvaluetxt").style.display = "block";
   document.getElementById("phvaluetxt").value = "0";
+  window.scrollBy(0, 500);
 }
 
 function titration() {
