@@ -33,6 +33,14 @@ The same procedure can be carried out to determine the isoelectric point of pept
 
 
 ## Simulation instrument setup
+
+1. pH measurement
+<div align="center">
+<img src="images/phmeter.png" class="img-fluid">
+</div>
+
+2. Titration
 <div align="center">
 <img src="images/burette.png" class="img-fluid">
 </div>
+
