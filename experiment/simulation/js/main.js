@@ -1397,10 +1397,7 @@ function checkb2() {
 
 function showansb2() {
   document.getElementById("partbans2").style.display = "block";
+  window.scrollBy(0,200);
 }
 
-
-function formulashow() {
-  document.getElementById("formula").style.display = "block";
-}
 
