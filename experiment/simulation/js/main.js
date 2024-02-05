@@ -1393,6 +1393,14 @@ function checkb2() {
     document.getElementById("inputpib2").style.border = "2px solid red";
     document.getElementById("showsteppb2").disabled = false;
   }
+
+  if ((usrinpvalue1 == "9.6") && (usrinpvalue2 == "3.65")){
+    document.getElementById("anspi").innerHTML = 6.625;
+
+}
+else{
+  document.getElementById("anspi").innerHTML = "";
+}
 }
 
 function showansb2() {
