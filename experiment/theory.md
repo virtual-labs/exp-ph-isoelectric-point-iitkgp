@@ -45,23 +45,23 @@ and acidic carboxylic group. The acid-base reactions are the following:
 Amino Acid | Side Chain | pK<sub>a1</sub> <br> (&alpha;- COOH) | pK<sub>a2</sub> <br>(&alpha;-NH <sub>3</sub><sup>+</sup>) | pK<sub>R</sub><br> (R-group)| pI| Properties |
 :--|:--|:--|:--|:--|:--|:--|
 Glycine (G)|H|2.34|9.60|-|5.97|Neutral
-Alanine (A) | CH<sub>3</sub> | 2.34 | 9.69 | - | 6.01 | Neutral
+Alanine (A) | CH<sub>3</sub> | 2.34 | 9.69 | - | 6.015 | Neutral
 Valine (V) | (CH<sub>3</sub>)<sub>2</sub>CH | 2.32 | 9.62 | - | 6.48 | Neutral
 Leucine (L) | (CH<sub>3</sub>)<sub>2</sub>CHCH<sub>2</sub> | 2.36 | 9.60 |  - | 5.98 | Neutral
 Isoleucine (I) | CH<sub>3</sub>CH<sub>2</sub>CH(CH<sub>3</sub>) | 2.36 | 9.68 | - | 6.02 | Neutral
 Serine (S) | CH<sub>2</sub>OH | 2.21 | 9.15 | - | 5.68 | Polar, Hydrophilic
-Threonine (T) | CH(OH)CH<sub>3</sub> | 2.11 | 9.62 | - | 5.60 | Polar, Hydrophilic
-Cysteine (C) | SH  | 1.96 | 10.28 | 8.18 | 5.07 | Polar, can form disulfide bonds
+Threonine (T) | CH(OH)CH<sub>3</sub> | 2.09 | 9.10 | - | 5.595 | Polar, Hydrophilic
+Cysteine (C) | SH  | 1.96 | 8.18 | - | 5.07 | Polar, can form disulfide bonds
 Methionine (M) | SCH<sub>3</sub> | 2.28 | 9.21 | - | 5.74 | Nonpolar
-Proline (P) | Fused to α-N | 1.99 | 10.96 | - | 6.48| Unique structure, cyclic
+Proline (P) | Fused to α-N | 1.99 | 10.60 | - | 6.295| Unique structure, cyclic
 Phenylalanine (F) | C<sub>6</sub>H<sub>5</sub> | 1.83 | 9.13 | - | 5.48 | Nonpolar
-Tyrosine (Y) | C<sub>6</sub>H<sub>4</sub>OH | 2.20 | 9.11 | 10.07 | 5.66 | Polar, Hydrophilic
-Tryptophan (W) | C<sub>8</sub>H<sub>6</sub>NCH<sub>2</sub> | 2.83 | 9.39 | - | 5.89 | Nonpolar
-Histidine (H) | C<sub>5</sub>H<sub>4</sub>NCH | 1.82 | 9.17 | 6.00 | 7.59 | Positively charged at neutral pH
+Tyrosine (Y) | C<sub>6</sub>H<sub>4</sub>OH | 2.20 | 9.11 | 10.07 | 5.655 | Polar, Hydrophilic
+Tryptophan (W) | C<sub>8</sub>H<sub>6</sub>NCH<sub>2</sub> | 2.83 | 9.39 | - | 5.88 | Nonpolar
+Histidine (H) | C<sub>5</sub>H<sub>4</sub>NCH | 1.82 | 9.17 | 6.00 | 7.585 | Positively charged at neutral pH
 Glutamine (Q) | CH<sub>2</sub>CONH<sub>2</sub> | 2.17 | 9.13 | - | 5.65 | Polar, Hydrophilic
 Asparagine (N) |CH<sub>2</sub>CONH<sub>2</sub> | 2.02 | 8.80 | - | 5.41 | Polar, Hydrophilic
-Glutamic acid (E) | CH<sub>2</sub>CH<sub>2</sub>COOH | 2.19 | 9.67 | - | 3.22 | Negatively charged at neutral pH
-Aspartic acid (D) | CH<sub>2</sub>COOH | 1.88 | 9.60 | 3.65 | 2.77 | Negatively charged at neutral pH
+Glutamic acid (E) | CH<sub>2</sub>CH<sub>2</sub>COOH | 2.19 | 9.67 | 4.25 | 3.22 | Negatively charged at neutral pH
+Aspartic acid (D) | CH<sub>2</sub>COOH | 1.88 | 9.60 | 3.65 | 2.765 | Negatively charged at neutral pH
 Lysine (K) | CH<sub>2</sub>CH<sub>2</sub>CH<sub>2</sub>NH<sub>3</sub><sup>+</sup> | 2.18 | 8.95 | 10.53 | 9.74 | Positively charged at neutral pH
 Arginine (R) | C4H<sub>6</sub>N<sub>3</sub><sup>+</sup>(NH)<sub>2</sub> | 2.17 | 9.04 | 12.48 | 10.76 | Positively charged at neutral pH
 
