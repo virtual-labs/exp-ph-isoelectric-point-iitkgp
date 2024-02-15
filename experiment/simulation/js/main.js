@@ -679,11 +679,11 @@ function check1() {
 
     if (aminoacid.options[aminoacid.selectedIndex].value == 2) {
 
-      if (userinpt == "6.01") {
+      if (userinpt== "6.015") {
         $('#alertModal').modal('show');
         $('.modal-body').text('Correct');
-        document.getElementById("inputpiresultpi").value = "6.01";
-        document.getElementById("inputpi12").value = "6.01";
+        document.getElementById("inputpiresultpi").value = "6.015";
+        document.getElementById("inputpi12").value = "6.015";
       }
       else {
         $('#alertModal').modal('show');
@@ -695,11 +695,11 @@ function check1() {
 
     if (aminoacid.options[aminoacid.selectedIndex].value == 3) {
 
-      if (userinpt == "6.48") {
+      if (userinpt == "5.97") {
         $('#alertModal').modal('show');
         $('.modal-body').text('Correct');
-        document.getElementById("inputpiresultpi").value = "6.48";
-        document.getElementById("inputpi12").value = "6.48";
+        document.getElementById("inputpiresultpi").value = "5.97";
+        document.getElementById("inputpi12").value = "5.97";
       }
       else {
         $('#alertModal').modal('show');
@@ -756,11 +756,11 @@ function check1() {
     }
     if (aminoacid.options[aminoacid.selectedIndex].value == 7) {
 
-      if (userinpt == "5.60") {
+      if (userinpt == "5.595") {
         $('#alertModal').modal('show');
         $('.modal-body').text('Correct');
-        document.getElementById("inputpiresultpi").value = "5.60";
-        document.getElementById("inputpi12").value = "5.60";
+        document.getElementById("inputpiresultpi").value = "5.595";
+        document.getElementById("inputpi12").value = "5.595";
       }
       else {
         $('#alertModal').modal('show');
@@ -789,11 +789,11 @@ function check1() {
 
     if (aminoacid.options[aminoacid.selectedIndex].value == 9) {
 
-      if (userinpt == "5.74") {
+      if (userinpt == "5.745") {
         $('#alertModal').modal('show');
         $('.modal-body').text('Correct');
-        document.getElementById("inputpiresultpi").value = "5.74";
-        document.getElementById("inputpi12").value = "5.74";
+        document.getElementById("inputpiresultpi").value = "5.745";
+        document.getElementById("inputpi12").value = "5.745";
       }
       else {
         $('#alertModal').modal('show');
@@ -805,11 +805,11 @@ function check1() {
 
     if (aminoacid.options[aminoacid.selectedIndex].value == 10) {
 
-      if (userinpt == "6.48") {
+      if (userinpt == "6.295") {
         $('#alertModal').modal('show');
         $('.modal-body').text('Correct');
-        document.getElementById("inputpiresultpi").value = "6.48";
-        document.getElementById("inputpi12").value = "6.48";
+        document.getElementById("inputpiresultpi").value = "6.295";
+        document.getElementById("inputpi12").value = "6.295";
       }
       else {
         $('#alertModal').modal('show');
@@ -838,11 +838,11 @@ function check1() {
 
     if (aminoacid.options[aminoacid.selectedIndex].value == 12) {
 
-      if (userinpt == "5.66") {
+      if (userinpt == "5.655") {
         $('#alertModal').modal('show');
         $('.modal-body').text('Correct');
-        document.getElementById("inputpiresultpi").value = "5.66";
-        document.getElementById("inputpi12").value = "5.66";
+        document.getElementById("inputpiresultpi").value = "5.655";
+        document.getElementById("inputpi12").value = "5.655";
       }
       else {
         $('#alertModal').modal('show');
@@ -855,11 +855,11 @@ function check1() {
 
     if (aminoacid.options[aminoacid.selectedIndex].value == 13) {
 
-      if (userinpt == "5.89") {
+      if (userinpt == "5.88") {
         $('#alertModal').modal('show');
         $('.modal-body').text('Correct');
-        document.getElementById("inputpiresultpi").value = "5.89";
-        document.getElementById("inputpi12").value = "5.89";
+        document.getElementById("inputpiresultpi").value = "5.88";
+        document.getElementById("inputpi12").value = "5.88";
       }
       else {
         $('#alertModal').modal('show');
@@ -924,8 +924,8 @@ function showans1() {
   if (aminoacid.options[aminoacid.selectedIndex].value == 2) {
 
 
-    document.getElementById("inputpiresultpi").value = "6.01";
-    document.getElementById("inputpi12").value = "6.01";
+    document.getElementById("inputpiresultpi").value = "6.015";
+    document.getElementById("inputpi12").value = "6.015";
 
     document.getElementById("showsteppi1").disabled = true;
 
@@ -934,8 +934,8 @@ function showans1() {
   if (aminoacid.options[aminoacid.selectedIndex].value == 3) {
 
 
-    document.getElementById("inputpiresultpi").value = "6.48";
-    document.getElementById("inputpi12").value = "6.48";
+    document.getElementById("inputpiresultpi").value = "5.97";
+    document.getElementById("inputpi12").value = "5.97";
 
     document.getElementById("showsteppi1").disabled = true;
 
@@ -971,8 +971,8 @@ function showans1() {
   if (aminoacid.options[aminoacid.selectedIndex].value == 7) {
 
 
-    document.getElementById("inputpiresultpi").value = "5.60";
-    document.getElementById("inputpi12").value = "5.60";
+    document.getElementById("inputpiresultpi").value = "5.595";
+    document.getElementById("inputpi12").value = "5.595";
 
     document.getElementById("showsteppi1").disabled = true;
 
@@ -991,8 +991,8 @@ function showans1() {
   if (aminoacid.options[aminoacid.selectedIndex].value == 9) {
 
 
-    document.getElementById("inputpiresultpi").value = "5.74";
-    document.getElementById("inputpi12").value = "5.74";
+    document.getElementById("inputpiresultpi").value = "5.745";
+    document.getElementById("inputpi12").value = "5.745";
 
     document.getElementById("showsteppi1").disabled = true;
 
@@ -1001,8 +1001,8 @@ function showans1() {
   if (aminoacid.options[aminoacid.selectedIndex].value == 10) {
 
 
-    document.getElementById("inputpiresultpi").value = "6.48";
-    document.getElementById("inputpi12").value = "6.48";
+    document.getElementById("inputpiresultpi").value = "6.295";
+    document.getElementById("inputpi12").value = "6.295";
 
     document.getElementById("showsteppi1").disabled = true;
 
@@ -1022,8 +1022,8 @@ function showans1() {
   if (aminoacid.options[aminoacid.selectedIndex].value == 12) {
 
 
-    document.getElementById("inputpiresultpi").value = "5.66";
-    document.getElementById("inputpi12").value = "5.66";
+    document.getElementById("inputpiresultpi").value = "5.655";
+    document.getElementById("inputpi12").value = "5.655";
 
     document.getElementById("showsteppi1").disabled = true;
 
@@ -1034,8 +1034,8 @@ function showans1() {
 
 
 
-    document.getElementById("inputpiresultpi").value = "5.89";
-    document.getElementById("inputpi12").value = "5.89";
+    document.getElementById("inputpiresultpi").value = "5.88";
+    document.getElementById("inputpi12").value = "5.88";
 
     document.getElementById("showsteppi1").disabled = true;
 
@@ -1081,11 +1081,11 @@ function check2() {
 
     if (aminoacid.options[aminoacid.selectedIndex].value == 14) {
 
-      if (userinpt == "7.59") {
+      if (userinpt == "7.585") {
         $('#alertModal').modal('show');
         $('.modal-body').text('Correct');
-        document.getElementById("inputpiresultpi").value = "7.59";
-        document.getElementById("inputpi12basic").value = "7.59";
+        document.getElementById("inputpiresultpi").value = "7.585";
+        document.getElementById("inputpi12basic").value = "7.585";
       }
       else {
         $('#alertModal').modal('show');
@@ -1141,8 +1141,8 @@ function showans2() {
   if (aminoacid.options[aminoacid.selectedIndex].value == 14) {
 
 
-    document.getElementById("inputpiresultpi").value = "7.59";
-    document.getElementById("inputpi12basic").value = "7.59";
+    document.getElementById("inputpiresultpi").value = "7.585";
+    document.getElementById("inputpi12basic").value = "7.585";
     document.getElementById("showsteppi2").disabled = true;
 
   }
@@ -1198,11 +1198,11 @@ function check3() {
 
     if (aminoacid.options[aminoacid.selectedIndex].value == 18) {
 
-      if (userinpt == "2.77") {
+      if (userinpt == "2.765") {
         $('#alertModal').modal('show');
         $('.modal-body').text('Correct');
-        document.getElementById("inputpiresultpi").value = "2.77";
-        document.getElementById("inputpi12acid").value = "2.77";
+        document.getElementById("inputpiresultpi").value = "2.765";
+        document.getElementById("inputpi12acid").value = "2.765";
       }
       else {
         $('#alertModal').modal('show');
@@ -1233,8 +1233,8 @@ function showans3() {
   if (aminoacid.options[aminoacid.selectedIndex].value == 18) {
 
 
-    document.getElementById("inputpiresultpi").value = "2.77";
-    document.getElementById("inputpi12acid").value = "2.77";
+    document.getElementById("inputpiresultpi").value = "2.765";
+    document.getElementById("inputpi12acid").value = "2.765";
     document.getElementById("showsteppi3").disabled = true;
 
   }
