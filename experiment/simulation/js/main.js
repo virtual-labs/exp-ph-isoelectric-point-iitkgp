@@ -80,7 +80,7 @@ function cancelmsg() {
 
 var valuesArray;
 function showcon() {
-  cancelAnimationFrame(cancelani);
+ 
   var aminoacid = document.getElementById("aminoacidsel");
   aaobj = aminoacid.options[aminoacid.selectedIndex].text;
   if (aminoacid.options[aminoacid.selectedIndex].value == 0) {
@@ -181,7 +181,7 @@ function showcon() {
     // Trigger Bootstrap tooltip update (if you're using Bootstrap)
     $(conicalFlask).tooltip('update');
   }
-
+  cancelAnimationFrame(cancelani);
 }
 
 function checkpH() {
@@ -855,11 +855,11 @@ function check1() {
 
     if (aminoacid.options[aminoacid.selectedIndex].value == 13) {
 
-      if (userinpt == "5.88") {
+      if (userinpt == "5.885") {
         $('#alertModal').modal('show');
         $('.modal-body').text('Correct');
-        document.getElementById("inputpiresultpi").value = "5.88";
-        document.getElementById("inputpi12").value = "5.88";
+        document.getElementById("inputpiresultpi").value = "5.885";
+        document.getElementById("inputpi12").value = "5.885";
       }
       else {
         $('#alertModal').modal('show');
@@ -869,7 +869,24 @@ function check1() {
       }
     }
 
+
     if (aminoacid.options[aminoacid.selectedIndex].value == 15) {
+
+      if (userinpt == "5.41") {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Correct');
+        document.getElementById("inputpiresultpi").value = "5.41";
+        document.getElementById("inputpi12").value = "5.41";
+      }
+      else {
+        $('#alertModal').modal('show');
+        $('.modal-body').text('Incorrect pI value');
+        document.getElementById("showsteppi1").disabled = false;
+        document.getElementById("inputpi12").value = " ";
+      }
+    }
+
+    if (aminoacid.options[aminoacid.selectedIndex].value == 16) {
 
       if (userinpt == "5.65") {
         $('#alertModal').modal('show');
@@ -885,21 +902,7 @@ function check1() {
       }
     }
 
-    if (aminoacid.options[aminoacid.selectedIndex].value == 16) {
-
-      if (userinpt == "5.41") {
-        $('#alertModal').modal('show');
-        $('.modal-body').text('Correct');
-        document.getElementById("inputpiresultpi").value = "5.41";
-        document.getElementById("inputpi12").value = "5.41";
-      }
-      else {
-        $('#alertModal').modal('show');
-        $('.modal-body').text('Incorrect pI value');
-        document.getElementById("showsteppi1").disabled = false;
-        document.getElementById("inputpi12").value = " ";
-      }
-    }
+    
   }
 }
 
@@ -1034,14 +1037,23 @@ function showans1() {
 
 
 
-    document.getElementById("inputpiresultpi").value = "5.88";
-    document.getElementById("inputpi12").value = "5.88";
+    document.getElementById("inputpiresultpi").value = "5.885";
+    document.getElementById("inputpi12").value = "5.885";
 
     document.getElementById("showsteppi1").disabled = true;
 
   }
 
   if (aminoacid.options[aminoacid.selectedIndex].value == 15) {
+
+
+    document.getElementById("inputpiresultpi").value = "5.41";
+    document.getElementById("inputpi12").value = "5.41";
+
+    document.getElementById("showsteppi1").disabled = true;
+
+  }
+  if (aminoacid.options[aminoacid.selectedIndex].value == 16) {
 
 
     document.getElementById("inputpiresultpi").value = "5.65";
@@ -1051,15 +1063,7 @@ function showans1() {
 
   }
 
-  if (aminoacid.options[aminoacid.selectedIndex].value == 16) {
-
-
-    document.getElementById("inputpiresultpi").value = "5.41";
-    document.getElementById("inputpi12").value = "5.41";
-
-    document.getElementById("showsteppi1").disabled = true;
-
-  }
+  
 
 
 
