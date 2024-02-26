@@ -192,10 +192,10 @@ function checkpH() {
   document.getElementById("phvaluetxt").style.display = "block";
   document.getElementById("phvaluetxt").value = "0";
   window.scrollBy(0, 500);
+  document.getElementById("checkph").disabled = true;
 }
 
 function titration() {
-
   document.getElementById("buretteswitch").setAttribute("onclick", "buretteswitch()");
   $('#alertModal').modal('show');
   $('.modal-body').text('Click on the stopcock of the burette to start the titration.');
