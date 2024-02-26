@@ -97,7 +97,7 @@ The isoelectric point of a peptide can be determined in a similar fashion as des
 
 
 <div align="center">
-<img src="images/fig7.png" class="img-fluid">
+<img src="images/figure7.png" class="img-fluid">
 
 </div>
 
