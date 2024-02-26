@@ -66,7 +66,7 @@ Lysine (K) | CH<sub>2</sub>CH<sub>2</sub>CH<sub>2</sub>NH<sub>3</sub><sup>+</sup
 Arginine (R) | C4H<sub>6</sub>N<sub>3</sub><sup>+</sup>(NH)<sub>2</sub> | 2.17 | 9.04 | 12.48 | 10.76 | Positively charged at neutral pH
 
 
-<p>Table 1: The pka values of common α-amino acids grouped based on their charge, polarity, and side
+<p>Table 1: The pk<sub>a</sub> values of common α-amino acids grouped based on their charge, polarity, and side
 chain properties.</p>
 
 
