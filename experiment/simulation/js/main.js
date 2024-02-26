@@ -97,6 +97,7 @@ function showcon() {
     document.getElementById("step41").style.display = "none";
     document.getElementById("step43").style.display = "none";
     document.getElementById("step2").disabled = true;
+    document.getElementById("aminoacidsel").disabled = true;
     document.getElementById("pi1").style.display = "none";
     document.getElementById("pi2").style.display = "block";
     document.getElementById("pi3").style.display = "none";
@@ -130,6 +131,7 @@ function showcon() {
     document.getElementById("step42").style.display = "none";
     document.getElementById("step41").style.display = "none";
     document.getElementById("step2").disabled = true;
+    document.getElementById("aminoacidsel").disabled = true;
     document.getElementById("pi3").style.display = "block";
     document.getElementById("pi1").style.display = "none";
     document.getElementById("pi2").style.display = "none";
@@ -161,6 +163,7 @@ function showcon() {
     document.getElementById("step43").style.display = "none";
     document.getElementById("conicalflaskph").style.display = "block";
     document.getElementById("step2").disabled = true;
+    document.getElementById("aminoacidsel").disabled = true;
     document.getElementById("pi1").style.display = "block";
     document.getElementById("pi2").style.display = "none";
     document.getElementById("pi3").style.display = "none";
