@@ -67,7 +67,7 @@ Arginine (R) | C4H<sub>6</sub>N<sub>3</sub><sup>+</sup>(NH)<sub>2</sub> | 2.17 |
 
 
 <p>Table 1: The pk<sub>a</sub> values of common α-amino acids grouped based on their charge, polarity, and side
-chain properties.</p>
+chain properties. Ref: [] ()</p>
 
 
 **How is the isoelectric point of an amino acid determined?**
@@ -84,7 +84,7 @@ According to Henderson Hesselbalch equation (Figure 4), the pH equals pK<sub>a</
 <p>Figure 5: The pI lies between the points A and B where the concentration of an acid is the same as that of its conjugate base</p>
 </div>
 
-To calculate the pI of a neutral amino acid, an average of the pKa1 and pKa2 values are taken. However, to find the pI of a triprotic acid, the average of the pK<sub>a</sub> values that are closest to the pH at which the amino acid assumes zero net charge is used (Figure 6).
+To calculate the pI of a neutral amino acid, an average of the pK<sub>a1</sub> and pK<sub>a2</sub> values are taken. However, to find the pI of a triprotic acid, the average of the pK<sub>a</sub> values that are closest to the pH at which the amino acid assumes zero net charge is used (Figure 6).
 
 <div align="center">
 <img src="images/fig6.png" class="img-fluid">

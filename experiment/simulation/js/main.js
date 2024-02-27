@@ -1262,7 +1262,7 @@ function checkb1() {
     $('.modal-body').html('Input box cannot be empty');
     document.getElementById("netcharge1").style.border = "2px solid blue";
   }
-  else if (usrinpnc1 == "+2") {
+  else if ((usrinpnc1 == "+2")|| (usrinpnc1 == "2") ) {
     document.getElementById("netcharge1").value = "+2";
     document.getElementById("netcharge1").style.border = "2px solid green";
   }
@@ -1277,7 +1277,7 @@ function checkb1() {
     $('.modal-body').html('Input box cannot be empty');
     document.getElementById("netcharge2").style.border = "2px solid blue";
   }
-  else if (usrinpnc2 == "+1") {
+  else if ((usrinpnc2 == "+1") || (usrinpnc2 == "1")) {
     document.getElementById("netcharge2").value = "+1";
     document.getElementById("netcharge2").style.border = "2px solid green";
   }
