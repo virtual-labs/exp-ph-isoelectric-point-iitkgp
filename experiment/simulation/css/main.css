@@ -1,1 +1,294 @@
-/* You CSS goes in here */
+/* /*
+ Lab name: Experimental Biochemistry
+Exp name: pH-titration of amino acids and small peptides, and estimation of isoelectric point (pI)
+File name: main.css
+Developer: Prakriti Dhang
+
+ */ 
+
+.card {
+    margin-bottom: 5px;
+}
+
+.img-container {
+    
+    display: inline-block;
+    position: relative;
+}
+
+.div-inline {
+
+    display: inline-block;
+}
+
+#burette{
+    position: relative;
+    top:1%;
+    left:5%;
+    width:80%;
+    height:5%;
+    z-index: 1;
+}
+
+
+#canvasburette{
+    position: absolute;
+    top:13%;
+    left:47.4%;
+    width:5%; /* 5*/
+    height:39.6%;  /* 37*/
+    opacity: 55%;
+    transform: rotate(-180deg);
+   
+}
+#canvasburetteempty{
+    position: absolute;
+    top:13%;
+    left:47.4%;
+    width:5%;
+    height: 39.6%; /* 40- */
+    
+   
+    
+    
+}
+
+#canvasburettelabel{
+    position: absolute;
+    top:9%;
+    left:47.4%;
+    width:5%;
+    height:43%;
+    cursor: pointer;
+    z-index: 2;
+    
+}
+
+#burettestndholder{
+    position: absolute;
+    top:15.2%;
+    left:46.6%;
+    width:6%;
+    height:4%;
+    z-index: 2;
+    
+}
+#buretteswitch{
+    position: absolute;
+    top:53.5%;
+    left:54%;
+    width:2%;
+    height:6.8%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#conicalflask{
+    position: absolute;
+    top:74%;
+    left:42%; /*41-43 */
+    width:15%;
+    height:18%;
+    display: none;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#conicalflaskph{
+    position: absolute;
+    top:74%;
+    left:64%;
+    width:15%;
+    height:18%;
+    display: none;
+    z-index: 5;
+    cursor: pointer;
+}
+
+#phprobe{
+    position: absolute;
+    top:30%; /*30 - 51 */
+    left:62.5%; 
+    width:15%;
+    height:40%;
+    display: none;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#phvaluetxt{
+    position: absolute;
+    top:36%; /* 36- 57 */
+    left:67%;
+    width:9%;
+    height:4.1%;
+    cursor: pointer;
+    z-index: 5;
+    background-color: transparent;
+    border: 0;
+} 
+
+/* old -- #phmeter{
+    position: relative;
+    top:34%;
+    left:10%; 
+    width:80%;
+    height:28%;
+    display: block;
+    z-index: 2;
+    cursor: pointer;
+} 
+
+#phmterpon{
+    position: absolute;
+    top:45.8%;
+    left:52.6%;
+    width:3.5%;
+    height:3.5%;
+    cursor: pointer;
+    z-index: 2;
+}*/
+ 
+
+/*#phprobe{
+    position: absolute;
+    top:45%;  45- 64
+    left:31.5%;
+    width:1.5%;
+    height:25%;
+    cursor: pointer;
+    z-index: 4;
+}
+#phprobeh{
+    position: absolute;
+    top:45%;  
+    left:31.6%;
+    width: 1.2%;
+    height:24%;
+    cursor: pointer;
+   display: none;
+}*/
+
+
+
+#pdrop{
+    position: absolute;
+    top:67%; /*67- 86*/
+    left:49.2%;
+    width:1.2%;
+    height:2%;
+    display: none;
+    z-index: 2;
+}
+
+
+
+
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+
+  
+
+  .btn-slate-blue-grey {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #6A5ACD;
+    --bs-btn-border-color: #6A5ACD;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #483D8B;
+    --bs-btn-hover-border-color: #6A5ACD;
+    --bs-btn-focus-shadow-rgb: 106, 90, 205;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #6A5ACD;
+    --bs-btn-active-border-color: #4B0082;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #6A5ACD;
+    --bs-btn-disabled-border-color: #6A5ACD;
+  }
+
+  .btn-pastel-blue {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #AED6F1;
+    --bs-btn-border-color: #AED6F1;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #85C1E9;
+    --bs-btn-hover-border-color: #AED6F1;
+    --bs-btn-focus-shadow-rgb: 174, 214, 241;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #AED6F1;
+    --bs-btn-active-border-color: #5499C7;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #AED6F1;
+    --bs-btn-disabled-border-color: #AED6F1;
+  }
+
+
+
+  .demo {
+    /* for IE10+ touch devices */
+    touch-action: none;
+}
+
+
+
+.jtk-overlay {
+    z-index: 51;
+}
+
+.jtk-endpoint {
+    z-index: 0; /* 50*/
+    cursor: move;
+}
+
+.jtk-connector {
+    z-index: 0; /* 10*/
+}
+
+.bigdot {
+    cursor: pointer;
+    width: 0.1%;
+    height: 0.1%;
+    /* background-image: url(./images/littledot.png);*/
+    position: absolute;
+    border-radius: 1%;
+
+}
+
+.littledot-hover-hover {
+    border: 2px solid orange;
+}
+
+.dropHover {
+    border: 1px solid orange;
+}
+
+#ld1 {
+    position: absolute;
+    width: 0.1%;
+    top:63%; /* 44 - 63 */
+    left: 31.6%;
+    
+}
+
+#ld2 {
+    position: absolute;
+    width: 0.1%;
+    top: 31%;
+    left: 50%;
+
+}
+
+path,
+.jtk-endpoint {
+    cursor: pointer;
+}
+
+.cmdLink detach {
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}

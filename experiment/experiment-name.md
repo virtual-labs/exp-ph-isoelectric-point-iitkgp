@@ -1,1 +1,1 @@
-## Experiment name
+## pH-titration of amino acids and small peptides, and estimation of isoelectric point (pI)
