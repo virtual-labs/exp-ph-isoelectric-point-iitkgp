@@ -101,39 +101,12 @@ The isoelectric point of a peptide can be determined in a similar fashion as des
 
 </div>
 
-<!-- pK<sub>a</sub>    2.19  3.86  4.25  9.82   
+<!-- pK<sub>a</sub>    2.19  3.86  4.25  9.82   -->
 
 pH | 1 | 2.5 | 4 | 5 | 10 | 
 :--|:--|:--|:--|:--|:--|
 Net Charge| +1 | 0 | -1 | -2 | -3 |
- -->
-
-<table>
-  <tr>
-  <td>pK<sub>a</sub></td>
-    <td > &nbsp; 2.18</td>
-    <td > &nbsp; &nbsp; 3.65</td>
-    <td > &nbsp;&nbsp; 9.6</td>
-    <td > &nbsp; &nbsp; 10.53</td>
-  </tr>
-  <tr>
-  <td>pH</td>
-    <td>1</td>
-    <td>2.5</td>
-    <td>7</td>
-    <td>10</td>
-    <td>13</td>
-  </tr>
-  <tr>
-  <td>Net Charge</td>
-    <td>+2</td>
-    <td>+1</td>
-    <td>0</td>
-    <td>-1</td>
-    <td>-2</td>
-  </tr>
-</table>
-
+ 
 Since zero net charge lies between pH of 2.19 and 3.86,  
 Isoelectric point = (2.19 + 3.86)/2 = 3.03
 
