@@ -87,7 +87,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "8. The dissociation constant of H2O at 25° C is ______.",
+      "question": "8. The dissociation constant of H<sub>2</sub>O at 25° C is ______.",
       "answers": {
         "a": "10<sup>7</sup>",
         "b": "10<sup>-7</sup>",
@@ -113,8 +113,8 @@
     {
       "question": "10. Which of the following leads to the neutral charge of an amino acid?",
       "answers": {
-        "a": "Deprotonation of COOH and protonation of NH2",
-        "b": "Deprotonation of NH3<sup>+</sup> and protonation of COO<sup>-</sup>",
+        "a": "Deprotonation of COOH and protonation of NH<sub>2</sub>",
+        "b": "Deprotonation of NH<sub>3</sub><sup>+</sup> and protonation of COO<sup>-</sup>",
         "c": "Protonation of NH<sub>3</sub><sup>+</sup> and deprotonation of COO<sup>-</sup>",
         "d": "Both a and b"
       },

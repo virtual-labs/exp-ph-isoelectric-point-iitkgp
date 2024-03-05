@@ -37,14 +37,14 @@ The same procedure can be carried out to determine the isoelectric point of pept
 **Step 6:** Calculate the pI by averaging the two pKa values that are just before and just after the zero net charge.  
 
 
-## Simulation instrument setup
+## Simulation Instrument Setup
 
-1. pH measurement
+1. **pH measurement**
 <div align="center">
 <img src="images/phmeter.png" class="img-fluid">
 </div>
 
-2. Titration
+2. **Titration**
 <div align="center">
 <img src="images/burette.png" class="img-fluid">
 </div>
