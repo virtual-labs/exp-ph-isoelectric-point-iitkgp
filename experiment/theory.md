@@ -72,7 +72,7 @@ chain properties. Ref: [] ()</p>
 
 **How is the isoelectric point of an amino acid determined?**
 
-According to Henderson Hesselbalch equation (Figure 4), the pH equals pK<sub>a</sub> (the quantitative measure of the strength of an acid) when the concentration of the acid (HA) is the same as that of its conjugate base (A-). Lower pK<sub>a</sub> values mean a stronger acid. The pK<sub>a</sub> is the pH at the mid-point of the flat buffering zones in a titration plot (pH vs volume of titrant). Table 1 lists out the pK<sub>a</sub> and pI values of each amino acid along with their properties.
+According to Henderson Hesselbalch equation (Figure 4), the pH equals pK<sub>a</sub> (the quantitative measure of the strength of an acid) when the concentration of the acid (HA) is the same as that of its conjugate base (A<sup>-</sup>). Lower pK<sub>a</sub> values mean a stronger acid. The pK<sub>a</sub> is the pH at the mid-point of the flat buffering zones in a titration plot (pH vs volume of titrant). Table 1 lists out the pK<sub>a</sub> and pI values of each amino acid along with their properties.
 
 <div align="center">
 <img src="images/fig4.png" class="img-fluid">
