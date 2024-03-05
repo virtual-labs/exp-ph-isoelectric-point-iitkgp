@@ -27,9 +27,14 @@
 The same procedure can be carried out to determine the isoelectric point of peptides.
 
 
+**Determine the isoelectric point of the tripeptide**
 
-
-
+**Step 1:** Write out the pKa values of the amino acid from low to high.  
+**Step 2:** Drop the pH below the lowest pKa value of the amino acid and determine the net charge of the amino acid.  
+**Step 3:** Select a pH between the first and the second pKa value of the amino acid and determine the net charge of the amino acid.  
+**Step 4:** Select a pH between the second and the third pKa value of the amino acid and determine the net charge of the amino acid.  
+**Step 5:** Raise the pH above the highest pKa value and determine the net charge of the amino acid.  
+**Step 6:** Calculate the pI by averaging the two pKa values that are just before and just after the zero net charge.  
 
 
 ## Simulation instrument setup
