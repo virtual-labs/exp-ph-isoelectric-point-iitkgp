@@ -38,7 +38,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "4. For lysine, the pKa1 is equal to 2.18, pKa2 is equal to 8.95 and pKR is equal to 10.53. At which pH will it assume an overall neutral charge",
+      "question": "4. For lysine, the pK<sub>a1</sub> is equal to 2.18, pK<sub>a2</sub> is equal to 8.95 and pKR is equal to 10.53. At which pH will it assume an overall neutral charge",
       "answers": {
         "a": "5.56",
         "b": "9.74",
@@ -111,7 +111,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "10. Calculate the pI of the tripeptide Asp-Gly-Glu. <br> Hint: Firstly, find out the net charge at pH = 0, 2.5, 4, 5 and 10 respectively. Then use the pKa values corresponding to the pH at which net charge of the tripeptide is zero to calculate the pI. <br> <p><img src=\"images/figure7.png\"></p>",
+      "question": "10. Calculate the pI of the tripeptide Asp-Gly-Glu. <br> Hint: Firstly, find out the net charge at pH = 0, 2.5, 4, 5 and 10 respectively. Then use the pK<sub>a</sub> values corresponding to the pH at which net charge of the tripeptide is zero to calculate the pI. <br> <p><img src=\"images/figure7.png\"></p>",
       "answers": {
         "a": "3.03",
         "b": "4.05",
