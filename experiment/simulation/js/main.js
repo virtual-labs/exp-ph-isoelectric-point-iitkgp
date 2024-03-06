@@ -102,6 +102,7 @@ function showcon() {
     document.getElementById("pi2").style.display = "block";
     document.getElementById("pi3").style.display = "none";
     document.getElementById("inputpiresult").value = aminoacid.options[aminoacid.selectedIndex].text;
+    document.getElementById("aminoacidselect1").innerHTML = aminoacid.options[aminoacid.selectedIndex].text;
     const conicalFlaskph = document.getElementById('conicalflaskph');
     const currentTitleph = conicalFlaskph.getAttribute('title');
     const newTitleph = currentTitleph === 'Conical Flask with 0.1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 0.1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text;
@@ -136,7 +137,7 @@ function showcon() {
     document.getElementById("pi1").style.display = "none";
     document.getElementById("pi2").style.display = "none";
     document.getElementById("inputpiresult").value = aminoacid.options[aminoacid.selectedIndex].text;
-
+    document.getElementById("aminoacidselect2").innerHTML = aminoacid.options[aminoacid.selectedIndex].text;
     const conicalFlaskph = document.getElementById('conicalflaskph');
     const currentTitleph = conicalFlaskph.getAttribute('title');
     const newTitleph = currentTitleph === 'Conical Flask with 0.1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 0.1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text;
@@ -168,7 +169,7 @@ function showcon() {
     document.getElementById("pi2").style.display = "none";
     document.getElementById("pi3").style.display = "none";
     document.getElementById("inputpiresult").value = aminoacid.options[aminoacid.selectedIndex].text;
-
+    document.getElementById("aminoacidselect3").innerHTML = aminoacid.options[aminoacid.selectedIndex].text;
     const conicalFlaskph = document.getElementById('conicalflaskph');
     const currentTitleph = conicalFlaskph.getAttribute('title');
     const newTitleph = currentTitleph === 'Conical Flask with 0.1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 0.1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text;
