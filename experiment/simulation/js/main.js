@@ -104,7 +104,7 @@ function showcon() {
     document.getElementById("inputpiresult").value = aminoacid.options[aminoacid.selectedIndex].text;
     const conicalFlaskph = document.getElementById('conicalflaskph');
     const currentTitleph = conicalFlaskph.getAttribute('title');
-    const newTitleph = currentTitleph === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text;
+    const newTitleph = currentTitleph === 'Conical Flask with 0.1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 0.1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text;
     conicalFlaskph.setAttribute('title', newTitleph);
     // Trigger Bootstrap tooltip update (if you're using Bootstrap)
     $(conicalFlaskph).tooltip('dispose').tooltip({
@@ -114,7 +114,7 @@ function showcon() {
 
     const conicalFlask = document.getElementById('conicalflask');
     const currentTitle = conicalFlask.getAttribute('title');
-    const newTitle = currentTitle === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text;
+    const newTitle = currentTitle === 'Conical Flask with 0.1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 0.1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text;
     conicalFlask.setAttribute('title', newTitle);
     // Trigger Bootstrap tooltip update (if you're using Bootstrap)
     $(conicalFlask).tooltip('dispose').tooltip({
@@ -139,7 +139,7 @@ function showcon() {
 
     const conicalFlaskph = document.getElementById('conicalflaskph');
     const currentTitleph = conicalFlaskph.getAttribute('title');
-    const newTitleph = currentTitleph === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text;
+    const newTitleph = currentTitleph === 'Conical Flask with 0.1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 0.1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text;
     conicalFlaskph.setAttribute('title', newTitleph);
     // Trigger Bootstrap tooltip update (if you're using Bootstrap)
     $(conicalFlaskph).tooltip('dispose').tooltip({
@@ -148,7 +148,7 @@ function showcon() {
 
     const conicalFlask = document.getElementById('conicalflask');
     const currentTitle = conicalFlask.getAttribute('title');
-    const newTitle = currentTitle === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text;
+    const newTitle = currentTitle === 'Conical Flask with 0.1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 0.1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text;
     conicalFlask.setAttribute('title', newTitle);
     // Trigger Bootstrap tooltip update (if you're using Bootstrap)
     $(conicalFlask).tooltip('update');
@@ -171,7 +171,7 @@ function showcon() {
 
     const conicalFlaskph = document.getElementById('conicalflaskph');
     const currentTitleph = conicalFlaskph.getAttribute('title');
-    const newTitleph = currentTitleph === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text;
+    const newTitleph = currentTitleph === 'Conical Flask with 0.1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 0.1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text;
     conicalFlaskph.setAttribute('title', newTitleph);
     // Trigger Bootstrap tooltip update (if you're using Bootstrap)
     $(conicalFlaskph).tooltip('dispose').tooltip({
@@ -179,7 +179,7 @@ function showcon() {
     }).tooltip('show');
     const conicalFlask = document.getElementById('conicalflask');
     const currentTitle = conicalFlask.getAttribute('title');
-    const newTitle = currentTitle === 'Conical Flask with 1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text;
+    const newTitle = currentTitle === 'Conical Flask with 0.1 M solution of chosen amino acid' ? 'New Title' : 'Conical Flask with 0.1 M solution of  ' + aminoacid.options[aminoacid.selectedIndex].text;
     conicalFlask.setAttribute('title', newTitle);
     // Trigger Bootstrap tooltip update (if you're using Bootstrap)
     $(conicalFlask).tooltip('update');
@@ -500,7 +500,7 @@ function dataanalysisgraph1() {
       title: "NaOH equivalents",
       minimum: 0,
       maximum: 10,
-      interval: 5,
+      interval: 1,
 
 
     },
@@ -522,9 +522,9 @@ function dataanalysisgraph1() {
     }]
   });
   chart.render();
-  //document.getElementById("exportChart").addEventListener("click", function () {
-  // chart.exportChart({ format: "jpg" });
-  //});
+ /*  document.getElementById("exportChart").addEventListener("click", function () {
+    chart.exportChart({ format: "jpg" });
+   }); */
 }
 
 function dataanalysisgraph2() {
@@ -559,7 +559,7 @@ function dataanalysisgraph2() {
       title: "NaOH equivalents",
       minimum: 0,
       maximum: 10,
-      interval: 0.5,
+      interval: 1,
 
 
     },
@@ -573,9 +573,9 @@ function dataanalysisgraph2() {
     }]
   });
   chart.render();
-//document.getElementById("exportChart").addEventListener("click", function () {
-  //chart.exportChart({ format: "jpg" });
- // });
+ /*  document.getElementById("exportChart").addEventListener("click", function () {
+    chart.exportChart({ format: "jpg" });
+   }); */
 }
 
 function dataanalysisgraph3() {
@@ -610,7 +610,7 @@ function dataanalysisgraph3() {
       title: "NaOH equivalents",
       minimum: 0,
       maximum: 10,
-      interval: 0.5,
+      interval: 1,
 
 
     },
@@ -624,9 +624,9 @@ function dataanalysisgraph3() {
     }]
   });
   chart.render();
-  document.getElementById("exportChart").addEventListener("click", function () {
+  /* document.getElementById("exportChart").addEventListener("click", function () {
    chart.exportChart({ format: "jpg" });
-  });
+  }); */
 }
 
 window.onload = function () {
@@ -647,7 +647,7 @@ window.onload = function () {
       title: "NaOH equivalents",
       minimum: 0,
       maximum: 10,
-      interval: 2,
+      interval: 1,
 
     },
     data: [{

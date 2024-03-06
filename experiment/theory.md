@@ -67,7 +67,8 @@ Arginine (R) | C4H<sub>6</sub>N<sub>3</sub><sup>+</sup>(NH)<sub>2</sub> | 2.17 |
 
 
 <p>Table 1: The pk<sub>a</sub> values of common α-amino acids grouped based on their charge, polarity, and side
-chain properties. Ref: [] ()</p>
+chain properties. </p>
+<p>Ref: Adapted from Voet, D. and Voet, J.G. (2010) Biochemistry. 4th Edition, Wiley, Hoboken</p>
 
 
 **How is the isoelectric point of an amino acid determined?**
