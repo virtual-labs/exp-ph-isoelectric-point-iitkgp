@@ -1,0 +1,126 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Which of the following configurations is commonly seen in the case of the amino acids that form human proteins?",
+      "answers": {
+        "a": "L",
+        "b": "D",
+        "c": "Can be either L or D",
+        "d": "Can be either R or S"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Amino acids Valine exist as ______ at neutral pH",
+      "answers": {
+        "a": "Cations",
+        "b": "Anions",
+        "c": "Neutral",
+        "d": "Zwitterions"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Zwitterions are ______ at neutral pH.",
+      "answers": {
+        "a": "Uncharged",
+        "b": "Positively charged",
+        "c": "Negatively charged",
+        "d": "Charged, but net charge is zero"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. The titration curve of glycine represents ______.",
+      "answers": {
+        "a": "Two buffering regions",
+        "b": "Two pKa values",
+        "c": "Both a and b",
+        "d": "One buffering region at neutral pH"
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. Which of the following amino acids exist as negatively charged ions at neutral pH?",
+      "answers": {
+        "a": "Histidine",
+        "b": "Lysine",
+        "c": "Glutamic acid",
+        "d": "Proline"
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "6. Which of the following amino acids exist as positively charged ions at neutral pH?",
+      "answers": {
+        "a": "Histidine",
+        "b": "Lysine",
+        "c": "Glutamic acid",
+        "d": "Proline"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+
+    {
+      "question": "7. Which of the following properties of a protein is least likely to be affected by changes in pH?",
+      "answers": {
+        "a": "Primary structure",
+        "b": "Secondary structure",
+        "c": "Tertiary structure",
+        "d": "Net charge"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "8. The dissociation constant of H<sub>2</sub>O at 25° C is ______.",
+      "answers": {
+        "a": "10<sup>7</sup>",
+        "b": "10<sup>-7</sup>",
+        "c": "10<sup>14</sup>",
+        "d": "10<sup>-14</sup>"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "9. The naming is commonly done in the following manner",
+      "answers": {
+        "a": "pK<sub>a1</sub> – COOH, pK<sub>a2</sub> – NH<sub>2</sub>, pK<sub>a3</sub> – R group",
+        "b": "pK<sub>a1</sub> – NH<sub>2</sub>, pK<sub>a2</sub> – R group, pK<sub>a3</sub> – COOH",
+        "c": "pK<sub>a1</sub> – NH<sub>2</sub>, pK<sub>a2</sub> – COOH, pK<sub>a3</sub> – R group",
+        "d": "Both a and b"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "10. Which of the following leads to the neutral charge of an amino acid?",
+      "answers": {
+        "a": "Deprotonation of COOH and protonation of NH<sub>2</sub>",
+        "b": "Deprotonation of NH<sub>3</sub><sup>+</sup> and protonation of COO<sup>-</sup>",
+        "c": "Protonation of NH<sub>3</sub><sup>+</sup> and deprotonation of COO<sup>-</sup>",
+        "d": "Both a and b"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    }
+  ]
+}

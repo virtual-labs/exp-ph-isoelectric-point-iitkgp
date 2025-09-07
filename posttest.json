@@ -1,0 +1,126 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Which of the following amino acids has the lowest isoelectric point?",
+      "answers": {
+        "a": "<img src=\"images/1a.png\">",
+        "b": "<img src=\"images/1b.png\">",
+        "c": "<img src=\"images/1c.png\">",
+        "d": "<img src=\"images/1d.png\">"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Which of the following amino acids has the highest isoelectric point?",
+      "answers": {
+        "a": "<img src=\"images/2a.png\">",
+        "b": "<img src=\"images/2a.png\">",
+        "c": "<img src=\"images/2a.png\">",
+        "d": "<img src=\"images/2a.png\">"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Sample A is a mixture of 3 polypeptide chains, polypeptide 1 (MW = 100 kDa), polypeptide 2 (MW = 200 kDa), and polypeptide 3 (MW = 400 kDa). All the peptides have their isoelectric point at pH 6. What would you see if electrophoretic separation is carried out at pH 6 for protein sample A?",
+      "answers": {
+        "a": "Polypeptide 1 migrates fastest",
+        "b": "Polypeptide 2 migrates fastest",
+        "c": "Polypeptide 3 migrates fastest",
+        "d": "None of the polypeptides migrates"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. For lysine, the pK<sub>a1</sub> is equal to 2.18, pK<sub>a2</sub> is equal to 8.95 and pKR is equal to 10.53. At which pH will it assume an overall neutral charge",
+      "answers": {
+        "a": "5.56",
+        "b": "9.74",
+        "c": "6.25",
+        "d": "0"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. Calculate the pI of the given amino acid. <p><img src=\"images/q5.png\"></p>",
+      "answers": {
+        "a": "5.5",
+        "b": "3.9",
+        "c": "7.6",
+        "d": "6.8"
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "6. Which of the following amino acids cannot participate in intermolecular H-bonding due to the chemical group in its side-chain?",
+      "answers": {
+        "a": "Ile",
+        "b": "Lys",
+        "c": "Trp",
+        "d": "Asn"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+
+    {
+      "question": "7. Which of the following amino acids are expected to have a net negative charge at pH 7.4?",
+      "answers": {
+        "a": "Glu & Asp",
+        "b": "Glu & Asn",
+        "c": "Gln & Asp",
+        "d": "Gln & Asn"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "8. During pH titration, HCl is added to glycine at the beginning of the experiment. What is the role of HCl?",
+      "answers": {
+        "a": "To neutralize NaOH",
+        "b": "To neutralize glycine",
+        "c": "To protonate glycine",
+        "d": "To make a zwitterion"
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "9. During the titration of Gly with NaOH, the change in pH is slow before and after the inflection point. This is because,",
+      "answers": {
+        "a": "Formation of buffer zone",
+        "b": "Slow deprotonation of GlyH",
+        "c": "Degradation of Gly",
+        "d": "Consumption of NaOH by HCl"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "10. Calculate the pI of the tripeptide Asp-Gly-Glu. <br> Hint: Firstly, find out the net charge at pH = 0, 2.5, 4, 5 and 10 respectively. Then use the pK<sub>a</sub> values corresponding to the pH at which net charge of the tripeptide is zero to calculate the pI. <br> <p><img src=\"images/figure7.png\"></p>",
+      "answers": {
+        "a": "3.03",
+        "b": "4.05",
+        "c": "6.84",
+        "d": "None of the above"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}
