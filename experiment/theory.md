@@ -68,7 +68,7 @@ chain properties. (Ref: Adapted from Voet, D. and Voet, J.G. (2010) Biochemistry
 
 
 
-**How is the isoelectric point of an amino acid determined?**
+#### How is the isoelectric point of an amino acid determined?**
 
 According to Henderson Hesselbalch equation (Figure 4), the pH equals pK<sub>a</sub> (the quantitative measure of the strength of an acid) when the concentration of the acid (HA) is the same as that of its conjugate base (A<sup>-</sup>). Lower pK<sub>a</sub> values mean a stronger acid. The pK<sub>a</sub> is the pH at the mid-point of the flat buffering zones in a titration plot (pH vs volume of titrant). Table 1 lists out the pK<sub>a</sub> and pI values of each amino acid along with their properties.
 
@@ -89,7 +89,7 @@ To calculate the pI of a neutral amino acid, an average of the pK<sub>a1</sub> a
 <p>Figure 6: Calculation of the isoelectric point of amino acids</p>
 </div>
 
-**How is the isoelectric point of a peptide is determined?**
+#### How is the isoelectric point of a peptide is determined?**
 
 The isoelectric point of a peptide can be determined in a similar fashion as described above. Let us take the example of a tripeptide Asp-Gly-Glu. The pK<sub>a</sub> values are listed below. As the pH increases from 1 to 10, the tripeptide transitions from net positive to negative charge. At pH above 2.2, net charge is zero. Therefore, the major contributors of the isoelectric point are the pK<sub>a</sub> values closest to pH 2.2 i.e. pK<sub>a</sub> 3.86 and 2.19. Therefore pI is calculated as an average of these 2 pK<sub>a</sub> values.
 
@@ -111,9 +111,10 @@ Isoelectric point = (2.19 + 3.86)/2 = 3.03
 
 
 
-**What is the biological and physiological significance of the amino acid titration curves?**
+#### What is the biological and physiological significance of the amino acid titration curves?**
 
 Understanding the titration curves of amino acids reaches far and wide within the realm of biology and medicine. The knowledge of pH-dependent charge of the constituent amino acids of a protein allows researchers to predict the folding, stability, and interaction of proteins, and unravel deeper insights into enzyme mechanisms.
   
 
 From a clinical perspective, understanding the impact of pH alternations on proteins can influence diagnostic and treatment strategies. A notable example is the disease metabolic acidosis, where a lower blood pH could potentially affect the structure and function of essential proteins. These studies find applications in nutrition and hereditary diseases as they throw light on why some mutations cause disease and others do not or on developing therapeutic strategies that alter protein interactions.
+
